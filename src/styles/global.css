@@ -1,0 +1,18 @@
+html {
+  background-color: #ffffff;
+  font-size: 15px !important;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: "Noto Sans" !important;
+}
+
+.headings {
+  font-family: "Poppins" !important;
+}
+
+body {
+  max-width: 80vw;
+  margin: auto !important;
+}
