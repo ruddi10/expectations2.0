@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
 import "./layout.css"
+import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,13 +22,9 @@ const Layout = ({ children }) => {
     <div className="layout-container">
       <Navbar />
       <div>{children}</div>
-      <h1>hello from footer</h1>
+      <Footer />
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
