@@ -3,7 +3,11 @@ html {
   font-size: 15px !important;
   box-sizing: border-box;
 }
-
+:root {
+  --lightg: #75c2be;
+  --darkg: #498b88;
+  --darkp: #e29a9a;
+}
 .text {
   font-family: "Noto Sans" !important;
 }
@@ -12,25 +16,21 @@ html {
   font-family: "Poppins" !important;
 }
 
-body:not(.full) {
-  max-width: 80vw;
-  margin: auto !important;
-}
 .light-color-head {
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-  color: #75c2be;
+  color: var(--lightg);
 }
 .dark-color-head {
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-  color: #75c2be;
+  color: var(--darkg);
 }

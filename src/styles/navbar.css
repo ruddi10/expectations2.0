@@ -10,10 +10,8 @@
   background-color: white;
   z-index: 10;
   width: 100%;
-
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  max-width: 80vw;
+  margin: auto !important;
 }
 .ui.dropdown.item.box {
   background-color: white;
@@ -50,6 +48,12 @@
 .ui.attached.item.menu:not(.tabular) {
   border: none;
 }
-.full {
-  border-bottom: 2px solid #75c2be;
+
+.navbar-container {
+  background-color: white;
+  border-bottom: 2px #75c2be solid;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
 }

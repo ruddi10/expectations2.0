@@ -2,11 +2,8 @@
 * {
   font-size: 15px;
 }
-body {
-  /* max-width: 80vw;
-  margin: auto !important; */
+
+.container {
+  max-width: 80vw;
+  margin: auto !important;
 }
-/* .layout-container {
-  display: flex;
-  flex-direction: column;
-} */

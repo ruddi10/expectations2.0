@@ -12,7 +12,7 @@ export default class Navbar extends Component {
   render() {
     const { activeItem } = this.state
     return (
-      <div className="full">
+      <div className="navbar-container">
         <div className="navbar-header">
           <h2>Expectations iitr</h2>
           <Menu

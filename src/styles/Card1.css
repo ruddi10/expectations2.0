@@ -16,7 +16,7 @@
 
 .ui.card.card1,
 .ui.card.card1:hover {
-  border-bottom: 4px solid #75c2be;
+  border-bottom: 4px solid var(--lightg);
   width: 100%;
   font-size: 0.9rem;
   max-height: 20rem;

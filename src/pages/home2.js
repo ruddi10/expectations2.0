@@ -2,9 +2,7 @@ import React from "react"
 import Card1 from "../components/Card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
-import { Card, Icon, Image } from "semantic-ui-react"
 import { h2data } from "../data"
-import Video from "../components/Video"
 function home2(props) {
   return (
     <Layout>

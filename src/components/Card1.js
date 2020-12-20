@@ -6,7 +6,7 @@ const Card1 = props => (
   <Card fluid className={"card1"} as={Link} to={`/cardLink`}>
     <Image
       src={
-        "https://storage.googleapis.com/picxystatic/cache/2019/7/4/0233b76936525adc4c2e68292d82a516.jpg"
+        "https://content.techgig.com/photo/77541410/iit-roorkee-to-launch-certification-course-in-ai-ml-data-science.jpg?141074"
       }
       wrapped
       ui={false}
