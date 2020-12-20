@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Footer from "./footer"
 import Navbar from "./Navbar"
 import "./layout.css"
+import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,14 +21,12 @@ const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <Navbar />
-      <div>{children}</div>
-      <Footer />
+      <div className="container">
+        <div>{children}</div>
+        <Footer />
+      </div>
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

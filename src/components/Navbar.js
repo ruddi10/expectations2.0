@@ -12,33 +12,35 @@ export default class Navbar extends Component {
   render() {
     const { activeItem } = this.state
     return (
-      <div className="navbar-header">
-        <h2>Expectations iitr</h2>
-        <Menu
-          stackable
-          widths={7}
-          size="large"
-          borderless
-          className="navbar-menu"
-          attached={"bottom"}
-        >
-          {dropups.map(dropup => (
-            <Dropdown item text={dropup.value} className="box">
-              <Dropdown.Menu>
-                {dropup.fields.map(field => (
-                  <Dropdown.Item
-                    className="ditem"
-                    value={field}
-                    as={Link}
-                    to={`/${dropup.value}/${field}`}
-                  >
-                    {field}
-                  </Dropdown.Item>
-                ))}
-              </Dropdown.Menu>
-            </Dropdown>
-          ))}
-        </Menu>
+      <div className="navbar-container">
+        <div className="navbar-header">
+          <h2>Expectations iitr</h2>
+          <Menu
+            stackable
+            widths={7}
+            size="large"
+            borderless
+            className="navbar-menu"
+            attached={"bottom"}
+          >
+            {dropups.map(dropup => (
+              <Dropdown item text={dropup.value} className="box">
+                <Dropdown.Menu>
+                  {dropup.fields.map(field => (
+                    <Dropdown.Item
+                      className="ditem"
+                      value={field}
+                      as={Link}
+                      to={`/${dropup.value}/${field}`}
+                    >
+                      {field}
+                    </Dropdown.Item>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            ))}
+          </Menu>
+        </div>
       </div>
     )
   }
