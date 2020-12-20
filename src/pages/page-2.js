@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Button, Card, Image } from "semantic-ui-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Imag from "../components/image"
 
 const SecondPage = () => (
   <Layout>
@@ -30,6 +31,9 @@ const SecondPage = () => (
         </div>
       </Card.Content>
     </Card>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Imag />
+    </div>
   </Layout>
 )
 

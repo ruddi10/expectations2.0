@@ -1,0 +1,25 @@
+body {
+  background-color: #f7f7f7;
+}
+.home2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home2-heading {
+}
+.home2-cards {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  /* padding: 0rem 10rem 2rem 10rem; */
+}
+.home2-bottom {
+}
+.card-container {
+  width: 30%;
+}

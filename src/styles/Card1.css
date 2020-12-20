@@ -1,0 +1,21 @@
+.ui.card1.card > .content,
+.ui.cards > .card.card1 > .content {
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+}
+.ui.card.card1 > .content > .description {
+  font-size: 1rem;
+}
+.ui.card.card1 > .image > img {
+  max-height: 12rem;
+}
+
+/* .ui.cards > .teal.card.card1,
+  .ui.cards.card1 > .teal.card:hover {
+    box-shadow: 0 0 0 1px #d4d4d5, 0 6px 0 0 #75c2be, 0 1px 3px 0 #d4d4d5;
+  } */
+
+.ui.teal.card.card1,
+.ui.teal.card.card1:hover {
+  box-shadow: 0 0 0 1px #d4d4d5, 0 6px 0 0 #75c2be, 0 1px 3px 0 #d4d4d5;
+  width: 100%;
+}
