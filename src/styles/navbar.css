@@ -8,11 +8,12 @@
   align-items: flex-start;
   height: max-content;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
-  /* position: sticky;
+
+  position: sticky;
   position: -webkit-sticky;
-  top: 0; */
+  top: 0;
 }
 .ui.dropdown.item.box {
   background-color: white;
@@ -49,6 +50,6 @@
 .ui.attached.item.menu:not(.tabular) {
   border: none;
 }
-.navbar-header h2 {
-  padding: 0.8rem 0 0 0;
+.full {
+  border-bottom: 2px solid #75c2be;
 }

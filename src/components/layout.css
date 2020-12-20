@@ -3,28 +3,10 @@
   font-size: 15px;
 }
 body {
-  max-width: 80vw;
-  margin: auto !important;
+  /* max-width: 80vw;
+  margin: auto !important; */
 }
-.layout-container {
+/* .layout-container {
   display: flex;
   flex-direction: column;
-}
-.light-color-head {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #75c2be;
-}
-.dark-color-head {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #75c2be;
-}
+} */
