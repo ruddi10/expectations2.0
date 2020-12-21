@@ -1,5 +1,4 @@
 body {
-  /* background-color: #f7f7f7 !important; */
 }
 .home2-container > * {
   display: flex;
@@ -38,8 +37,19 @@ body {
   /* border: 1px solid black; */
 }
 
-.card-container {
-  width: 30%;
+.home2-cards > *:not(:first-child) {
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 650px) {
+  .home2-cards {
+    flex-direction: column;
+  }
+  .home2-cards > * {
+    padding: 0 0 2rem 0 !important;
+  }
+  .home2-bottom {
+    display: none;
+  }
 }
 
 .image-gallery-image {
