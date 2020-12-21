@@ -3,10 +3,50 @@ import Card1 from "../components/Card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
 import { h2data } from "../data"
+
+import ImageGallery from "react-image-gallery"
+
+const images = [
+  {
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    description:
+      '<a href="https://facebook.com">Hello World there i am here to defeat everyone</>',
+    embedUrl: "/",
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
+  {
+    original: require("../images/expectations_carousel_dummy.png"),
+  },
+]
+
 function home2(props) {
   return (
-    <Layout>
+    <Layout noContainer={true}>
+      <ImageGallery
+        items={images}
+        showThumbnails={false}
+        autoPlay={true}
+        showBullets={true}
+        showPlayButton={false}
+        showFullscreenButton={false}
+      />
+
       <div className="home2-container">
+        <div className="home-banner">
+          <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
+          <div className="dark-color-head">
+            A COMPREHENSIVE GUIDE TO IIT ROORKEE FOR FRESHERS AND PROSPECTIVE
+            STUDENTS.
+          </div>
+        </div>
         <div className="home2-heading">
           <h2 className="light-color-head">Life and culture at IITR</h2>
         </div>

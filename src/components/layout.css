@@ -1,27 +1,4 @@
-* {
-  font-size: 15px;
-}
-
 .container {
   max-width: 80vw;
   margin: auto !important;
-}
-
-.light-color-head {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #75c2be;
-}
-.dark-color-head {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #75c2be;
 }

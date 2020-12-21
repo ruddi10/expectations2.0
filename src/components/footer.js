@@ -1,6 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { Button, Icon, Menu } from "semantic-ui-react"
+import {
+  Button,
+  Icon,
+  Menu,
+  List,
+  Image as SemanticImage,
+} from "semantic-ui-react"
 import Image from "gatsby-image"
 import "../styles/footer.css"
 const query = graphql`
@@ -39,24 +45,82 @@ export default function Footer() {
         <Menu.Item as={Link}>Parent's Corner</Menu.Item>
         <Menu.Item as={Link}>Experiences</Menu.Item>
       </div>
-      <div className="bottom text">
+      <div className="footer-bottom text">
         <div className="grid-header headings">Quick Links</div>
         <div className="grid-header headings">Other Resources</div>
         <div className="grid-header headings">Connect With Us</div>
-        <Menu.Item as={Link}>Student's Corner</Menu.Item>
-        <div>1</div>
-        <div>1</div>
         <Menu.Item as={Link}>How to get to Roorkee?</Menu.Item>
-        <div>1</div>
+        <a
+          href="https://geekgazette.iitr.ac.in"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          geekgazette.iitr.ac.in
+        </a>
+        <div className="connect-icons">
+          <List horizontal>
+            <List.Item>
+              <SemanticImage
+                avatar
+                as={"a"}
+                href="https://www.facebook.com/geekgazette"
+                target="_blank"
+                rel="noopener noreferrer"
+                src={require("../images/facebook.png")}
+              />
+            </List.Item>
+            <List.Item>
+              <SemanticImage
+                avatar
+                as={"a"}
+                href="https://www.instagram.com/geek_gazette/"
+                target="_blank"
+                rel="noopener noreferrer"
+                src={require("../images/insta_exp.png")}
+              />
+            </List.Item>
+            <List.Item>
+              <SemanticImage
+                avatar
+                as={"a"}
+                href="https://www.linkedin.com/company/geek-gazette/"
+                target="_blank"
+                rel="noopener noreferrer"
+                src={require("../images/linkedin_exp.png")}
+              />
+            </List.Item>
+            <List.Item>
+              <SemanticImage
+                avatar
+                as={"a"}
+                href="https://twitter.com/teamgeekgazette"
+                target="_blank"
+                rel="noopener noreferrer"
+                src={require("../images/tweet_exp.png")}
+              />
+            </List.Item>
+          </List>
+        </div>
         <Menu.Item as={Link}>Gallery</Menu.Item>
-        <div>1</div>
-        <div>1</div>
+        <a href="https://iitr.ac.in" target="_blank" rel="noopener noreferrer">
+          iitr.ac.in
+        </a>
         <Menu.Item as={Link}>Know Your Branch</Menu.Item>
-        <div>1</div>
-        <div>1</div>
+        <div>Photo Courtesy: Photography Section, IITR</div>
+        <div style={{ color: "var(--lightg)" }}>
+          Check JEE opening and closing ranks
+        </div>
         <Menu.Item as={Link}>FAQs</Menu.Item>
-        <div>1</div>
-        <div>1</div>
+        <div>Video Courtesy: Cinematic Section, IITR </div>
+        <Button
+          as={"a"}
+          href="https://cutoffs.iitr.ac.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cutoff-btn headings"
+        >
+          View cutoffs
+        </Button>
       </div>
     </div>
   )

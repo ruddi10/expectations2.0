@@ -7,7 +7,7 @@ import "./layout.css"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noContainer }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,9 +21,20 @@ const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <Navbar />
-      <div className="container">
+      <div className={noContainer ? " " : "container"}>
         <div>{children}</div>
         <Footer />
+      </div>
+      <div
+        style={{
+          background: "#F7F7F7",
+          fontSize: "0.8rem",
+          marginTop: "0.6rem",
+        }}
+      >
+        <div className="container headings">
+          All rights reserved Geek Gazette,Copyright 2020
+        </div>
       </div>
     </div>
   )
