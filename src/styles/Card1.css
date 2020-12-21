@@ -19,5 +19,29 @@
   border-bottom: 4px solid var(--lightg);
   width: 100%;
   font-size: 0.9rem;
-  max-height: 20rem;
+  max-height: 25rem;
+}
+@media only screen and (max-width: 900px) {
+  .ui.card.card1,
+  .ui.card.card1:hover {
+    font-size: 0.9rem;
+  }
+  .ui.card.card1 > .image > img {
+    max-height: 18rem;
+  }
+  .ui.card.card1 > .content > .description {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .ui.card.card1,
+  .ui.card.card1:hover {
+    font-size: 1.5rem;
+  }
+  .ui.card.card1 > .image > img {
+    max-height: 18rem;
+  }
+  .ui.card.card1 > .content > .description {
+    font-size: 1.3rem;
+  }
 }

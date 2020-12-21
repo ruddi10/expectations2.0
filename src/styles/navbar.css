@@ -57,3 +57,33 @@
   top: 0;
   z-index: 10;
 }
+.above-menu {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.cond-icon {
+  visibility: hidden;
+}
+@media only screen and (max-width: 800px) {
+  .navbar-header {
+    max-width: 95vw;
+  }
+  .navbar-menu {
+    width: 100vw;
+  }
+  .ui.item.dropdown.box {
+    max-width: 100vw;
+    width: 100vw;
+    border-radius: 0;
+  }
+  .cond-icon {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
