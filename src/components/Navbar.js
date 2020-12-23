@@ -3,6 +3,7 @@ import { Sticky, Dropdown, Menu, Icon, Image } from "semantic-ui-react"
 import "../styles/navbar.css"
 import { dropups } from "../data"
 import { Link } from "gatsby"
+import ResponsiveComponent from "./responsive-component"
 const MenuList = () => (
   <Menu
     stackable
@@ -30,23 +31,14 @@ const MenuList = () => (
     ))}
   </Menu>
 )
-export default class Navbar extends Component {
+export default class Navbar extends ResponsiveComponent {
   constructor(props) {
     super(props)
     this.state = { windowWidth: window.innerWidth, toggle: false }
-    this.handleClick = this.handleClick.bind(this)
-    this.handleResize = this.handleResize.bind(this)
   }
-  componentDidMount() {
-    window.addEventListener("resize", this.handleResize)
-  }
-  handleClick() {
+
+  handleClick = () => {
     this.setState({ toggle: !this.state.toggle })
-  }
-  handleResize() {
-    this.setState({
-      windowWidth: window.innerWidth,
-    })
   }
   render() {
     return (

@@ -3,42 +3,50 @@ import Card1 from "../components/Card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
 import { h2data } from "../data"
-
-import ImageGallery from "react-image-gallery"
-
-const images = [
-  {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-    description:
-      '<a href="https://facebook.com">Hello World there i am here to defeat everyone</>',
-    embedUrl: "/",
-  },
-  {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-  },
-  {
-    original: require("../images/expectations_carousel_dummy.png"),
-  },
-]
+import TestimonialExcerpt from "../components/testimonial-excerpt"
+import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
+import { Carousel } from "react-responsive-carousel"
+import { Link } from "gatsby"
 
 function home2(props) {
   return (
     <Layout noContainer={true}>
-      <ImageGallery
-        items={images}
-        showThumbnails={false}
-        autoPlay={true}
-        showBullets={true}
-        showPlayButton={false}
-        showFullscreenButton={false}
-      />
-
+      <Carousel
+        showArrows={true}
+        infiniteLoop
+        autoPlay
+        swipeable
+        showThumbs={false}
+      >
+        <div style={{ height: "50vh" }}>
+          <img
+            className="image-gallery-image"
+            src="https://picsum.photos/id/1018/1000/600/"
+          />
+          <p className="legend">Legend 1</p>
+        </div>
+        <div style={{ height: "50vh" }}>
+          <img
+            className="image-gallery-image"
+            src="https://picsum.photos/id/1015/1000/600/"
+          />
+          <p className="legend">Legend 2</p>
+        </div>
+        <div style={{ height: "50vh" }}>
+          <img
+            className="image-gallery-image"
+            src="https://picsum.photos/id/1019/1000/600/"
+          />
+          <p className="legend">Legend 3</p>
+        </div>
+        <div style={{ height: "50vh" }}>
+          <img
+            className="image-gallery-image"
+            src={require("../images/expectations_carousel_dummy.png")}
+          />
+          <p className="legend">Legend 3</p>
+        </div>
+      </Carousel>
       <div className="home2-container">
         <div className="home-banner">
           <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
@@ -66,7 +74,45 @@ function home2(props) {
             allowfullscreen
           ></iframe>
           <div className="card-container2">
-            <Card1 carddata={h2data[0]} />
+            <div className="all-excerpt">
+              <Link>View All</Link>
+            </div>
+            <Carousel
+              infiniteLoop
+              showArrows={false}
+              autoPlay
+              swipeable
+              showThumbs={false}
+              showStatus={false}
+            >
+              <TestimonialExcerpt
+                data={{
+                  text:
+                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
+                  author: "Ketan Dhanuka",
+                  branch: "Applied Mathematics, IITR’24",
+                  source: "gg_logo.png",
+                }}
+              />
+              <TestimonialExcerpt
+                data={{
+                  text:
+                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
+                  author: "Ketan Dhanuka",
+                  branch: "Applied Mathematics, IITR’24",
+                  source: "gg_logo.png",
+                }}
+              />
+              <TestimonialExcerpt
+                data={{
+                  text:
+                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
+                  author: "Ketan Dhanuka",
+                  branch: "Applied Mathematics, IITR’24",
+                  source: "gg_logo.png",
+                }}
+              />
+            </Carousel>
           </div>
         </div>
       </div>
