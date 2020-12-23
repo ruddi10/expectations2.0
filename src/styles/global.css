@@ -24,6 +24,7 @@ html {
   letter-spacing: 0em;
   text-align: left;
   color: var(--lightg);
+  padding: 1rem 0 1rem 0;
 }
 .dark-color-head {
   font-family: "Poppins", sans-serif;
@@ -33,6 +34,14 @@ html {
   letter-spacing: 0em;
   text-align: left;
   color: var(--darkg);
+  padding: 1rem 0 1rem 0;
+}
+.normal-para,
+.normal-para p {
+  font-family: "Noto Sans" !important;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: #6b6b6b;
 }
 @media only screen and (max-width: 650px) {
   html {

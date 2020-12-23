@@ -13,13 +13,20 @@
   .ui.cards.card1 > .teal.card:hover {
     box-shadow: 0 0 0 1px #d4d4d5, 0 6px 0 0 #75c2be, 0 1px 3px 0 #d4d4d5;
   } */
+.ui.cards > .card.card1 {
+  border-bottom: 4px solid var(--lightg);
+}
 
-.ui.card.card1,
+/* .ui.card.card1,
 .ui.card.card1:hover {
   border-bottom: 4px solid var(--lightg);
   width: 100%;
   font-size: 0.9rem;
   max-height: 25rem;
+} */
+.ui.cards > .card.card1:hover {
+  border-bottom: 4px solid var(--darkp);
+  transform: none;
 }
 @media only screen and (max-width: 900px) {
   .ui.card.card1,
