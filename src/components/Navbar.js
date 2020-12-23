@@ -20,7 +20,7 @@ const MenuList = () => (
               className="ditem"
               value={field}
               as={Link}
-              to={`/${dropup.value}/${field}`}
+              to={`/${dropup.value}/${field}/`}
             >
               {field}
             </Dropdown.Item>
@@ -54,7 +54,7 @@ export default class Navbar extends Component {
         <div className="navbar-header">
           <div className="above-menu">
             <Image
-              src={"https://www.linkpicture.com/q/explogo.png"}
+              src={require("../images/explogo.jpg")}
               fluid
               size={"small"}
               as={Link}
