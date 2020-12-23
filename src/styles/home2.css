@@ -119,5 +119,5 @@ body {
 }
 
 .carousel .slide {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }

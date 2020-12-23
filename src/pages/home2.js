@@ -6,9 +6,47 @@ import { h2data } from "../data"
 import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
-function home2(props) {
+import HomeColumn from "../components/home-colum"
+
+const query = graphql`
+  {
+    image1: file(relativePath: { eq: "dummy_image.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image2: file(relativePath: { eq: "dummy_image.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image3: file(relativePath: { eq: "dummy_image.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image4: file(relativePath: { eq: "dummy_image.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+export default function Home2(props) {
+  const data = useStaticQuery(query)
+  console.log("Hiiiiiiiiiiiiii")
+  console.log(data)
   return (
     <Layout noContainer={true}>
       <Carousel
@@ -115,9 +153,15 @@ function home2(props) {
             </Carousel>
           </div>
         </div>
+        <HomeColumn
+          data={{
+            heading: "Student’s Corner",
+            body:
+              "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+            source: data.image1.childImageSharp.fluid,
+          }}
+        />
       </div>
     </Layout>
   )
 }
-
-export default home2
