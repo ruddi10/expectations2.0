@@ -2,7 +2,7 @@ import React from "react"
 import Card1 from "../components/Card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
-import { h2data } from "../data"
+import { h2data, testimonialExcerpt } from "../data"
 import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
@@ -45,8 +45,6 @@ const query = graphql`
 
 export default function Home2(props) {
   const data = useStaticQuery(query)
-  console.log("Hiiiiiiiiiiiiii")
-  console.log(data)
   return (
     <Layout noContainer={true}>
       <Carousel
@@ -123,44 +121,58 @@ export default function Home2(props) {
               showThumbs={false}
               showStatus={false}
             >
-              <TestimonialExcerpt
-                data={{
-                  text:
-                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
-                  author: "Ketan Dhanuka",
-                  branch: "Applied Mathematics, IITR’24",
-                  source: "gg_logo.png",
-                }}
-              />
-              <TestimonialExcerpt
-                data={{
-                  text:
-                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
-                  author: "Ketan Dhanuka",
-                  branch: "Applied Mathematics, IITR’24",
-                  source: "gg_logo.png",
-                }}
-              />
-              <TestimonialExcerpt
-                data={{
-                  text:
-                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
-                  author: "Ketan Dhanuka",
-                  branch: "Applied Mathematics, IITR’24",
-                  source: "gg_logo.png",
-                }}
-              />
+              {testimonialExcerpt.map(data => (
+                <TestimonialExcerpt data={data} />
+              ))}
             </Carousel>
           </div>
         </div>
-        <HomeColumn
-          data={{
-            heading: "Student’s Corner",
-            body:
-              "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-            source: data.image1.childImageSharp.fluid,
-          }}
-        />
+        <div className="home-column-container">
+          <HomeColumn
+            data={{
+              heading: "Student’s Corner",
+              body:
+                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+              source: data.image1.childImageSharp.fluid,
+              to: "/",
+            }}
+            isReverse={false}
+            backdrop="tr"
+          />
+          <HomeColumn
+            data={{
+              heading: "Student’s Corner",
+              body:
+                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+              source: data.image1.childImageSharp.fluid,
+              to: "/",
+            }}
+            isReverse={true}
+            backdrop="tl"
+          />
+          <HomeColumn
+            data={{
+              heading: "Student’s Corner",
+              body:
+                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+              source: data.image1.childImageSharp.fluid,
+              to: "/",
+            }}
+            isReverse={false}
+            backdrop="tr"
+          />
+          <HomeColumn
+            data={{
+              heading: "Student’s Corner",
+              body:
+                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+              source: data.image1.childImageSharp.fluid,
+              to: "/",
+            }}
+            isReverse={true}
+            backdrop="tl"
+          />
+        </div>
       </div>
     </Layout>
   )
