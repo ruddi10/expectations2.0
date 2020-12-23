@@ -24,7 +24,7 @@ html {
   letter-spacing: 0em;
   text-align: left;
   color: var(--lightg);
-  padding-top: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 .dark-color-head {
   font-family: "Poppins", sans-serif;
@@ -34,6 +34,7 @@ html {
   letter-spacing: 0em;
   text-align: left;
   color: var(--darkg);
+  padding: 1rem 0 1rem 0;
 }
 .normal-para,
 .normal-para p {
