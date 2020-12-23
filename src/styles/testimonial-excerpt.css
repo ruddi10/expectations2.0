@@ -1,12 +1,14 @@
 .excerpt-card {
   display: "flex";
   flex-direction: "column";
-  padding: 2rem 10rem;
+  padding: 2rem 1rem;
   background-color: #ffffff;
   text-align: center;
   color: #6b6b6b;
   line-height: 1.3rem;
   max-height: max-content;
+  width: 80%;
+  margin: auto;
 }
 
 /* .all-excerpt {

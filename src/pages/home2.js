@@ -79,6 +79,7 @@ function home2(props) {
             </div>
             <Carousel
               infiniteLoop
+              showArrows={false}
               autoPlay
               swipeable
               showThumbs={false}
