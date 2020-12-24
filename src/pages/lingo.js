@@ -19,8 +19,6 @@ export default () => (
             <Card2 />
           </Card.Group>
         </div>
-
-
         </Layout>
         
     </div>
