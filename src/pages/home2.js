@@ -2,7 +2,7 @@ import React from "react"
 import Card1 from "../components/Card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
-import { h2data, testimonialExcerpt } from "../data"
+import { h2data, testimonialExcerpt, homeColumn } from "../data"
 import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
@@ -10,41 +10,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 import HomeColumn from "../components/home-colum"
 
-const query = graphql`
-  {
-    image1: file(relativePath: { eq: "dummy_image.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    image2: file(relativePath: { eq: "dummy_image.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    image3: file(relativePath: { eq: "dummy_image.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    image4: file(relativePath: { eq: "dummy_image.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 export default function Home2(props) {
-  const data = useStaticQuery(query)
   return (
     <Layout noContainer={true}>
       <Carousel
@@ -128,50 +94,9 @@ export default function Home2(props) {
           </div>
         </div>
         <div className="home-column-container">
-          <HomeColumn
-            data={{
-              heading: "Student’s Corner",
-              body:
-                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-              source: data.image1.childImageSharp.fluid,
-              to: "/",
-            }}
-            isReverse={false}
-            backdrop="tr"
-          />
-          <HomeColumn
-            data={{
-              heading: "Student’s Corner",
-              body:
-                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-              source: data.image1.childImageSharp.fluid,
-              to: "/",
-            }}
-            isReverse={true}
-            backdrop="tl"
-          />
-          <HomeColumn
-            data={{
-              heading: "Student’s Corner",
-              body:
-                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-              source: data.image1.childImageSharp.fluid,
-              to: "/",
-            }}
-            isReverse={false}
-            backdrop="tr"
-          />
-          <HomeColumn
-            data={{
-              heading: "Student’s Corner",
-              body:
-                "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-              source: data.image1.childImageSharp.fluid,
-              to: "/",
-            }}
-            isReverse={true}
-            backdrop="tl"
-          />
+          {homeColumn.map(data => (
+            <HomeColumn data={{ ...data }} />
+          ))}
         </div>
       </div>
     </Layout>

@@ -1,3 +1,5 @@
+import { graphql } from "gatsby"
+
 export const dropups = [
   {
     value: "Academics",
@@ -106,35 +108,41 @@ export const testimonialExcerpt = [
   },
 ]
 
-// export const homeColumn=[
-//   {
-//     heading: "Student’s Corner",
-//     body:
-//       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-//     to: "/",
-//       isReverse=false,
-//   backdrop="tr"
-//             },{
-//     heading: "Student’s Corner",
-//     body:
-//       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-//     to: "/",
-//       isReverse=true,
-//   backdrop="tl"
-//             },{
-//     heading: "Student’s Corner",
-//     body:
-//       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-//     to: "/",
-//       isReverse=false,
-//   backdrop="tr"
-//             },{
-//     heading: "Student’s Corner",
-//     body:
-//       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
-//     to: "/",
-//       isReverse=true,
-//   backdrop="tl"
-//             }
-
-// ]
+export const homeColumn = [
+  {
+    heading: "Student’s Corner",
+    body:
+      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+    to: "/",
+    isReverse: false,
+    backdrop: "tr",
+    image: "dummy_image.png",
+  },
+  {
+    heading: "Student’s Corner",
+    body:
+      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+    to: "/",
+    isReverse: true,
+    backdrop: "tl",
+    image: "dummy_image.png",
+  },
+  {
+    heading: "Student’s Corner",
+    body:
+      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+    to: "/",
+    isReverse: false,
+    backdrop: "tr",
+    image: "dummy_image.png",
+  },
+  {
+    heading: "Student’s Corner",
+    body:
+      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+    to: "/",
+    isReverse: true,
+    backdrop: "tl",
+    image: "dummy_image.png",
+  },
+]

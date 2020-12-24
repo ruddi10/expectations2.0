@@ -2,13 +2,30 @@ import React from "react"
 import { Button } from "semantic-ui-react"
 import Image from "gatsby-image"
 import "../styles/home-column.css"
-import { Link } from "gatsby"
-const HomeColumn = ({ data, isReverse, backdrop }) => {
+import { Link, useStaticQuery, graphql } from "gatsby"
+const HomeColumn = ({ data }) => {
+  const {
+    allFile: { nodes },
+  } = useStaticQuery(graphql`
+    {
+      allFile {
+        nodes {
+          relativePath
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)
+  const image_source = nodes.find(image => image.relativePath == data.image)
   return (
     <div
       className={
         `home-column-wrapper text ` +
-        (isReverse ? "column-wrapper-reverse" : "")
+        (data.isReverse ? "column-wrapper-reverse" : "")
       }
     >
       <div className="home-column-content">
@@ -26,9 +43,9 @@ const HomeColumn = ({ data, isReverse, backdrop }) => {
         </div>
       </div>
       <div className="home-column-image">
-        <div className={"home-column-backdrop " + backdrop}></div>
+        <div className={"home-column-backdrop " + data.backdrop}></div>
         <div className="home-image-wrapper">
-          <Image fluid={data.source} />
+          <Image fluid={image_source.childImageSharp.fluid} />
         </div>
       </div>
     </div>
