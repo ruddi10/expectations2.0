@@ -34,6 +34,16 @@ html {
   text-align: left;
   color: var(--darkg);
 }
+.description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  line-height: 1.75rem;
+  color: #666666;
+}
 @media only screen and (max-width: 650px) {
   html {
     font-size: 12px !important;
