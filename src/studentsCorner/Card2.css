@@ -1,0 +1,8 @@
+.bg_position {
+    position: relative;
+}
+.card_content {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
