@@ -10,13 +10,7 @@ const Card1 = props => (
     to={`/${props.carddata.link}`}
     raised={false}
   >
-    <Image
-      src={
-        "https://content.techgig.com/photo/77541410/iit-roorkee-to-launch-certification-course-in-ai-ml-data-science.jpg?141074"
-      }
-      wrapped
-      ui={false}
-    />
+    <Image src={props.carddata.src} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{props.carddata.head}</Card.Header>
       <Card.Description>{props.carddata.Content}</Card.Description>

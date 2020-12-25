@@ -42,13 +42,14 @@ function Branches({ data }) {
           boisterous as solicitude to introduced. Or fifteen covered we enjoyed
           demesne is in prepare.{" "}
         </p>
-        <Card.Group itemsPerRow={isMobile ? 1 : 3}>
+        <Card.Group itemsPerRow={isMobile ? 1 : 3} className="cards-row">
           {Branches.map(Branch => (
             <Card1
               carddata={{
                 head: Branch.name,
                 Content: `${getWords(Branch.sContent.sContent)}...`,
                 link: `branches/${Branch.slug}`,
+                src: Branch.image.fluid.src,
               }}
             />
           ))}
@@ -72,6 +73,11 @@ export const query = graphql`
         }
         name
         slug
+        image {
+          fluid {
+            src
+          }
+        }
       }
     }
   }
