@@ -41,9 +41,17 @@ html {
   line-height: 1.9rem;
   color: #6b6b6b;
 }
-
+.only-mobile {
+  display: none !important;
+}
 @media only screen and (max-width: 650px) {
   html {
     font-size: 12px !important;
+  }
+  .only-web {
+    display: none !important;
+  }
+  .only-mobile {
+    display: flex !important;
   }
 }

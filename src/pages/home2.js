@@ -7,9 +7,41 @@ import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { Embed } from "semantic-ui-react"
 
 import HomeColumn from "../components/home-colum"
-
+const Bottom = props => (
+  <div className={`home2-bottom ${props.class}`}>
+    <iframe
+      src="https://www.youtube.com/embed/b7xePppEUIU?start=11"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    {/* <Embed
+      source="youtube"
+      placeholder="https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png"
+      url="https://www.youtube.com/watch?v=b7xePppEUIU"
+    /> */}
+    <div className="card-container2">
+      <div className="all-excerpt">
+        <Link>View All</Link>
+      </div>
+      <Carousel
+        infiniteLoop
+        showArrows={false}
+        autoPlay
+        swipeable
+        showThumbs={false}
+        showStatus={false}
+      >
+        {testimonialExcerpt.map(data => (
+          <TestimonialExcerpt data={data} />
+        ))}
+      </Carousel>
+    </div>
+  </div>
+)
 export default function Home2(props) {
   return (
     <Layout noContainer={true}>
@@ -68,32 +100,7 @@ export default function Home2(props) {
               </div>
             ))}
           </div>
-          <div className="home2-bottom">
-            <iframe
-              width="800px"
-              src="https://www.youtube.com/embed/tkJWtLKRVQA?start=11"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div className="card-container2">
-              <div className="all-excerpt">
-                <Link>View All</Link>
-              </div>
-              <Carousel
-                infiniteLoop
-                showArrows={false}
-                autoPlay
-                swipeable
-                showThumbs={false}
-                showStatus={false}
-              >
-                {testimonialExcerpt.map(data => (
-                  <TestimonialExcerpt data={data} />
-                ))}
-              </Carousel>
-            </div>
-          </div>
+          <Bottom class={"only-web"} />
         </div>
       </div>
       <div className="home2-container">
@@ -102,6 +109,7 @@ export default function Home2(props) {
             <HomeColumn data={{ ...data }} />
           ))}
         </div>
+        <Bottom class={"only-mobile"} />
       </div>
     </Layout>
   )
