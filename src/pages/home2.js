@@ -2,13 +2,15 @@ import React from "react"
 import Card1 from "../components/Card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
-import { h2data } from "../data"
+import { h2data, testimonialExcerpt, homeColumn } from "../data"
 import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
-function home2(props) {
+import HomeColumn from "../components/home-colum"
+
+export default function Home2(props) {
   return (
     <Layout noContainer={true}>
       <Carousel
@@ -85,39 +87,18 @@ function home2(props) {
               showThumbs={false}
               showStatus={false}
             >
-              <TestimonialExcerpt
-                data={{
-                  text:
-                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
-                  author: "Ketan Dhanuka",
-                  branch: "Applied Mathematics, IITR’24",
-                  source: "gg_logo.png",
-                }}
-              />
-              <TestimonialExcerpt
-                data={{
-                  text:
-                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
-                  author: "Ketan Dhanuka",
-                  branch: "Applied Mathematics, IITR’24",
-                  source: "gg_logo.png",
-                }}
-              />
-              <TestimonialExcerpt
-                data={{
-                  text:
-                    "I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.",
-                  author: "Ketan Dhanuka",
-                  branch: "Applied Mathematics, IITR’24",
-                  source: "gg_logo.png",
-                }}
-              />
+              {testimonialExcerpt.map(data => (
+                <TestimonialExcerpt data={data} />
+              ))}
             </Carousel>
           </div>
+        </div>
+        <div className="home-column-container">
+          {homeColumn.map(data => (
+            <HomeColumn data={{ ...data }} />
+          ))}
         </div>
       </div>
     </Layout>
   )
 }
-
-export default home2

@@ -50,7 +50,7 @@ export default class Navbar extends ResponsiveComponent {
               fluid
               size={"small"}
               as={Link}
-              to="/"
+              to="/home2"
             />
             <Icon
               className="cond-icon"

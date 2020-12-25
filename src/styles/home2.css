@@ -118,5 +118,15 @@ body {
 }
 
 .carousel .slide {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  opacity: 0.5 !important;
+}
+
+.home-column-container {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
