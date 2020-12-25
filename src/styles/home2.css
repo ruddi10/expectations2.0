@@ -41,7 +41,7 @@ body {
 .home2-bottom > * {
   /* border: 1px solid black; */
   margin-top: 2rem;
-  min-height: 20vh;
+  min-height: 24vw;
   width: 45%;
 }
 .home2-bottom {
