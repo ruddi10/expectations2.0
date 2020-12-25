@@ -50,9 +50,17 @@ html {
   text-align: left;
   line-height: 1.75rem;
   color: #666666;
+.only-mobile {
+  display: none !important;
 }
 @media only screen and (max-width: 650px) {
   html {
     font-size: 12px !important;
+  }
+  .only-web {
+    display: none !important;
+  }
+  .only-mobile {
+    display: flex !important;
   }
 }
