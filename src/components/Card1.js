@@ -4,16 +4,13 @@ import "../styles/Card1.css"
 import { Link } from "gatsby"
 const Card1 = props => (
   <Card
-    fluid
     className={"card1"}
     as={Link}
     to={`/${props.carddata.link}`}
     raised={false}
   >
     <Image
-      src={
-        "https://content.techgig.com/photo/77541410/iit-roorkee-to-launch-certification-course-in-ai-ml-data-science.jpg?141074"
-      }
+      src="https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png"
       wrapped
       ui={false}
     />

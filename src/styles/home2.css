@@ -1,4 +1,13 @@
 body {
+  background-color: aqua;
+}
+.grey-body {
+  background-color: #f7f7f7;
+}
+.gb-container {
+  max-width: 80vw;
+  margin: auto;
+  padding-bottom: 5vw;
 }
 .home2-container > * {
   display: flex;
@@ -9,6 +18,10 @@ body {
   padding: 1rem 0 1rem 0;
 
   /* border: 1px solid black; */
+}
+.home-banner {
+  max-width: 80vw;
+  margin: auto;
 }
 .home2-container {
   max-width: 80vw;
@@ -22,11 +35,11 @@ body {
   height: max-content;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
   /* padding: 0rem 10rem 2rem 10rem; */
 }
 .home2-bottom > * {
   /* border: 1px solid black; */
+  margin-top: 2rem;
   max-width: 45%;
   height: 20rem;
 }
@@ -38,7 +51,7 @@ body {
 }
 
 .home2-cards > *:not(:first-child) {
-  padding-left: 3rem;
+  padding-left: 5vw;
 }
 @media only screen and (max-width: 650px) {
   .home2-cards {
@@ -49,6 +62,9 @@ body {
   }
   .home2-bottom {
     display: none;
+  }
+  .home2-heading {
+    text-align: center;
   }
 }
 

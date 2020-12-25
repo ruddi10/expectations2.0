@@ -70,6 +70,9 @@
 .cond-icon {
   visibility: hidden;
 }
+.ui.bottom.attached.menu.borderless > .item:first-child {
+  border-radius: 5px 5px 0 0;
+}
 @media only screen and (max-width: 800px) {
   .navbar-header {
     max-width: 95vw;

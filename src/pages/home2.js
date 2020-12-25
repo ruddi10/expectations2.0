@@ -49,50 +49,54 @@ export default function Home2(props) {
           <p className="legend">Legend 3</p>
         </div>
       </Carousel>
+      <div className="home-banner">
+        <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
+        <div className="dark-color-head">
+          A COMPREHENSIVE GUIDE TO IIT ROORKEE FOR FRESHERS AND PROSPECTIVE
+          STUDENTS.
+        </div>
+      </div>
+      <div className="grey-body">
+        <div className="gb-container">
+          <div className="home2-heading">
+            <h2 className="light-color-head">Life and culture at IITR</h2>
+          </div>
+          <div className="home2-cards">
+            {h2data.map(data => (
+              <div className="card-container">
+                <Card1 carddata={data} />
+              </div>
+            ))}
+          </div>
+          <div className="home2-bottom">
+            <iframe
+              width="800px"
+              src="https://www.youtube.com/embed/tkJWtLKRVQA?start=11"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div className="card-container2">
+              <div className="all-excerpt">
+                <Link>View All</Link>
+              </div>
+              <Carousel
+                infiniteLoop
+                showArrows={false}
+                autoPlay
+                swipeable
+                showThumbs={false}
+                showStatus={false}
+              >
+                {testimonialExcerpt.map(data => (
+                  <TestimonialExcerpt data={data} />
+                ))}
+              </Carousel>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="home2-container">
-        <div className="home-banner">
-          <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
-          <div className="dark-color-head">
-            A COMPREHENSIVE GUIDE TO IIT ROORKEE FOR FRESHERS AND PROSPECTIVE
-            STUDENTS.
-          </div>
-        </div>
-        <div className="home2-heading">
-          <h2 className="light-color-head">Life and culture at IITR</h2>
-        </div>
-        <div className="home2-cards">
-          {h2data.map(data => (
-            <div className="card-container">
-              <Card1 carddata={data} />
-            </div>
-          ))}
-        </div>
-        <div className="home2-bottom">
-          <iframe
-            width="800px"
-            src="https://www.youtube.com/embed/tkJWtLKRVQA?start=11"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <div className="card-container2">
-            <div className="all-excerpt">
-              <Link>View All</Link>
-            </div>
-            <Carousel
-              infiniteLoop
-              showArrows={false}
-              autoPlay
-              swipeable
-              showThumbs={false}
-              showStatus={false}
-            >
-              {testimonialExcerpt.map(data => (
-                <TestimonialExcerpt data={data} />
-              ))}
-            </Carousel>
-          </div>
-        </div>
         <div className="home-column-container">
           {homeColumn.map(data => (
             <HomeColumn data={{ ...data }} />

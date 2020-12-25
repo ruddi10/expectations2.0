@@ -5,6 +5,8 @@ import { bdata } from "../../data"
 import { Card } from "semantic-ui-react"
 import { graphql } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
+import "../../styles/Branches.css"
+
 function getWords(str) {
   return str.split(/\s+/).slice(0, 13).join(" ")
 }
@@ -42,17 +44,18 @@ function Branches({ data }) {
           boisterous as solicitude to introduced. Or fifteen covered we enjoyed
           demesne is in prepare.{" "}
         </p>
-        <Card.Group itemsPerRow={isMobile ? 1 : 3}>
+        <div className="branches-card">
           {Branches.map(Branch => (
             <Card1
               carddata={{
                 head: Branch.name,
                 Content: `${getWords(Branch.sContent.sContent)}...`,
                 link: `branches/${Branch.slug}`,
+                src: Branch.image.fluid.src,
               }}
             />
           ))}
-        </Card.Group>
+        </div>
       </Layout>
     </div>
   )
@@ -72,6 +75,11 @@ export const query = graphql`
         }
         name
         slug
+        image {
+          fluid {
+            src
+          }
+        }
       }
     }
   }

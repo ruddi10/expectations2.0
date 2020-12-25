@@ -39,8 +39,8 @@ a:hover {
 }
 
 .footer-bottom a,
-a:hover,
-a.item:hover {
+.footer-bottom a:hover,
+.footer-bottom a.item:hover {
   color: #333333;
   cursor: pointer;
 }
