@@ -139,8 +139,9 @@ body {
   flex: 1;
 }
 
-.card-container2 .carousel-slider {
+.card-container2 .carousel.carousel-slider {
   height: 100%;
+  overflow: visible;
 }
 
 .card-container2 .slide {
