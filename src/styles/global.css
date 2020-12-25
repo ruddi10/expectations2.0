@@ -50,6 +50,7 @@ html {
   text-align: left;
   line-height: 1.75rem;
   color: #666666;
+}
 .only-mobile {
   display: none !important;
 }
