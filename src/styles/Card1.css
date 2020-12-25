@@ -1,6 +1,8 @@
 .ui.card1.card > .content,
 .ui.cards > .card.card1 > .content {
   padding: 1.2rem 0.6rem 0.6rem 0.6rem;
+  font-family: "Noto-sans";
+  line-height: 1.5rem;
 }
 .ui.card.card1 > .content > .description {
   font-size: 0.9rem;
@@ -28,7 +30,7 @@
   border-bottom: 4px solid var(--darkp);
   transform: none;
 }
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
   .ui.card.card1,
   .ui.card.card1:hover {
     font-size: 0.9rem;
@@ -39,16 +41,29 @@
   .ui.card.card1 > .content > .description {
     font-size: 0.8rem;
   }
-}
+} */
+
 @media only screen and (max-width: 650px) {
   .ui.card.card1,
   .ui.card.card1:hover {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
+  /* .ui.card.card1 > .content > .header:not(.ui),
+  .ui.cards > .card.card1 > .content > .header:not(.ui) {
+    font-weight: 700;
+    font-size: 1.8rem;
+  } */
   .ui.card.card1 > .image > img {
     max-height: 18rem;
   }
-  .ui.card.card1 > .content > .description {
-    font-size: 1.3rem;
+  .ui.card.card1 > .content {
+    font-size: 1.8rem;
   }
+  .ui.card.card1 > .content > .description {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+.ui.card.card1 > .image > img {
+  max-height: 30rem;
 }
