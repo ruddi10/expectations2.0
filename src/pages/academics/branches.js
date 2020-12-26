@@ -5,7 +5,7 @@ import { bdata } from "../../data"
 import { Card } from "semantic-ui-react"
 import { graphql } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
-import "../../styles/Branches.css"
+import "../../styles/branches.css"
 import { getWords } from "../../helper-functions"
 
 function Branches({ data }) {
