@@ -1,0 +1,14 @@
+.icon-head {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 3rem;
+}
+.icon-head > * {
+  height: max-content;
+  /* margin: 0 0 8rem 0; */
+}
+.flag-icon {
+  max-height: 10vh;
+  padding-top: 8px;
+}

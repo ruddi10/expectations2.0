@@ -15,7 +15,7 @@ function Scholarships(props) {
       </p>
       {scholarships.map(scholarship => (
         <div className="single-scholarship">
-          <h2 className="normal-head">{scholarship.head}</h2>
+          <h2 className="normal-head">{scholarship.title}</h2>
           <p
             className="normal-para"
             dangerouslySetInnerHTML={{

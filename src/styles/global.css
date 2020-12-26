@@ -32,11 +32,12 @@ html {
   color: var(--darkg);
   padding: 1rem 0 1rem 0;
 }
-.normal-head {
+.normal-head,
+.normal-para h2 {
   font-family: "Poppins", sans-serif;
   color: black;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .normal-para,
 .normal-para p {
@@ -49,11 +50,17 @@ html {
   color: black;
 }
 .para-container {
-  padding-top: 2rem;
+}
+.normal-para > h4 {
+  font-family: "Noto Sans" !important;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #666666;
+  font-size: 1.3rem;
 }
 .expanded-image {
   max-height: 60vh;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 3rem 0;
   object-fit: cover;
 }
 .description {
@@ -69,6 +76,7 @@ html {
 .only-mobile {
   display: none !important;
 }
+
 @media only screen and (max-width: 650px) {
   html {
     font-size: 12px !important;

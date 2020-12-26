@@ -4,7 +4,7 @@ import GeneralComp from "../../components/generalComp"
 import Layout from "../../components/layout"
 import { pgphd } from "../../data"
 import { graphql } from "gatsby"
-function Nptel(props) {
+function PgAndPhd(props) {
   return (
     <div>
       <Layout>
@@ -14,7 +14,7 @@ function Nptel(props) {
   )
 }
 
-export default Nptel
+export default PgAndPhd
 
 export const query = graphql`
   {
