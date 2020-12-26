@@ -1,0 +1,37 @@
+.card2-container {
+  display: flex;
+  flex-direction: row;
+  color: #666666;
+  text-align: justify;
+  border-bottom: 4px solid var(--lightg);
+  transition: 0.2s ease-in-out all;
+  padding-bottom: 0.6rem;
+}
+
+.card2-container:hover {
+  border-bottom: 4px solid var(--darkp);
+}
+
+.card2-content {
+  width: 70%;
+}
+
+.card2-content > div {
+  padding-bottom: 1rem;
+}
+
+.card2-title {
+  color: var(--darkg);
+  font-size: 1.2rem;
+}
+
+.card2-pattern {
+  flex: 1;
+  height: 100%;
+}
+
+.card2-readmore,
+.card2-readmore:hover {
+  color: #000000;
+  font-size: 1.08rem;
+}
