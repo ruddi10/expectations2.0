@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import Card1 from "../../components/Card1"
+import Card1 from "../../components/card1"
 import Layout from "../../components/layout"
 import { bdata } from "../../data"
 import { Card } from "semantic-ui-react"

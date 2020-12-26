@@ -1,5 +1,5 @@
 import React from "react"
-import Card1 from "../components/Card1"
+import Card1 from "../components/card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
 import { h2data, testimonialExcerpt, homeColumn } from "../data"

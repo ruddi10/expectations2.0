@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { Icon, Image } from "semantic-ui-react"
+import { Icon } from "semantic-ui-react"
+import Image from "gatsby-image"
 import "../styles/branch-template.css"
 function branchTemplate(props) {
   console.log(props.data)
@@ -10,7 +11,8 @@ function branchTemplate(props) {
     <div>
       <Layout>
         <h2 className="dark-color-head">{branch.name}</h2>
-        <Image className="btimage" fluid src={branch.image.fluid.src} />
+        <Image className="expanded-image" fluid={branch.image.fluid} />
+
         {/* <div className="btlinks">
           <Icon
             name="user"
@@ -53,7 +55,6 @@ export const query = graphql`
       image {
         fluid {
           ...GatsbyContentfulFluid
-          src
         }
       }
       slug
