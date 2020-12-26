@@ -21,18 +21,19 @@ const Card2 = ({ data }) => {
     <div className="card2-container text">
       <div className="card2-content">
         <div>
-          <SemanticImage
-            avatar
-            size="tiny"
-            src={require(`../images/${data.source}`)}
-          />
+          <SemanticImage avatar size="tiny" src={data.source} />
         </div>
         <div className="card2-title headings">{data.title}</div>
-        <div className="card2-body">{data.content}</div>
+        <div
+          className="card2-body"
+          dangerouslySetInnerHTML={{ __html: data.content }}
+        />
         {data.isReadMore ? (
-          <Link to="/home2" className="card2-readmore">
-            READ MORE >
-          </Link>
+          <div style={{ marginTop: "auto" }}>
+            <Link to={`/${data.to}`} className="card2-readmore">
+              READ MORE >
+            </Link>
+          </div>
         ) : (
           ""
         )}

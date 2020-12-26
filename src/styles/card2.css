@@ -6,6 +6,8 @@
   border-bottom: 4px solid var(--lightg);
   transition: 0.2s ease-in-out all;
   padding-bottom: 0.6rem;
+  line-height: 1.8rem;
+  box-shadow: inset 2px 0px 2px rgba(134, 134, 134, 0.05);
 }
 
 .card2-container:hover {
@@ -14,6 +16,8 @@
 
 .card2-content {
   width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card2-content > div {
@@ -34,4 +38,9 @@
 .card2-readmore:hover {
   color: #000000;
   font-size: 1.08rem;
+  margin-top: auto;
+}
+
+.card2-content .card2-body {
+  padding-bottom: 2vw;
 }

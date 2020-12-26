@@ -6,10 +6,8 @@ import { Card } from "semantic-ui-react"
 import { graphql } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import "../../styles/branches.css"
+import { getWords } from "../../helper-functions"
 
-function getWords(str) {
-  return str.split(/\s+/).slice(0, 13).join(" ")
-}
 function Branches({ data }) {
   const {
     allContentfulBranch: { nodes: Branches },
