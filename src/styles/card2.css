@@ -44,3 +44,7 @@
 .card2-content .card2-body {
   padding-bottom: 2vw;
 }
+
+.card2-content .ui.tiny.image {
+  width: 50px;
+}
