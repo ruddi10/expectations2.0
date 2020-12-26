@@ -47,7 +47,7 @@ function Branches({ data }) {
             <Card1
               carddata={{
                 title: Branch.name,
-                Content: `${getWords(Branch.sContent.sContent)}...`,
+                Content: `${getWords(Branch.sContent.sContent, 10)}...`,
                 link: `branches/${Branch.slug}`,
                 src: Branch.image.fluid.src,
               }}
@@ -63,7 +63,7 @@ export default Branches
 
 export const query = graphql`
   {
-    allContentfulBranch {
+    allContentfulBranch(sort: { fields: name }) {
       nodes {
         sContent {
           sContent
