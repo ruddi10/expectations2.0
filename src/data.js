@@ -147,3 +147,9 @@ export const homeColumn = [
     image: "dummy_image.png",
   },
 ]
+
+export const technicalGroup = {
+  heading: "Technical Groups",
+  content:
+    "Little afraid its eat looked now. Very ye lady girl them good me make.It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptanceunsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.<br> <br> Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare.",
+}

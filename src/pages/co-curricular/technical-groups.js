@@ -1,12 +1,13 @@
 import React, { Component } from "react"
 import Card2 from "../../components/card2"
 import Layout from "../../components/layout"
-import { Grid, GridColumn } from "semantic-ui-react"
-class TechnicalGroupsList extends Component {
-  render() {
-    return (
-      <Layout>
-        <h2 className="dark-color-head" style={{ fontSize: "2.5rem" }}>
+import { technicalGroup } from "../../data"
+import GenericCard2Landing from "../../components/card2-landing"
+const TechnicalGroupsList = ({ data }) => {
+  const groups = data.allContentfulGroup.nodes.filter(node => node.technical)
+  return (
+    <Layout>
+      {/* <h2 className="dark-color-head" style={{ fontSize: "2.5rem" }}>
           Technical Groups
         </h2>
         <p className="normal-para">
@@ -21,7 +22,12 @@ class TechnicalGroupsList extends Component {
           Apartments occasional boisterous as solicitude to introduced. Or
           fifteen covered we enjoyed demesne is in prepare.
         </p>
-        <Grid columns={3} stackable relaxed style={{ marginTop: "2rem" }}>
+        <Grid
+          columns={3}
+          stackable
+          relaxed
+          style={{ marginTop: "2rem", marginBottom: "2rem" }}
+        >
           <GridColumn>
             <Card2
               data={{
@@ -66,10 +72,38 @@ class TechnicalGroupsList extends Component {
               }}
             />
           </GridColumn>
-        </Grid>
-      </Layout>
-    )
-  }
+        </Grid> */}
+      <GenericCard2Landing
+        data={{
+          ...technicalGroup,
+          isReadMore: true,
+          cards: groups,
+          rooturl: "/co-curricular/technical-groups/",
+          isTrim: true,
+          num: 25,
+        }}
+      />
+    </Layout>
+  )
 }
 
+export const query = graphql`
+  {
+    allContentfulGroup {
+      nodes {
+        technical
+        title
+        about {
+          about
+        }
+        logo {
+          file {
+            url
+          }
+        }
+        slug
+      }
+    }
+  }
+`
 export default TechnicalGroupsList
