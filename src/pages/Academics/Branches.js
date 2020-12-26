@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
-import Card1 from "../../components/Card1"
+import Card1 from "../../components/card1"
 import Layout from "../../components/layout"
 import { bdata } from "../../data"
 import { Card } from "semantic-ui-react"
 import { graphql } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
-import "../../styles/Branches.css"
+import "../../styles/branches.css"
 
 function getWords(str) {
   return str.split(/\s+/).slice(0, 13).join(" ")
@@ -48,7 +48,7 @@ function Branches({ data }) {
           {Branches.map(Branch => (
             <Card1
               carddata={{
-                head: Branch.name,
+                title: Branch.name,
                 Content: `${getWords(Branch.sContent.sContent)}...`,
                 link: `branches/${Branch.slug}`,
                 src: Branch.image.fluid.src,

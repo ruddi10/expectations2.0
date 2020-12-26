@@ -21,7 +21,10 @@ const MenuList = () => (
               className="ditem"
               value={field}
               as={Link}
-              to={`/${dropup.value}/${field}/`}
+              to={`/${dropup.value
+                .split(" ")
+                .join("-")
+                .toLowerCase()}/${field.split(" ").join("-").toLowerCase()}/`}
             >
               {field}
             </Dropdown.Item>

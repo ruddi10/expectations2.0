@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, Icon, Image } from "semantic-ui-react"
-import "../styles/Card1.css"
+import "../styles/card1.css"
 import { Link } from "gatsby"
 const Card1 = props => (
   <Card
@@ -15,7 +15,7 @@ const Card1 = props => (
       ui={false}
     />
     <Card.Content>
-      <Card.Header>{props.carddata.head}</Card.Header>
+      <Card.Header>{props.carddata.title}</Card.Header>
       <Card.Description>{props.carddata.Content}</Card.Description>
     </Card.Content>
   </Card>
