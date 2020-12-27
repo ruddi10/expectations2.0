@@ -61,7 +61,7 @@ export const dropups = [
 export const h2data = [
   {
     title: "Campus Groups",
-    Content:
+    content:
       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. ",
     src:
       "https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png",
@@ -69,7 +69,7 @@ export const h2data = [
   },
   {
     title: "Hostels",
-    Content:
+    content:
       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. ",
     src:
       "https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png",
@@ -77,7 +77,7 @@ export const h2data = [
   },
   {
     title: "Eateries",
-    Content:
+    content:
       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. ",
     src:
       "https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png",
@@ -148,14 +148,11 @@ export const homeColumn = [
   },
 ]
 
-<<<<<<< HEAD
-=======
 export const technicalGroup = {
   heading: "Technical Groups",
   content:
     "Little afraid its eat looked now. Very ye lady girl them good me make.It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptanceunsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.<br> <br> Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare.",
 }
->>>>>>> 7f0a6a0de34a0dbe3f59c46b58fee5250911c68c
 export const scholarships = [
   {
     title: "Merit-Cum-Means Scholarship",
@@ -502,12 +499,4 @@ export const packinglist = {
   title: "Packing List",
   content:
     "<h2>Documents-</h2><p>The most important requirement. Even if you forget everything else at home be sure to carry these.</p><h2>Laptop-</h2><p>Although you can buy a laptop later, it’d be best to have one from the start.</p><p>All the other things that are required can be purchased after coming to IIT-R. On the registration day, stalls are put up inside the campus for bedding and bicycles. And all the other things that you’ll require in your room will be available to purchase right outside the campus.</p>",
-<<<<<<< HEAD
-}
-export const technicalGroup = {
-  heading: "Technical Groups",
-  content:
-    "Little afraid its eat looked now. Very ye lady girl them good me make.It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptanceunsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.<br> <br> Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare.",
-=======
->>>>>>> 7f0a6a0de34a0dbe3f59c46b58fee5250911c68c
 }

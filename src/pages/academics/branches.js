@@ -46,13 +46,8 @@ function Branches({ data }) {
           {Branches.map(Branch => (
             <Card1
               carddata={{
-<<<<<<< HEAD:src/pages/Academics/Branches.js
                 title: Branch.name,
-                Content: `${getWords(Branch.sContent.sContent, 10)}...`,
-=======
-                head: Branch.name,
-                Content: `${getWords(Branch.sContent.sContent, 13)}...`,
->>>>>>> 7f0a6a0de34a0dbe3f59c46b58fee5250911c68c:src/pages/academics/branches.js
+                content: `${getWords(Branch.sContent.sContent, 10)}...`,
                 link: `branches/${Branch.slug}`,
                 src: Branch.image.fluid.src,
               }}
