@@ -23,61 +23,18 @@ const GenericCard2Landing = ({ data }) => {
             <Card2
               data={{
                 title: card.title,
+                subhead: card.subhead,
+                isLingo: data.isLingo,
                 content: data.isTrim
                   ? getWords(card.about.about, data.num) + "..."
-                  : card.about.about,
+                  : card.content,
                 isReadMore: data.isReadMore,
-                source: card.logo.file.url,
+                source: card.logo ? card.logo.file.url : "",
                 to: data.rooturl + card.slug,
               }}
             />
           </GridColumn>
         ))}
-
-        {/* <GridColumn>
-            <Card2
-              data={{
-                title: "Geek Gazette",
-                content:
-                  "It is a general belief that a branch change is a big task and a very difficult thing to achieve. My first year was about fun and regrets.",
-                isReadMore: true,
-                source: "gg_logo.png",
-              }}
-            />
-          </GridColumn>
-          <GridColumn>
-            <Card2
-              data={{
-                title: "Geek Gazette",
-                content:
-                  "It is a general belief that a branch change is a big task and a very difficult thing to achieve. My first year was about fun and regrets.",
-                isReadMore: true,
-                source: "gg_logo.png",
-              }}
-            />
-          </GridColumn>
-          <GridColumn>
-            <Card2
-              data={{
-                title: "Geek Gazette",
-                content:
-                  "It is a general belief that a branch change is a big task and a very difficult thing to achieve. My first year was about fun and regrets.",
-                isReadMore: true,
-                source: "gg_logo.png",
-              }}
-            />
-          </GridColumn>
-          <GridColumn>
-            <Card2
-              data={{
-                title: "Geek Gazette",
-                content:
-                  "It is a general belief that a branch change is a big task and a very difficult thing to achieve. My first year was about fun and regrets.",
-                isReadMore: true,
-                source: "gg_logo.png",
-              }}
-            />
-          </GridColumn> */}
       </Grid>{" "}
     </>
   )

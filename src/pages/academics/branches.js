@@ -46,7 +46,7 @@ function Branches({ data }) {
           {Branches.map(Branch => (
             <Card1
               carddata={{
-                head: Branch.name,
+                title: Branch.name,
                 Content: `${getWords(Branch.sContent.sContent, 13)}...`,
                 link: `branches/${Branch.slug}`,
                 src: Branch.image.fluid.src,

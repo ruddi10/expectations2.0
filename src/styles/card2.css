@@ -7,7 +7,7 @@
   transition: 0.2s ease-in-out all;
   padding-bottom: 0.6rem;
   line-height: 1.8rem;
-  box-shadow: inset 2px 0px 2px rgba(134, 134, 134, 0.05);
+  box-shadow: inset 10px 0px 10px rgba(134, 134, 134, 0.05);
 }
 
 .card2-container:hover {
@@ -18,6 +18,7 @@
   width: 70%;
   display: flex;
   flex-direction: column;
+  padding-left: 0.5rem;
 }
 
 .card2-content > div {

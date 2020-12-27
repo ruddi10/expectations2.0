@@ -1,18 +1,18 @@
 import React, { Component } from "react"
 import Card2 from "../../components/card2"
 import Layout from "../../components/layout"
-import { technicalGroup } from "../../data"
+import { culturalGroup } from "../../data"
 import GenericCard2Landing from "../../components/card2-landing"
-const TechnicalGroupsList = ({ data }) => {
-  const groups = data.allContentfulGroup.nodes.filter(node => node.technical)
+const CulturalGroupsList = ({ data }) => {
+  const groups = data.allContentfulGroup.nodes.filter(node => !node.technical)
   return (
     <Layout>
       <GenericCard2Landing
         data={{
-          ...technicalGroup,
+          ...culturalGroup,
           isReadMore: true,
           cards: groups,
-          rooturl: "/co-curricular/technical-groups/",
+          rooturl: "/co-curricular/cultural-groups/",
           isTrim: true,
           num: 25,
         }}
@@ -40,4 +40,4 @@ export const query = graphql`
     }
   }
 `
-export default TechnicalGroupsList
+export default CulturalGroupsList
