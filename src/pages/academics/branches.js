@@ -47,7 +47,7 @@ function Branches({ data }) {
             <Card1
               carddata={{
                 title: Branch.name,
-                content: `${getWords(Branch.sContent.sContent, 10)}...`,
+                Content: `${getWords(Branch.sContent.sContent, 13)}...`,
                 link: `branches/${Branch.slug}`,
                 src: Branch.image.fluid.src,
               }}

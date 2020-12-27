@@ -20,17 +20,28 @@ const Card2 = ({ data }) => {
   return (
     <div className="card2-container text">
       <div className="card2-content">
-        <div>
-          <SemanticImage avatar size="tiny" src={data.source} />
-        </div>
+        {data.isLingo ? (
+          ""
+        ) : (
+          <div>
+            <SemanticImage avatar size="tiny" src={data.source} />
+          </div>
+        )}
         <div className="card2-title headings">{data.title}</div>
+        {data.isLingo ? (
+          <div style={{ fontStyle: "italic", color: "#333333" }}>
+            {data.subhead}
+          </div>
+        ) : (
+          ""
+        )}
         <div
           className="card2-body"
           dangerouslySetInnerHTML={{ __html: data.content }}
         />
         {data.isReadMore ? (
           <div style={{ marginTop: "auto" }}>
-            <Link to={`/${data.to}`} className="card2-readmore">
+            <Link to={`${data.to}`} className="card2-readmore">
               READ MORE >
             </Link>
           </div>

@@ -153,6 +153,75 @@ export const technicalGroup = {
   content:
     "Little afraid its eat looked now. Very ye lady girl them good me make.It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptanceunsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.<br> <br> Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare.",
 }
+
+export const culturalGroup = {
+  heading: "Cultural Groups",
+  content:
+    "Little afraid its eat looked now. Very ye lady girl them good me make.It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptanceunsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.<br> <br> Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare.",
+}
+
+export const lingo = {
+  heading: "IITR Lingo",
+  content:
+    "A non-exhaustive list of words present in the vocabulary of the campus junta! Don’t try to memorise them all, you’ll definitely get savvy with these, by the end of the semester knowingly or unknowingly.",
+  cards: [
+    {
+      title: "Chapo",
+      subhead: "noun",
+      content:
+        "Originally meaning chai-pakoda, the concept has now evolved to anything from small treats from your seniors in the bhavan canteens to expensive ones at Rustic House or Olive.\n<br>But, as a freshman you need not worry about all that. This can also help you bond with your seniors who are going to be an important part of your campus life. Most seniors would be happy to give you a chapo (especially if you are of the opposite sex) so you should take full advantage of this and get all the chapos you can.<br>\nAdvice: Spare the Sophomores. They are just as broke as you are. The 3rd/4th/5th years got all that good intern money. So, target them for the more expensive chapos.",
+    },
+    {
+      title: "Faccha/Facchi",
+      subhead: "noun",
+      content:
+        " Word used to address the super confused and overwhelmed crowd that enters R-Land after surviving the harsh and unforgiving life of JEE prep. Yes, this is what you guys will be called.",
+    },
+    {
+      title: "Ghissu",
+      subhead: "noun",
+      content:
+        "Term of endearment for the extremely hard-working and academically driven members of R-Land who don’t indulge themselves in trivial activities and have completely devoted their lives to the study of Engineering and the Sciences.<br>Advice: Always be friends with one but, never become one yourself.",
+    },
+    {
+      title: "Matka",
+      subhead: "noun",
+      content:
+        "Arguably the most misunderstood and mistreated faction of the R-landers. These are the M.Tech Students who will also act as your Teaching Assistants, so these guys have a portion of your grades in their hands. Hence, the hate from the B.Tech/IMS crowd.<br>Advice: These people are just a few years older than you are so being friends with them can be very beneficial to the Practicals and Tutorial components in some of your courses.",
+    },
+    {
+      title: "Machax/Machau",
+      subhead: "noun",
+      content:
+        "Term used to refer to the exceptionally talented and people in campus who take it upon themselves to make everyone else insecure with their outrageous achievements.<br>Advice: “<b>Don't</b> Compare, <b>Don't Expect Too Fast<b>, and <b>Don't<b> Worry\".",
+    },
+    {
+      title: "Dassi,Nehli,Atthi,Satti,Chaggi,Panji,Chaugi",
+      subhead: "noun",
+      content:
+        "These represent your grades from 10-4 respectively. In some circles these are closely associated with one’s competency, intellect and dictates people’s opinion of a person.",
+    },
+    {
+      title: "Saanp",
+      subhead: "noun",
+      content:
+        "The heathens who claim to be a part of your “gang” but end up scoring significantly better than the gang in the exams after pretending to be just as fucked as you are.",
+    },
+    {
+      title: "GPL",
+      subhead: "noun",
+      content:
+        " Unempathetic thrashing of one’s posterior to celebrate the joyous occasion of their birth. The weapon of choice is usually a chappal but can vary based on the kind of friends you have :)",
+    },
+    {
+      title: "Kholu and Dhakkan",
+      subhead: "noun",
+      content:
+        "The person who has the lowest rank in the branch is called the kholu. And the one with the highest is called the dhakkan. Although the name sometimes sticks, the sentiment involved and the association of one’s JEE rank soon dissipates. So, no matter what your rank might be you start with a level playing field in your branch.",
+    },
+  ],
+}
+
 export const scholarships = [
   {
     title: "Merit-Cum-Means Scholarship",
