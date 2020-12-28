@@ -18,6 +18,8 @@
 .experience-wrapper {
   border-bottom: 4px solid var(--lightg);
   transition: 0.2s ease-in-out all;
+  display: flex;
+  flex-direction: column;
 }
 
 .card2-container:hover,
