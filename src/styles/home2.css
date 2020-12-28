@@ -80,8 +80,7 @@ body {
 }
 
 .image-gallery-image {
-  height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .image-gallery-description {

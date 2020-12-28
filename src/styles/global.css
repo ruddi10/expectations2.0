@@ -32,6 +32,10 @@ html {
   color: var(--darkg);
   padding: 1rem 0 1rem 0;
 }
+
+h2.dark-color-head {
+  padding: 3rem 0 1rem 0;
+}
 .normal-head,
 .normal-para h2 {
   font-family: "Poppins", sans-serif;
@@ -87,4 +91,8 @@ html {
   .only-mobile {
     display: flex !important;
   }
+}
+
+.ui.grid > .column:not(.row) {
+  padding-bottom: 3rem !important;
 }

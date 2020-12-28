@@ -15,6 +15,7 @@ const TechnicalGroupsList = ({ data }) => {
           rooturl: "/co-curricular/technical-groups/",
           isTrim: true,
           num: 25,
+          cardNum: 3,
         }}
       />
     </Layout>

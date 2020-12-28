@@ -24,7 +24,12 @@ const Card2 = ({ data }) => {
           ""
         ) : (
           <div>
-            <SemanticImage avatar size="tiny" src={data.source} />
+            <SemanticImage
+              className="card2-logo"
+              avatar
+              size="tiny"
+              src={data.source}
+            />
           </div>
         )}
         <div className="card2-title headings">{data.title}</div>

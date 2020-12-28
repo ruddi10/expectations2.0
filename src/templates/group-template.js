@@ -1,13 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import GeneralComp from "../components/generalComp"
 import Image from "gatsby-image"
 import "../styles/branch-template.css"
-function branchTemplate({ data: { group } }) {
+function groupTemplate({ data: { group } }) {
   return (
     <div>
       <Layout>
-        <h2 className="dark-color-head">{group.name}</h2>
+        <GeneralComp
+          title={group.title}
+          fluid={group.image.fluid}
+          content={group.about.childMarkdownRemark.html}
+        />
+        {/* <h2 className="dark-color-head">{group.title}</h2>
         <Image className="expanded-image" fluid={group.image.fluid} />
         <div className="branch-info">
           <p
@@ -16,13 +22,13 @@ function branchTemplate({ data: { group } }) {
               __html: group.about.childMarkdownRemark.html,
             }}
           />
-        </div>
+        </div> */}
       </Layout>
     </div>
   )
 }
 
-export default branchTemplate
+export default groupTemplate
 export const query = graphql`
   query Group($slug: String) {
     group: contentfulGroup(slug: { eq: $slug }) {

@@ -15,6 +15,7 @@ const CulturalGroupsList = ({ data }) => {
           rooturl: "/co-curricular/cultural-groups/",
           isTrim: true,
           num: 25,
+          cardNum: 3,
         }}
       />
     </Layout>
