@@ -35,7 +35,7 @@
   border-bottom: 4px solid var(--darkp);
   transform: none;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .ui.card.card1 > :first-child,
   .ui.cards > .card.card1 > :first-child {
     min-height: 22vw;
