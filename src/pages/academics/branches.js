@@ -49,7 +49,7 @@ function Branches({ data }) {
                 title: Branch.name,
                 content: `${getWords(Branch.sContent.sContent, 13)}...`,
                 link: `branches/${Branch.slug}`,
-                src: Branch.image.fluid.src,
+                fluid: Branch.image.fluid,
               }}
             />
           ))}
@@ -75,7 +75,7 @@ export const query = graphql`
         slug
         image {
           fluid {
-            src
+            ...GatsbyContentfulFluid
           }
         }
       }

@@ -238,7 +238,7 @@ export const scholarships = [
   {
     title: "Aditya Birla Scholarship",
     content:
-      "<p>Students in the top 20 of the institute according to their JEE ranks are eligible to apply for this scholarship, which they receive after clearing a written round and an interview. This scholarship is given to students studying at IITs and BITS Pilani.</p> <p><strong>How to apply-</strong> Applications are submitted via the Dean as soon as the first week of August. These applications include a write-up content one’s aims and vision for the society. Shortlisted candidates have to appear for an interview in Mumbai in mid-October.</p>",
+      "<p>Students in the top 20 of the institute according to their JEE ranks are eligible to apply for this scholarship, which they receive after clearing a written round and an interview. This scholarship is given to students studying at IITs and BITS Pilani.<br><strong>How to apply-</strong>Applications are submitted via the Dean as soon as the first week of August. These applications include a write-up content one’s aims and vision for the society. Shortlisted candidates have to appear for an interview in Mumbai in mid-October.</p>",
     src: "http://www.adityabirlascholars.net/",
   },
   {
@@ -250,13 +250,13 @@ export const scholarships = [
   {
     title: "Encore Scholarship",
     content:
-      "<p>This alumni-funded scholarship is awarded to meritorious second and fourth-year students during the autumn semester.</p> <p><strong>How to apply-</strong> The application form is available on the website from August and a notice is posted on ChannelI regarding the same. Candidates who are shortlisted on the basis of application have to clear an interview to become eligible for the scholarship.",
+      "<p>This alumni-funded scholarship is awarded to meritorious second and fourth-year students during the autumn semester.<br><strong>How to apply-</strong> The application form is available on the website from August and a notice is posted on ChannelI regarding the same. Candidates who are shortlisted on the basis of application have to clear an interview to become eligible for the scholarship.",
     src: "https://sites.google.com/site/iitrencore89/",
   },
   {
     title: "Google Anita Borg Scholarship",
     content:
-      "<p>This scholarship is awarded to women at under-graduation/ post-graduation level in the field of Computer Science, Computer Engineering or a closely related branch. The application is available on womentechmakers from mid April until mid of May (may vary by a week or two).</p> <p><strong>How to apply-</strong> Applicants need to submit write ups to four to five essay questions along with their resume/cv and transcripts. ",
+      "<p>This scholarship is awarded to women at under-graduation/ post-graduation level in the field of Computer Science, Computer Engineering or a closely related branch. The application is available on womentechmakers from mid April until mid of May (may vary by a week or two).</p> <br><strong>How to apply-</strong><p> Applicants need to submit write ups to four to five essay questions along with their resume/cv and transcripts. ",
     src: "https://www.womentechmakers.com/scholars",
   },
   {
@@ -594,7 +594,7 @@ export const firstsem = {
 }
 
 export const ragging = {
-  title: "Anti Ragging Ploicy",
+  title: "Anti Ragging Policy",
   content:
     "<p>UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions, 2009 completely forbids ragging of any kind in an institute of higher education. What this means for you as a potential student is that there is absolutely no reason to be afraid. If you’re looking for a safe stay, you will definitely get that and if you’re not looking for a safe stay, hmmm... As a matter of fact, IIT Roorkee can boast of a really good senior-junior culture.</p>",
 }

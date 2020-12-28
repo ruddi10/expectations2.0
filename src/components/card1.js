@@ -1,7 +1,8 @@
 import React from "react"
-import { Card, Icon, Image } from "semantic-ui-react"
+import { Card, Icon } from "semantic-ui-react"
 import "../styles/card1.css"
 import { Link } from "gatsby"
+import Image from "gatsby-image"
 const Card1 = props => (
   <Card
     className={"card1"}
@@ -9,11 +10,7 @@ const Card1 = props => (
     to={`/${props.carddata.link}`}
     raised={false}
   >
-    <Image
-      src="https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png"
-      wrapped
-      ui={false}
-    />
+    <Image fluid={props.carddata.fluid} />
     <Card.Content>
       <Card.Header>{props.carddata.title}</Card.Header>
       <Card.Description>{props.carddata.content}</Card.Description>
