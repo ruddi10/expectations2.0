@@ -1,5 +1,3 @@
-import { graphql } from "gatsby"
-
 export const dropups = [
   {
     value: "Academics",
