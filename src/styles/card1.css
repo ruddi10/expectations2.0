@@ -15,7 +15,7 @@
 }
 .ui.card.card1 > :first-child,
 .ui.cards > .card.card1 > :first-child {
-  min-height: 15vw;
+  min-height: 18vw;
 }
 /* .ui.cards > .teal.card.card1,
   .ui.cards.card1 > .teal.card:hover {
