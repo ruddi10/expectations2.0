@@ -11,7 +11,7 @@ import HomeColumn from "../components/home-colum"
 const Bottom = props => (
   <div className={`home2-bottom ${props.class}`}>
     <iframe
-      src="https://www.youtube.com/embed/b7xePppEUIU?start=11"
+      src="https://www.youtube.com/embed/b7xePppEUIU?start=1"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen

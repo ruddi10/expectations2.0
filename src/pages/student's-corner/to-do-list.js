@@ -9,6 +9,10 @@ function ToDoList(props) {
     <div>
       <Layout>
         <h2 className="dark-color-head">To-do list</h2>
+        <p className="list-head">
+          A list of must haves and things required to help you have a wonderful
+          stay at IIT Roorkee!
+        </p>
         <div>
           {todolist.map(todo => (
             <div className="todo">
