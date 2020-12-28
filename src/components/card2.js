@@ -45,7 +45,7 @@ const Card2 = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: data.content }}
         />
         {data.isReadMore ? (
-          <div style={{ marginTop: "auto" }}>
+          <div style={{ marginTop: "auto", paddingBottom: "0" }}>
             <Link to={`${data.to}`} className="card2-readmore">
               READ MORE >
             </Link>
