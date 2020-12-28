@@ -3,6 +3,8 @@ import { Image } from "semantic-ui-react"
 import GeneralComp from "../../components/generalComp"
 import Layout from "../../components/layout"
 import { branchCh } from "../../data"
+import { graphql } from "gatsby"
+
 function BranchChange(props) {
   return (
     <div>

@@ -16,7 +16,7 @@ const Card1 = props => (
     />
     <Card.Content>
       <Card.Header>{props.carddata.title}</Card.Header>
-      <Card.Description>{props.carddata.Content}</Card.Description>
+      <Card.Description>{props.carddata.content}</Card.Description>
     </Card.Content>
   </Card>
 )

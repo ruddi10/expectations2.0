@@ -2,13 +2,15 @@ import React from "react"
 import { Image } from "semantic-ui-react"
 import GeneralComp from "../../components/generalComp"
 import Layout from "../../components/layout"
-import { packinglist } from "../../data"
-function PackingList(props) {
+import { cgpa } from "../../data"
+function Cgpa(props) {
   return (
     <div>
-      <Layout>{/* <GeneralComp {...packinglist} /> */}</Layout>
+      <Layout>
+        <GeneralComp {...cgpa} />
+      </Layout>
     </div>
   )
 }
 
-export default PackingList
+export default Cgpa

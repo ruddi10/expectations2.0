@@ -2,13 +2,15 @@ import React from "react"
 import { Image } from "semantic-ui-react"
 import GeneralComp from "../../components/generalComp"
 import Layout from "../../components/layout"
-import { packinglist } from "../../data"
-function PackingList(props) {
+import { security } from "../../data"
+function Security(props) {
   return (
     <div>
-      <Layout>{/* <GeneralComp {...packinglist} /> */}</Layout>
+      <Layout>
+        <GeneralComp {...security} />
+      </Layout>
     </div>
   )
 }
 
-export default PackingList
+export default Security
