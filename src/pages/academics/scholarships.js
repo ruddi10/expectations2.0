@@ -24,7 +24,7 @@ function Scholarships(props) {
           />
           <div className="scholar-link">
             <Image src={require("../../images/web.png")} />
-            <a href={scholarship.src}>{scholarship.src}</a>
+            <a href={scholarship.src}>Check the website link</a>
           </div>
         </div>
       ))}

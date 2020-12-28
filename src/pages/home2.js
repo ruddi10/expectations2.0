@@ -7,8 +7,6 @@ import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { Embed } from "semantic-ui-react"
-
 import HomeColumn from "../components/home-colum"
 const Bottom = props => (
   <div className={`home2-bottom ${props.class}`}>
