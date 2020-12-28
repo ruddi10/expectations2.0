@@ -7,12 +7,16 @@
   transition: 0.2s ease-in-out all;
   padding-bottom: 0.6rem;
   line-height: 1.8rem;
+  padding-left: 2rem;
+  box-shadow: inset 2px 0 2px rgba(134, 134, 134, 0.05);
   /* box-shadow: 0px 2px 2px 0px #868686 inset; */
 }
 
 .experience-container.card2-container,
 .card2-container.experience-container:hover {
   border-bottom: none;
+  padding-left: 0;
+  box-shadow: none;
 }
 
 .experience-wrapper {
@@ -21,6 +25,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: inset 2px 0 2px rgba(134, 134, 134, 0.05);
+  padding-left: 2rem;
 }
 
 .card2-container:hover,
