@@ -20,6 +20,7 @@
   transition: 0.2s ease-in-out all;
   display: flex;
   flex-direction: column;
+  box-shadow: inset 2px 0 2px rgba(134, 134, 134, 0.05);
 }
 
 .card2-container:hover,

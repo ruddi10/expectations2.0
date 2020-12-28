@@ -15,7 +15,7 @@
 }
 .ui.card.card1 {
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .branches-card {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
