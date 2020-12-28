@@ -12,7 +12,7 @@ const FreshmanList = ({ data }) => {
           cards: groups,
           rooturl: "/experiences/freshman/",
           isTrim: true,
-          num: 50,
+          num: 40,
           cardNum: 2,
           isExperience: true,
         }}
