@@ -25,7 +25,7 @@ function Branches({ data }) {
   return (
     <div>
       <Layout>
-        <h2 className="light-color-head">Know Your Branches</h2>
+        <h2 className="dark-color-head">Know Your Branches</h2>
         <p className="normal-para">
           Little afraid its eat looked now. Very ye lady girl them good me make.
           It hardly cousin me always. An shortly village is raising we shewing
@@ -47,7 +47,7 @@ function Branches({ data }) {
             <Card1
               carddata={{
                 title: Branch.name,
-                Content: `${getWords(Branch.sContent.sContent, 13)}...`,
+                content: `${getWords(Branch.sContent.sContent, 13)}...`,
                 link: `branches/${Branch.slug}`,
                 src: Branch.image.fluid.src,
               }}

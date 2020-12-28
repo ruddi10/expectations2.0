@@ -3,6 +3,8 @@ import Card2 from "../../components/card2"
 import Layout from "../../components/layout"
 import { technicalGroup } from "../../data"
 import GenericCard2Landing from "../../components/card2-landing"
+import { graphql } from "gatsby"
+
 const TechnicalGroupsList = ({ data }) => {
   const groups = data.allContentfulGroup.nodes.filter(node => node.technical)
   return (

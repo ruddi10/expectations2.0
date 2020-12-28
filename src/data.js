@@ -48,13 +48,8 @@ export const dropups = [
   { value: "Experiences", fields: ["Freshman", "Alumni"] },
   { value: "Placements", fields: ["Analysis"] },
   {
-    value: "Parent's Section",
-    fields: [
-      "Anti-Ragging policy",
-      "Banking, Fees and loans",
-      "Where to stay",
-      "Secqurity",
-    ],
+    value: "Parents' Section",
+    fields: ["Anti-Ragging policy", "Banking", "Where to stay", "Security"],
   },
 ]
 
@@ -568,4 +563,39 @@ export const packinglist = {
   title: "Packing List",
   content:
     "<h2>Documents-</h2><p>The most important requirement. Even if you forget everything else at home be sure to carry these.</p><h2>Laptop-</h2><p>Although you can buy a laptop later, it’d be best to have one from the start.</p><p>All the other things that are required can be purchased after coming to IIT-R. On the registration day, stalls are put up inside the campus for bedding and bicycles. And all the other things that you’ll require in your room will be available to purchase right outside the campus.</p>",
+}
+
+export const security = {
+  title: "Security",
+  content:
+    "<p>Security at IIT-R is one of those rare things you can absolutely rely upon. At the time of entry into the campus outsiders are required to submit their IDs so no unnecessary movement can disrupt the tranquility of the campus. Also, each campus building has its own security ‘check-point’. IIT-R has around 10 boys, 3 girls, 6 married and 1 co-ed hostel and these 20 Bhawans have their own security checkpoint. Facchas (First Year Students, check out IIT-R lingos) are not allowed to exit their Bhawan’s campus after 2300 hours due to security reasons for some initial months. So, all in all, security standards may sometimes bug you, but they are and will always be for your best.</p>",
+}
+
+export const cgpa = {
+  title: "CGPA",
+  content:
+    "<p>Grades have always been a point of worry for students. It is essential to know that a grade does not define who you are. Keeping this fact in mind, it is generally a good idea to keep your grade above 7.5 as it ensures that you clear the cut offs for various CGPA dependent activities such as being a part of the college fest team or placement cell or competing in the student elections. A 7.5 or above CGPA also ensures good placement opportunities as it is generally the cut off for many Tier 1 companies. While a higher grade is somewhat of an advantage, it isn't worth it if that is what you only do in your years in college. A lot of the learning happens outside class, through interacting with others, taking part in groups and basically enjoying your time here. Sometimes, if you've done something outstanding in a non-course activity, companies might even ignore a difference (like between an X.6 and an X.4). Nonetheless, it is you who decide which grade is good for you, depending on your aspirations and future plans. If you intend to go for higher studies abroad and are looking for a scholarship, chances are, you need a CGPA above 8.5.</p>",
+}
+
+export const firstsem = {
+  title: "First Semester",
+  content:
+    "<p>Grades have always been a point of worry for students. It is essential to know that a grade does not define who you are. Keeping this fact in mind, it is generally a good idea to keep your grade above 7.5 as it ensures that you clear the cut offs for various CGPA dependent activities such as being a part of the college fest team or placement cell or competing in the student elections. A 7.5 or above CGPA also ensures good placement opportunities as it is generally the cut off for many Tier 1 companies. While a higher grade is somewhat of an advantage, it isn't worth it if that is what you only do in your years in college. A lot of the learning happens outside class, through interacting with others, taking part in groups and basically enjoying your time here. Sometimes, if you've done something outstanding in a non-course activity, companies might even ignore a difference (like between an X.6 and an X.4). Nonetheless, it is you who decide which grade is good for you, depending on your aspirations and future plans. If you intend to go for higher studies abroad and are looking for a scholarship, chances are, you need a CGPA above 8.5.</p>",
+}
+
+export const ragging = {
+  title: "Anti Ragging Ploicy",
+  content:
+    "<p>UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions, 2009 completely forbids ragging of any kind in an institute of higher education. What this means for you as a potential student is that there is absolutely no reason to be afraid. If you’re looking for a safe stay, you will definitely get that and if you’re not looking for a safe stay, hmmm... As a matter of fact, IIT Roorkee can boast of a really good senior-junior culture.</p>",
+}
+
+export const banking = {
+  title: "Banking",
+  content:
+    "<p>There are two banks on-campus: the Punjab National Bank (PNB) and the State Bank of India(SBI). Both the banks have ATM facilities on-campus. On enrollment, every student of IIT-R must open an account with either bank.</p><p>Google Pay, Paytm and other apps would be extremely useful to have. All the canteens and cafes accept payment through these, it’s quick and easy.</p> ",
+}
+
+export const stay = {
+  title: "Where to stay",
+  content: "",
 }

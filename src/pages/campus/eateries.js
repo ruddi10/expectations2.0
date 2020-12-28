@@ -3,7 +3,8 @@ import React from "react"
 import Image from "gatsby-image"
 import { eateries } from "../../data"
 import Layout from "../../components/layout"
-import GeneralComp from "../../components/generalComp"
+import { graphql } from "gatsby"
+
 const Eateries = props => {
   return (
     <div>
@@ -15,7 +16,7 @@ const Eateries = props => {
         />
         <div className="para-container">
           {eateries.map(eat => (
-            <div className="para-container">
+            <div className="eat-cntr">
               <h2 className="normal-head">{eat.title}</h2>
               <p
                 className="normal-para"
