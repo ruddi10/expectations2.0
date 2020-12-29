@@ -34,4 +34,32 @@
   .icon-group > * {
     padding: 5px 0 0 0 !important;
   }
+
+.experience-template-author {
+  color: #666666;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.experience-template-branch {
+  font-size: 1.25rem;
+  color: #999999;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.experience-tag-bottom > span {
+  margin-right: 0.6rem;
+}
+
+.experience-tag-bottom {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid var(--lightg);
+  margin-bottom: 3rem;
+}
+
+.experience-tag-bottom > .tag1,
+.experience-tag-bottom > .tag2 {
+  font-size: 0.9rem;
 }
