@@ -8,6 +8,7 @@
   padding-left: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* border: 1px solid black; */
 }
 .cwi-image {
@@ -16,16 +17,10 @@
   max-height: 23rem;
 }
 .cwi-para {
-  /* padding-top: 2rem; */
+  padding-top: 2rem;
   /* border: 1px solid black; */
 }
-.para-cnt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid black; */
-  height: 100%;
-}
+
 .cwi-para p {
   line-height: 1.7rem;
 }
@@ -33,5 +28,6 @@
   font-family: Poppins;
   font-size: 32px;
   font-weight: 400;
+  color: #6b6b6b;
   /* border: 1px solid black; */
 }
