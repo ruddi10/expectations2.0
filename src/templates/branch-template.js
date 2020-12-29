@@ -5,7 +5,6 @@ import { Icon } from "semantic-ui-react"
 import Image from "gatsby-image"
 import "../styles/branch-template.css"
 function branchTemplate(props) {
-  console.log(props.data)
   const branch = props.data.branch
   return (
     <div>

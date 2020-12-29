@@ -18,6 +18,16 @@ exports.createPages = async ({ graphql, actions }) => {
           slug
         }
       }
+      freshman: allContentfulExperience(filter: { archive: { eq: false } }) {
+        experiences: nodes {
+          slug
+        }
+      }
+      alumni: allContentfulExperience(filter: { archive: { eq: true } }) {
+        experiences: nodes {
+          slug
+        }
+      }
     }
   `)
   result.data.branches.nodes.forEach(branch => {
@@ -44,6 +54,26 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`src/templates/group-template.js`),
       context: {
         slug: group.slug,
+      },
+    })
+  })
+  result.data.freshman.experiences.forEach(experience => {
+    createPage({
+      path: `/experiences/freshman/${experience.slug}`,
+      component: path.resolve(`src/templates/experience-template.js`),
+      context: {
+        slug: experience.slug,
+        myurl: `/experiences/freshman/`,
+      },
+    })
+  })
+  result.data.alumni.experiences.forEach(experience => {
+    createPage({
+      path: `/experiences/alumni/${experience.slug}`,
+      component: path.resolve(`src/templates/experience-template.js`),
+      context: {
+        slug: experience.slug,
+        myurl: "/experiences/alumni/",
       },
     })
   })

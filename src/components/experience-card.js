@@ -29,8 +29,8 @@ const ExperienceCard = ({ data }) => {
           </div>
           <div className="card2-title headings">{data.title}</div>
           <div className="experience-tag">
-            <div>design</div>
-            <div>branch change</div>
+            <div className="tag1">design</div>
+            <div className="tag2">branch change</div>
           </div>
           <div
             className="card2-body"

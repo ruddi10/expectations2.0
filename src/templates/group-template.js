@@ -38,7 +38,7 @@ export const query = graphql`
         }
       }
       image {
-        fluid {
+        fluid(quality: 90, maxWidth: 1800) {
           ...GatsbyContentfulFluid
         }
       }

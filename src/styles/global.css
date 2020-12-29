@@ -67,6 +67,11 @@ h2.dark-color-head {
   margin: 1rem 0 3rem 0;
   object-fit: cover;
 }
+.experience-expanded-image {
+  max-height: calc(80vw / 3.3);
+  margin: 1rem 0 3rem 0;
+  object-fit: cover;
+}
 .description {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
@@ -97,4 +102,18 @@ h2.dark-color-head {
 
 .ui.grid > .column:not(.row) {
   padding-bottom: 3rem !important;
+}
+
+.tag1 {
+  background-color: rgba(231, 253, 223, 0.5);
+}
+
+.tag2 {
+  background-color: rgba(253, 245, 223, 0.5);
+}
+
+.tag1,
+.tag2 {
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
 }

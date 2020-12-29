@@ -1,0 +1,16 @@
+.experience-two-wrapper {
+  margin: 4rem 3rem;
+}
+
+.experience-two-header {
+  font-size: 1.25rem;
+  color: #888888;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-two-all,
+.experience-two-all:hover {
+  color: var(--darkg);
+}

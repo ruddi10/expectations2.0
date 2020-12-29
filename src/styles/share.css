@@ -1,0 +1,20 @@
+.share-wrapper .share-icons {
+  background-color: #c4c4c4;
+  color: white;
+  margin-right: 0.8rem;
+  margin-top: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.share-wrapper .share-icons:hover {
+  background-color: var(--darkp);
+  color: white;
+}
+
+.share-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
