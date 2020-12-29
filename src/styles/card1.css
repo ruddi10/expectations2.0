@@ -49,11 +49,11 @@
   }
 
   .ui.card.card1 > .content {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .ui.card.card1 > .content > .description {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
   .ui.card.card1 > :first-child,
   .ui.cards > .card.card1 > :first-child {
