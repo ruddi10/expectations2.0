@@ -22,7 +22,7 @@ const Layout = ({ children, noContainer }) => {
       <Navbar />
       <div className={noContainer ? " " : "container"}>
         <div>{children}</div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
       <div
         style={{

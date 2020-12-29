@@ -32,3 +32,35 @@
 .experience-tag-bottom > .tag2 {
   font-size: 0.9rem;
 }
+.icon-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.image-wi {
+  margin-bottom: 1rem;
+}
+.icon-group > img {
+  height: 2vw;
+}
+.single-link > p {
+  padding-left: 0.2rem;
+}
+.icon-group > *:not(:first-child) {
+  padding-left: 1rem;
+}
+.single-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 650px) {
+  .icon-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icon-group > * {
+    padding: 5px 0 0 0 !important;
+  }
+}

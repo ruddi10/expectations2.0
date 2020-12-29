@@ -22,9 +22,16 @@ const Share = ({ relativeUrl, slug, title }) => {
           >
             <Icon circular className="share-icons" name="facebook f" />
           </a>
-
-          <Icon circular className="share-icons" name="instagram" />
-
+          <a
+            href={`https://www.linkedin.com/shareArticle?url=${makeUrl(
+              relativeUrl,
+              slug
+            )}&title=${title} `}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon circular className="share-icons" name="linkedin" />
+          </a>
           <a
             href={`https://api.whatsapp.com/send?text=${title} ${makeUrl(
               relativeUrl,

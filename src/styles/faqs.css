@@ -12,15 +12,13 @@
   font-family: "Noto Sans";
   font-size: 18px;
   font-weight: 400;
+  border-radius: 0px;
 }
-
-
-
 
 .ui.styled.accordion .active.content,
 .ui.styled.accordion .accordion .active.content {
   display: block;
-  background: #F5ECEC;
+  background: #f5ecec;
   color: #666666;
   padding: 2.75rem;
   font-family: "Noto Sans";
@@ -29,10 +27,9 @@
 }
 .ui.styled.accordion .active.title,
 .ui.styled.accordion .accordion .active.title {
-    background: #EF9797;
-    color: white;
+  background: #ef9797;
+  color: white;
 }
-
 
 .ui.accordion .title .dropdown.icon,
 .ui.accordion .accordion .title .dropdown.icon {
