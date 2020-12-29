@@ -34,7 +34,7 @@ html {
 }
 
 h2.dark-color-head {
-  padding: 3rem 0 1rem 0;
+  padding: 2rem 0 1rem 0;
 }
 .normal-head,
 .normal-para h2 {
@@ -63,7 +63,7 @@ h2.dark-color-head {
   font-size: 1.3rem;
 }
 .expanded-image {
-  max-height: 60vh;
+  max-height: 30vw;
   margin: 1rem 0 3rem 0;
   object-fit: cover;
 }
@@ -99,6 +99,9 @@ h2.dark-color-head {
   }
   .only-mobile {
     display: flex !important;
+  }
+  .expanded-image {
+    max-height: 50vw;
   }
 }
 

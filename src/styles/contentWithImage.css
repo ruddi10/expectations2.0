@@ -1,0 +1,22 @@
+.cwi-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.cwi-content {
+  width: 60%;
+  padding-left: 1rem;
+}
+.cwi-image {
+  height: auto;
+  width: 40%;
+  object-fit: cover;
+}
+.cwi-para p {
+  line-height: 1.7rem;
+}
+.cwi-head {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+}
