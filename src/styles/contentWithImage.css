@@ -5,12 +5,26 @@
 }
 .cwi-content {
   width: 60%;
-  padding-left: 1rem;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
 }
 .cwi-image {
-  height: auto;
   width: 40%;
   object-fit: cover;
+  max-height: 23rem;
+}
+.cwi-para {
+  /* padding-top: 2rem; */
+  /* border: 1px solid black; */
+}
+.para-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  height: 100%;
 }
 .cwi-para p {
   line-height: 1.7rem;
@@ -19,4 +33,5 @@
   font-family: Poppins;
   font-size: 32px;
   font-weight: 400;
+  /* border: 1px solid black; */
 }
