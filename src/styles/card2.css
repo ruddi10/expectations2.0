@@ -5,9 +5,9 @@
   text-align: justify;
   border-bottom: 4px solid var(--lightg);
   transition: 0.2s ease-in-out all;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1rem;
   line-height: 1.8rem;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   box-shadow: inset 2px 0 2px rgba(134, 134, 134, 0.05);
   /* box-shadow: 0px 2px 2px 0px #868686 inset; */
 }
@@ -17,6 +17,7 @@
   border-bottom: none;
   padding-left: 0;
   box-shadow: none;
+  padding-bottom: 0rem;
 }
 
 .experience-wrapper {
@@ -25,7 +26,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: inset 2px 0 2px rgba(134, 134, 134, 0.05);
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 .card2-container:hover,
@@ -38,6 +39,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 0.5rem;
+  padding-top: 1rem;
 }
 
 .card2-content > div {
@@ -79,6 +81,7 @@
   font-size: 1.08rem;
   line-height: 1.8rem;
   padding-bottom: 1rem;
+  padding-right: 1.5rem;
 }
 
 .experience-tag {
