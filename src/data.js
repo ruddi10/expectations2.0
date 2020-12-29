@@ -610,6 +610,7 @@ export const stay = {
   content: "",
 }
 
+<<<<<<< HEAD
 export const interIITs = [
   {
     title: "Sports",
@@ -627,3 +628,12 @@ export const interIITs = [
       "<p>Little afraid its eat looked now. Very ye lady girl them good me make. It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptance unsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.</p><p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in</p>",
   },
 ]
+=======
+export const incampusCommute = {
+  title: "In Campus Commute and Payments",
+  content:
+    "<p>Little afraid its eat looked now. Very ye lady girl them good me make. It hardly cousin me always. An shortly village is raising we shewing replied. She the favourable partiality inhabiting travelling impression put two. His six are entreaties instrument acceptance unsatiable her. Amongst as or on herself chapter entered carried no. Sold old ten are quit lose deal his sent. You correct how sex several far distant believe journey parties. We shyness enquire uncivil affixed it carried to.</p><p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in </p>",
+    
+}
+
+>>>>>>> 20affeece280250285e123aa1565143271e1b1d0
