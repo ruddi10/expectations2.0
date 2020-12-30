@@ -2,6 +2,7 @@ import React from "react"
 import ContentWithImage from "../../components/contentWithImage"
 import Layout from "../../components/layout"
 import { interIITs } from "../../data"
+import { graphql } from "gatsby"
 function InterIit(props) {
   return (
     <div>
@@ -24,7 +25,7 @@ export default InterIit
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "eateriesback.jpg" }) {
+    file(relativePath: { eq: "tin_tin1.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

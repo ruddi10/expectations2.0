@@ -1,7 +1,7 @@
 .branches-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 5vw;
+  column-gap: 4vw;
   row-gap: 2rem;
   margin-bottom: 2rem;
 }

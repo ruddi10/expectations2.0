@@ -1,0 +1,35 @@
+.eat-button {
+  border: 2px solid var(--darkp);
+  margin-right: 1rem;
+  background: none;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-weight: 400;
+  width: 15vw;
+  min-width: 80px;
+  height: 2rem;
+  border-bottom: 0px;
+  color: #4c4c4c;
+  cursor: pointer;
+  outline: none;
+}
+.eat-button:hover,
+.eat-button:active,
+.eat-button:focus {
+  background-color: var(--darkp);
+}
+.eat-div h2 {
+  color: var(--darkg);
+}
+.hr {
+  border: 1px solid var(--darkp);
+  background-color: var(--darkp);
+  margin-top: 0px;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 450px) {
+  .eat-button {
+    font-size: 1rem;
+  }
+}
