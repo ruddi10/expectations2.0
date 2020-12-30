@@ -26,7 +26,6 @@
   border: 1px solid var(--darkp);
   background-color: var(--darkp);
   margin-top: 0px;
-  margin-bottom: 3rem;
 }
 @media only screen and (max-width: 450px) {
   .eat-button {
