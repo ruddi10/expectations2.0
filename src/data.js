@@ -123,18 +123,18 @@ export const testimonialExcerpt = [
 
 export const homeColumn = [
   {
-    heading: "Student’s Corner",
+    heading: "Placement analysis",
     body:
-      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+      "<i>“The one with the numbers”</i><br>Here lies a comprehensive analysis of the placement season in IIT Roorkee, including tantalizing statistical figures and recent trends in recruitments.",
     to: "/",
     isReverse: false,
     backdrop: "tr",
     image: "dummy_image.png",
   },
   {
-    heading: "Student’s Corner",
+    heading: "Parents corner",
     body:
-      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+      "<i>“The one for Mom and Dad”</i><br>This segment is dedicated to informing the guardians of their various requirements. It also includes details regarding acquiring a guest room when you’re visiting.  ",
     to: "/",
     isReverse: true,
     backdrop: "tl",
@@ -143,16 +143,16 @@ export const homeColumn = [
   {
     heading: "Student’s Corner",
     body:
-      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+      "<i>“The one you should read”</i><br>This section comprises all the things you’ll need to know before coming to Roorkee, including necessities like what to pack and the lingo encountered here.",
     to: "/",
     isReverse: false,
     backdrop: "tr",
     image: "dummy_image.png",
   },
   {
-    heading: "Student’s Corner",
+    heading: "Branch Change",
     body:
-      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits.",
+      "<i>“The one you were looking for”</i><br>This section provides you with the necessary preliminary equipment and information required to commence your (not so) adventurous and dangerous quest towards a Branch Change.<br>May you fare well on your journey!",
     to: "/",
     isReverse: true,
     backdrop: "tl",
