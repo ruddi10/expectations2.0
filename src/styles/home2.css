@@ -107,7 +107,7 @@ body {
   max-width: 60%;
   padding-top: 0.8rem;
   text-align: center;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 /* .slider-container {
@@ -194,5 +194,8 @@ body {
   }
   .home2-heading {
     text-align: center;
+  }
+  .home-banner .dark-color-head {
+    max-width: 100%;
   }
 }

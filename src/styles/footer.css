@@ -81,7 +81,7 @@ a:hover {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 840px) {
   .footer-bottom {
     grid-template-columns: auto;
     justify-content: center;

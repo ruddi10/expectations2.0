@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { connect } from "../data"
 import {
   Button,
   Icon,
@@ -38,46 +39,18 @@ export default function MobileFooter() {
           <div className="grid-header headings">Connect With Us</div>
           <div>
             <List horizontal>
-              <List.Item>
-                <SemanticImage
-                  avatar
-                  as={"a"}
-                  href="https://www.facebook.com/geekgazette"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  src={require("../images/facebook.png")}
-                />
-              </List.Item>
-              <List.Item>
-                <SemanticImage
-                  avatar
-                  as={"a"}
-                  href="https://www.instagram.com/geek_gazette/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  src={require("../images/insta_exp.png")}
-                />
-              </List.Item>
-              <List.Item>
-                <SemanticImage
-                  avatar
-                  as={"a"}
-                  href="https://www.linkedin.com/company/geek-gazette/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  src={require("../images/linkedin_exp.png")}
-                />
-              </List.Item>
-              <List.Item>
-                <SemanticImage
-                  avatar
-                  as={"a"}
-                  href="https://twitter.com/teamgeekgazette"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  src={require("../images/tweet_exp.png")}
-                />
-              </List.Item>
+              {connect.map(conn => (
+                <List.Item>
+                  <SemanticImage
+                    avatar
+                    as={"a"}
+                    href={conn.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    src={require(`../images/${conn.image}`)}
+                  />
+                </List.Item>
+              ))}
             </List>
           </div>
           <div className="grid-header headings">
@@ -111,15 +84,6 @@ export default function MobileFooter() {
             <Button className="button headings" color="teal">
               <Icon name="download" /> Expectations PDF
             </Button>
-          </div>
-        </div>
-
-        <div className="mobi-low headings">
-          <div>Photo Courtesy: Photography Section, IITR</div>
-
-          <div>Video Courtesy: Cinematic Section, IITR </div>
-          <div style={{ color: "#333333" }}>
-            All rights reserved Geek Gazette,Copyright 2020
           </div>
         </div>
       </div>

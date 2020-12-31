@@ -14,9 +14,9 @@ class Layout extends ResponsiveComponent {
         <Navbar />
         <div className={noContainer ? " " : "container"}>
           <div>{children}</div>
-          {this.state.windowWidth > 650 ? <Footer /> : <MobileFooter />}
+          {this.state.windowWidth > 840 ? <Footer /> : <MobileFooter />}
         </div>
-        {this.state.windowWidth > 650 && (
+        {this.state.windowWidth > 840 ? (
           <div
             style={{
               background: "#F7F7F7",
@@ -25,6 +25,15 @@ class Layout extends ResponsiveComponent {
             }}
           >
             <div className="container headings">
+              All rights reserved Geek Gazette,Copyright 2020
+            </div>
+          </div>
+        ) : (
+          <div className="mobi-low headings">
+            <div>Photo Courtesy: Photography Section, IITR</div>
+
+            <div>Video Courtesy: Cinematic Section, IITR </div>
+            <div style={{ color: "#333333" }}>
               All rights reserved Geek Gazette,Copyright 2020
             </div>
           </div>
