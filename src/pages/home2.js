@@ -94,7 +94,14 @@ export default function Home2(props) {
           <div className="home2-cards">
             {h2data.map(data => (
               <div className="card-container">
-                <Card1 carddata={data} />
+                <Card1
+                  carddata={{
+                    ...data,
+                    fluid: props.data.allFile.edges.find(
+                      edge => edge.node.name === data.title
+                    ).node.childImageSharp.fluid,
+                  }}
+                />
               </div>
             ))}
           </div>
@@ -112,3 +119,21 @@ export default function Home2(props) {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    allFile(filter: { relativeDirectory: { eq: "home" } }) {
+      totalCount
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+`
