@@ -84,6 +84,18 @@
 .ui.bottom.attached.menu.borderless > .item:first-child {
   border-radius: 5px 5px 0 0;
 }
+@media only screen and (max-width: 1150px) {
+  .ui.dropdown.box > .text {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .ui.dropdown.box > .text {
+    display: inline-block;
+    font-size: 0.6rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .navbar-header {
     max-width: 95vw;

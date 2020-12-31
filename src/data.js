@@ -325,233 +325,265 @@ export const covidupd = {
 
 export const eateries = [
   {
+    type: "dessert",
+    display: "ccd",
     title: "CCD",
     content:
-      "<p>No, not the one in MAC. There's a CCD on Dehradun Road, which taxes of about 19% being charged. Yikes! Why should you possibly go to this place? Well, if you want something sweet after your adventure at Hideout, the neighbouring CCD is the place to go.<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> You know your favourites<strong>Route: </strong>Take the lane that joins dominos to Pizza hut. Keep walking, and walking, and walking, cross the bridge, and walk some more. Voila!</p>",
+      "<p>No, not the one in MAC. There's a CCD on Dehradun Road, which taxes of about 19% being charged. Yikes! Why should you possibly go to this place? Well, if you want something sweet after your adventure at Hideout, the neighbouring CCD is the place to go. Dessert<br><strong>Speciality:</strong> You know your favourites<br><strong>Route: </strong>Take the lane that joins dominos to Pizza hut. Keep walking, and walking, and walking, cross the bridge, and walk some more. Voila!</p>",
   },
   {
-    display: "Happinezz",
+    type: "veg",
+    display: "happinezz",
     title: "Happinezz",
     img: "../images/eateries/happinezz1.jpg",
     content:
-      "<p>Yeah, we've got the spelling right. This sweet little place is more of a cafe than a restaurant. It's got good coffee, decent homemade pizzas, and the best cheese sandwiches of Roorkee. The best part: a huge variety of cream bell ice creams are available.<br><strong>Type:</strong> Pure Veg<br><strong>Speciality:</strong> Cheese Sandwiches, Pizzas, Pav Bhaji<br><strong>Route: </strong>This is a bit tricky. Walk straight from Century gate and take the lane on the left (the one that has the Samsung store). Walk straight and you'll soon see a left. The lane is just before a 'Jockey' store. Take this left and you'll reach Happinezz.</p>",
+      "<p>Yeah, we've got the spelling right. This sweet little place is more of a cafe than a restaurant. It's got good coffee, decent homemade pizzas, and the best cheese sandwiches of Roorkee. The best part: a huge variety of cream bell ice creams are available. Pure Veg<br><strong>Speciality:</strong> Cheese Sandwiches, Pizzas, Pav Bhaji<br><strong>Route: </strong>This is a bit tricky. Walk straight from Century gate and take the lane on the left (the one that has the Samsung store). Walk straight and you'll soon see a left. The lane is just before a 'Jockey' store. Take this left and you'll reach Happinezz.</p>",
   },
   {
-    display: "Tin Tin",
+    type: "nonveg",
+    display: "tintin",
     title: "Tin Tin",
     img: "../images/eateries/tin_tin1.jpg",
     content:
-      "<p>TinTin is a small eatery by lovely old Parsi Couple who moved from South Africa five years back to serve the students of IITR great Mushroom burgers and Pizzas. Well, at least that was their plan at that time. They’ve grown old now and the food just isn’t what it used to be. Not to mention the restricted menu on specific days. And they’re closed on Monday<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Creamy Egg Roll, Chicken Taco, Desserts<br><strong>Route: </strong>Get out of kasturba gate and take a right. Keep walking, follow the curved road, and take a right when you see a weird gate. You should reach tintin. It’s a very confus<br><strong>Route: </strong>contact us if you find yourself lost.</p>",
+      "<p>TinTin is a small eatery by lovely old Parsi Couple who moved from South Africa five years back to serve the students of IITR great Mushroom burgers and Pizzas. Well, at least that was their plan at that time. They’ve grown old now and the food just isn’t what it used to be. Not to mention the restricted menu on specific days. And they’re closed on Monday Veg And Non-Veg<br><strong>Speciality:</strong> Creamy Egg Roll, Chicken Taco, Desserts<br><strong>Route: </strong>Get out of kasturba gate and take a right. Keep walking, follow the curved road, and take a right when you see a weird gate. You should reach tintin. It’s a very confusing route contact us if you find yourself lost.</p>",
   },
   {
-    display: "Milkbar",
+    type: "dessert",
+    display: "milkbar",
     title: "Milkbar",
     img: "../images/eateries/milk_bar1.jpg",
     content:
-      "<p>This is a no brainer. It’s a simple great non-diner offering great milk products, pizzas, sandwiches, pastries, and ice creams. All products are rightly priced<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Lassi, pastries, Aloo Patties<br><strong>Route: </strong>It’s a 30 second walk from the century gate. Go straight from Century gate and follow the road that goes to the right.</p>",
+      "<p>This is a no brainer. It’s a simple great non-diner offering great milk products, pizzas, sandwiches, pastries, and ice creams. All products are rightly priced Dessert<br><strong>Speciality:</strong> Lassi, pastries, Aloo Patties<br><strong>Route: </strong>It’s a 30 second walk from the century gate. Go straight from Century gate and follow the road that goes to the right.</p>",
   },
   {
-    display: "Al Baik",
+    type: "nonveg",
+    display: "albaik",
     title: "Al Baik",
     img: "../images/eateries/Al-Baik2.jpg",
     content:
-      "<p>Probably the farthest one in the list (It's in Old Roorkee!), the quality of this 'legend' has steadily declined in the last two years. However, they still serve the best Rotis in Roorkee, and honestly, that would be the only reason to choose this diner over the others<br><strong>Type:</strong> Mostly Non-Veg<br><strong>Speciality:</strong> Burrah and Rotis<br><strong>Route: </strong>Cross the Solani bridge and walk straight. You'll soon see a Bata showroom. First left after crossing the showroom and then the right at the end of the lane. Happy Dining!</p>",
+      "<p>Probably the farthest one in the list (It's in Old Roorkee!), the quality of this 'legend' has steadily declined in the last two years. However, they still serve the best Rotis in Roorkee, and honestly, that would be the only reason to choose this diner over the others Mostly Non-Veg<br><strong>Speciality:</strong> Burrah and Rotis<br><strong>Route: </strong>Cross the Solani bridge and walk straight. You'll soon see a Bata showroom. First left after crossing the showroom and then the right at the end of the lane. Happy Dining!</p>",
   },
   {
-    display: "Baadshah",
+    type: "nonveg",
+    display: "baadshah",
     title: "Baadshah",
     img: "../images/eateries/baadshah.jpg",
     content:
-      "<p>Situated just ahead of Al-Baik, is another oldie with a title that sounds cooler the more you say it. Although the place has become unpredictable,they might just serve you the best chicken changezi if you're in luck. Others, meh. Bonus: there’s home delivery.<br><strong>Type:</strong> Non-Veg<br><strong>Speciality:</strong> Chicken Changezi<br><strong>Route: </strong>Just a few steps ahead of Al-Baik</p>",
+      "<p>Situated just ahead of Al-Baik, is another oldie with a title that sounds cooler the more you say it. Although the place has become unpredictable,they might just serve you the best chicken changezi if you're in luck. Others, meh. Bonus: there’s home delivery. Non-Veg<br><strong>Speciality:</strong> Chicken Changezi<br><strong>Route: </strong>Just a few steps ahead of Al-Baik</p>",
   },
   {
-    display: "Desi Tadka",
+    type: "nonveg",
+    display: "desitadka",
     title: "Desi Tadka",
     img: "../images/eateries/desi_tadka.jpg",
     content:
-      "<p>This diner used to serve food that has good quality and taste. It’s ambience does justice to its title, with rustic Indian artwork, copper glasses, and huge plates that make you wonder if they serve you a complimentary thali. Despite the lack of consistency in their dishes, their truffles are always spot on and delicious<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong>  Truffles, Rice and Noodles<br><strong>Route: </strong>It's situated on the opposite side of Dominos and Woodland showroom.</p>",
+      "<p>This diner used to serve food that has good quality and taste. It’s ambience does justice to its title, with rustic Indian artwork, copper glasses, and huge plates that make you wonder if they serve you a complimentary thali. Despite the lack of consistency in their dishes, their truffles are always spot on and delicious Veg And Non-Veg<br><strong>Speciality:</strong>  Truffles, Rice and Noodles<br><strong>Route: </strong>It's situated on the opposite side of Dominos and Woodland showroom.</p>",
   },
   {
-    display: "Dominos",
+    type: "nonveg",
+    display: "dominos",
     title: "Dominos",
     img: "../images/eateries/dominos1.jpg",
     content:
-      "<p>Yay! We have a Domi! Yeah that's what we call it, Domi. A lot of city kids will tell you that the Domi in Roorkee is not as good as the Domi in Bombay or Delhi, which is, sadly, true. But as time passes, you'll realize that the best food you can get in Roorkee is in Domi, and by best food we mean the cheeseburst pizzas<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Everything with Cheeseburst<br><strong>Route: </strong>Take the straight path from NIH gate and then take a left on meeting the main road. Else, walk straight from century gate, take the path that goes right and keep walking. You'll soon see a dominos logo from a distance.</p>",
+      "<p>Yay! We have a Domi! Yeah that's what we call it, Domi. A lot of city kids will tell you that the Domi in Roorkee is not as good as the Domi in Bombay or Delhi, which is, sadly, true. But as time passes, you'll realize that the best food you can get in Roorkee is in Domi, and by best food we mean the cheeseburst pizzas Veg And Non-Veg<br><strong>Speciality:</strong> Everything with Cheeseburst<br><strong>Route: </strong>Take the straight path from NIH gate and then take a left on meeting the main road. Else, walk straight from century gate, take the path that goes right and keep walking. You'll soon see a dominos logo from a distance.</p>",
   },
   {
-    display: "Food Point",
+    type: "nonveg",
+    display: "foodpoint",
     title: "Food Point",
     img: "../images/eateries/Food_Point.jpg",
     content:
-      "<p>Food point in an integral part of the meat consuming student community at IITR. It's cheap, close by, and the service is fast. And if a senior has to give a chicken chapo to his junior, the chapo would most likely take place at food point. From good rumali rotis to a lovable afghani, the diner is best suited for people who don't care content the ambience<br><strong>Type:</strong> Veg And Non-Veg, Not much for vegetarians.<br><strong>Speciality:</strong> Afghani, Hariyali<br><strong>Route: </strong>Just before Hotel Center Point</p>",
+      "<p>Food point in an integral part of the meat consuming student community at IITR. It's cheap, close by, and the service is fast. And if a senior has to give a chicken chapo to his junior, the chapo would most likely take place at food point. From good rumali rotis to a lovable afghani, the diner is best suited for people who don't care content the ambience Veg And Non-Veg, Not much for vegetarians.<br><strong>Speciality:</strong> Afghani, Hariyali<br><strong>Route: </strong>Just before Hotel Center Point</p>",
   },
   {
-    display: "Hideout",
+    type: "nonveg",
+    display: "hideout",
     title: "Hideout",
     img: "../images/eateries/hideout2.jpg",
     content:
-      "<p>Hideout is among the newer food joints of the town. Although the location is a bit shady the food is quite good. The menu is quite intensive and almost all the dishes are a go-go. For the non-vegetarians, the Fried Chicken and Chicken Lollipop are quite while the vegetarian food isn’t bad either. The price is a bit on the higher side. Hideout also hosts few parties throughout the year<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Fried Chicken<br><strong>Route: </strong>A km or so up the Haridwar road. Below the Royal Enfield agency.</p>",
+      "<p>Hideout is among the newer food joints of the town. Although the location is a bit shady the food is quite good. The menu is quite intensive and almost all the dishes are a go-go. For the non-vegetarians, the Fried Chicken and Chicken Lollipop are quite while the vegetarian food isn’t bad either. The price is a bit on the higher side. Hideout also hosts few parties throughout the year Veg And Non-Veg<br><strong>Speciality:</strong> Fried Chicken<br><strong>Route: </strong>A km or so up the Haridwar road. Below the Royal Enfield agency.</p>",
   },
   {
-    display: "Olive",
+    type: "nonveg",
+    display: "olive",
     title: "Olive",
     img: "../images/eateries/olive1.jpg",
     content:
-      "<p>Olive is one of the most posh restaurant Roorkee has to offer. The food rates are the highest amongst all the diners in Roorkee, but the prices are still lower than most posh city diners. The food is great, be it Vegetarian or Non-Vegetarian. The service is good, the ambience is superb, and it's the only place apart from Polaris that serves seafood. We would recommend this place if you want a change from the regular roti-sabzi. It's not that they have below par Roti-sabzis, but they have better to offer. Avoid white pasta<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Sizzlers, Biriyani, Fish Tikkas, Desserts, Russian Salad, Ambience<br><strong>Route: </strong>Keep walking straight from the Old Kasturba gate. Olive is at the end of the Road.</p>",
+      "<p>Olive is one of the most posh restaurant Roorkee has to offer. The food rates are the highest amongst all the diners in Roorkee, but the prices are still lower than most posh city diners. The food is great, be it Vegetarian or Non-Vegetarian. The service is good, the ambience is superb, and it's the only place apart from Polaris that serves seafood. We would recommend this place if you want a change from the regular roti-sabzi.<br><strong>Speciality:</strong> Sizzlers, Biriyani, Fish Tikkas, Desserts, Russian Salad, Ambience<br><strong>Route: </strong>Keep walking straight from the Old Kasturba gate. Olive is at the end of the Road.</p>",
   },
   {
-    display: "Punjabi Nature",
+    type: "nonveg",
+    display: "punjabinature",
     title: "Punjabi Nature",
     img: "../images/eateries/Panjabi_Nature.jpg",
     content:
-      "<p>This is going to be less of a review and more of a warning. Just don’t visit this place. And tell your friends not to visit this place too. It’s horrible and you may end up with food poisoning. Now, do you want food poisoning?<br><strong>Type:</strong> Veg And Non-Veg, Not much for vegetarians.<br><strong>Speciality:</strong> Changezi, Hariyali, kebabs<br><strong>Route: </strong>Just before Food Point</p>",
+      "<p>This is going to be less of a review and more of a warning. Just don’t visit this place. And tell your friends not to visit this place too. It’s horrible and you may end up with food poisoning. Now, do you want food poisoning? Veg And Non-Veg, Not much for vegetarians.<br><strong>Speciality:</strong> Changezi, Hariyali, kebabs<br><strong>Route: </strong>Just before Food Point</p>",
   },
   {
-    display: "Punjabi Dhaba",
+    type: "nonveg",
+    display: "punjabinature",
     title: "Punjabi Dhaba",
     img: "../images/transparent.png",
     content:
-      "<p>This is going to be less of a review and more of a warning. Just don’t visit this place. And tell your friends not to visit this place too. It’s horrible and you may end up with food poisoning. Now, do you want food poisoning?<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> The Sardarji dhaba outside<br><strong>Route: </strong>Opposite Bus Stand.</p>",
+      "<p>This is going to be less of a review and more of a warning. Just don’t visit this place. And tell your friends not to visit this place too. It’s horrible and you may end up with food poisoning. Now, do you want food poisoning? Veg And Non-Veg<br><strong>Speciality:</strong> The Sardarji dhaba outside<br><strong>Route: </strong>Opposite Bus Stand.</p>",
   },
   {
-    display: "Royal Palace",
+    type: "nonveg",
+    display: "royalpalace",
     title: "Royal Palace",
     img: "../images/eateries/Royal Palace.jpg",
     content:
-      "<p>As time passes one shall understand that the term RP is hardly used for the diner. Speaking content the diner, they have a lot to offer. For a huge group comprising of vegetarians and nonvegetarians, RP is the best option after Olive<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong>Butter chicken, Kadhai Paneer, Irani Chicken, Chicken TIkka, Nargisi Kofta<br><strong>Route: </strong>Just before Samsung Store/ before Punjabi Nature</p>",
+      "<p>As time passes one shall understand that the term RP is hardly used for the diner. Speaking content the diner, they have a lot to offer. For a huge group comprising of vegetarians and nonvegetarians, RP is the best option after Olive Veg And Non-Veg<br><strong>Speciality:</strong>Butter chicken, Kadhai Paneer, Irani Chicken, Chicken TIkka, Nargisi Kofta<br><strong>Route: </strong>Just before Samsung Store/ before Punjabi Nature</p>",
   },
   {
-    display: "Snacks Point",
+    type: "nonveg",
+    display: "temp",
     title: "Snacks Point",
     img: "../images/transparent.png",
     content:
-      "<p>Snacks point offers decent vegetarian and non-vegetarian food. The ambience is certainly not a plus point for this restaurant. The dal makhani here is good, and may make some students remember their home.<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Dal, Boondi Raita, Baigan ka Bharta<br><strong>Route: </strong>Just before Prakash sweets.</p>",
+      "<p>Snacks point offers decent vegetarian and non-vegetarian food. The ambience is certainly not a plus point for this restaurant. The dal makhani here is good, and may make some students remember their home. Veg And Non-Veg<br><strong>Speciality:</strong> Dal, Boondi Raita, Baigan ka Bharta<br><strong>Route: </strong>Just before Prakash sweets.</p>",
   },
   {
-    display: "Rolla Costa",
+    type: "nonveg",
+    display: "rollacosta",
     title: "Rolla Costa",
     img: "../images/eateries/Rolla Costa.jpg",
     content:
-      "<p>This is a relatively new place. It’s all content shakes and rolls, however they serve other stuff too. The ambience is good and casual. As someone said, if you want to connect to youth get bean bags. RC definitely heard that and got plenty of them. It’s a good place to go and chill on a lazy weekend<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Shawarma Rolls and Shakes<br><strong>Route: </strong>Right next to Pizza Hut</p>",
+      "<p>This is a relatively new place. It’s all content shakes and rolls, however they serve other stuff too. The ambience is good and casual. As someone said, if you want to connect to youth get bean bags. RC definitely heard that and got plenty of them. It’s a good place to go and chill on a lazy weekend Veg And Non-Veg<br><strong>Speciality:</strong> Shawarma Rolls and Shakes<br><strong>Route: </strong>Right next to Pizza Hut</p>",
   },
   {
-    display: "Peppery Herbs",
+    type: "nonveg",
+    display: "temp",
     title: "Peppery Herbs",
     img: "../images/eateries/The_Blue_Pepper.jpg",
     content:
-      "<p>One of the newly opened restaurants in Roorkee, Peppery Herbs offers a menu that is so diverse that it becomes difficult to choose what to have. The smartest way to order at this place is to have your own favourites and that wouldn’t be too difficult considering that the restaurant serves some delicious cuisines<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Prawn, Momos, Sizzlers, Dosas<br><strong>Route: </strong>Take the road that has Royal Palace and Center Point and continue walking straight. You’ll see TBP on the left above Tanishq.</p>",
+      "<p>One of the newly opened restaurants in Roorkee, Peppery Herbs offers a menu that is so diverse that it becomes difficult to choose what to have. The smartest way to order at this place is to have your own favourites and that wouldn’t be too difficult considering that the restaurant serves some delicious cuisines Veg And Non-Veg<br><strong>Speciality:</strong> Prawn, Momos, Sizzlers, Dosas<br><strong>Route: </strong>Take the road that has Royal Palace and Center Point and continue walking straight. You’ll see TBP on the left above Tanishq.</p>",
   },
   {
-    display: "Tamarind",
+    type: "nonveg",
+    display: "tamarind",
     title: "Tamarind",
     img: "../images/eateries/tamarind2.jpg",
     content:
-      "<p>Tamarind is a fairly new restaurant and has gone under a number of changes since it s conception. Its current version, is the most posh looking joints in Roorkee. Although, they’ve recently let go of a chef, resulting in a great loss in variety. The presentation and the taste is on point and has one of the best hospitality<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Tikka Snacks, Malay and Thai cuisine, Ambience<br><strong>Route: </strong>Take the straight path from the NIH Gate and cross the main road.</p>",
+      "<p>Tamarind is a fairly new restaurant and has gone under a number of changes since it s conception. Its current version, is the most posh looking joints in Roorkee. Although, they’ve recently let go of a chef, resulting in a great loss in variety. The presentation and the taste is on point and has one of the best hospitality Veg And Non-Veg<br><strong>Speciality:</strong> Tikka Snacks, Malay and Thai cuisine, Ambience<br><strong>Route: </strong>Take the straight path from the NIH Gate and cross the main road.</p>",
   },
   {
-    display: "KIH",
+    type: "nonveg",
+    display: "kih",
     title: "KIH",
     img: "../images/eateries/kih_cafe.jpg",
     content:
-      "<p>What used to be a canteen once is now a restaurant. The place offers good variety of vegetarian dishes apart from being the only place inside the campus that serves non-veg. The location and affordable prices are two big pluses for the cafeteria, but the food and service generally fall short of what some eateries outside the campus offer<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Veg pakoras and paneer<br><strong>Route: </strong>Take a left turn from the Mechanical Engineering Department, beside Khosla International House</p>",
+      "<p>What used to be a canteen once is now a restaurant. The place offers good variety of vegetarian dishes apart from being the only place inside the campus that serves non-veg. The location and affordable prices are two big pluses for the cafeteria, but the food and service generally fall short of what some eateries outside the campus offer Veg And Non-Veg<br><strong>Speciality:</strong> Veg pakoras and paneer<br><strong>Route: </strong>Take a left turn from the Mechanical Engineering Department, beside Khosla International House</p>",
   },
   {
-    display: "Rustic House",
+    type: "nonveg",
+    display: "rustic",
     title: "Rustic House",
     img: "../images/eateries/rustic_house2.jpg",
     content:
-      "<p>Opened by the owners of Olive, possibly to monopolise the fine-dining market, Rustic House is one of the best restaurants in Roorkee. Being a multi-cuisine restaurant, rustic house serves great variety of vegetarian and non-vegetarian food. Though the prices are a little bit on the higher side, a good ambience and fastidious service compensate for it<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Kadhai Paneer, White Pasta, Brownie Shake, Salads<br><strong>Route: </strong>Keep walking straight from the Old Kasturba gate. Rustic House is at the end of the Road, right next to Olive.</p>",
+      "<p>Opened by the owners of Olive, possibly to monopolise the fine-dining market, Rustic House is one of the best restaurants in Roorkee. Being a multi-cuisine restaurant, rustic house serves great variety of vegetarian and non-vegetarian food. Though the prices are a little bit on the higher side, a good ambience and fastidious service compensate for it Veg And Non-Veg<br><strong>Speciality:</strong> Kadhai Paneer, White Pasta, Brownie Shake, Salads<br><strong>Route: </strong>Keep walking straight from the Old Kasturba gate. Rustic House is at the end of the Road, right next to Olive.</p>",
   },
   {
-    display: "34, Chouranghee Lane Kathi Rolls",
+    type: "nonveg",
+    display: "choukathirolls",
     title: "34, Chouranghee Lane Kathi Rolls",
     img: "../images/eateries/chou_kathi_rolls.jpg",
     content:
-      "<p>The place offers great Kathi Rolls at affordable prices. With one roll sufficient to fulfill your evening hunger, and the joint being located just outside the century gate, the place is ideal for a short trip outside the campus. They also delivers to hostels at IIT Roorkee which is an added benefit.<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Malai Paneer and Chicken Seekh Rolls<br><strong>Route: </strong>Opposite Milk Bar, right outside the Century Gate.</p>",
+      "<p>The place offers great Kathi Rolls at affordable prices. With one roll sufficient to fulfill your evening hunger, and the joint being located just outside the century gate, the place is ideal for a short trip outside the campus. They also delivers to hostels at IIT Roorkee which is an added benefit. Veg And Non-Veg<br><strong>Speciality:</strong> Malai Paneer and Chicken Seekh Rolls<br><strong>Route: </strong>Opposite Milk Bar, right outside the Century Gate.</p>",
   },
   {
-    display: "Al- Baik Fried Chicken",
+    type: "nonveg",
+    display: "albaik",
     title: "Al- Baik Fried Chicken",
     img: "../images/eateries/Al-Baik2.jpg",
     content:
-      "<p>This is the closest you’ll get to KFC in Roorkee. Their Fried Chicken is decent and comparable to KFC’s. A major downside is the lack of seating facility<br><strong>Type:</strong> Non-Veg<br><strong>Speciality:</strong> Fried Chicken<br><strong>Route: </strong>Slightly ahead of Desi Tadka on the same lane.</p>",
+      "<p>This is the closest you’ll get to KFC in Roorkee. Their Fried Chicken is decent and comparable to KFC’s. A major downside is the lack of seating facility Non-Veg<br><strong>Speciality:</strong> Fried Chicken<br><strong>Route: </strong>Slightly ahead of Desi Tadka on the same lane.</p>",
   },
   {
-    display: "Sattviko Idea Cafe",
+    type: "veg",
+    display: "sattviko",
     title: "Sattviko Idea Cafe",
     img: "../images/eateries/saatviko1.jpg",
     content:
-      "<p>Situated at the 3rd Floor in the MAC, the Sattviko Cafe is a perfect place for discussions, meetings and general bakar.  It has a great conference room and one full of bean bags for you to hang out with your friends. Talking content food, the place offers a strictly vegetarian (no onion/garlic) menu which taste adequately average<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Sabudana Upma, Lemonade<br><strong>Route: </strong>It is on the 3rd Floor of the MAC, above CCD.</p>",
+      "<p>Situated at the 3rd Floor in the MAC, the Sattviko Cafe is a perfect place for discussions, meetings and general bakar.  It has a great conference room and one full of bean bags for you to hang out with your friends. Talking content food, the place offers a strictly vegetarian (no onion/garlic) menu which taste adequately average Veg<br><strong>Speciality:</strong> Sabudana Upma, Lemonade<br><strong>Route: </strong>It is on the 3rd Floor of the MAC, above CCD.</p>",
   },
   {
-    display: "Giani’s",
+    type: "dessert",
+    display: "giani",
     title: "Giani’s",
     img: "../images/eateries/Giani2.jpg",
     content:
-      "<p>It is the only premium Ice Cream place in Roorkee. It offers decent Ice Creams in a wide range of flavours. Like many other restaurants in Roorkee, the place offers you a discount for being from IIT<br><strong>Type:</strong> Desserts<br><strong>Speciality:</strong> Unreal Sundaes<br><strong>Route: </strong>Take the straight path from NIH gate and then take a left on meeting the main road. Else, walk straight from century gate, take the path that goes right and keep walking.</p>",
+      "<p>It is the only premium Ice Cream place in Roorkee. It offers decent Ice Creams in a wide range of flavours. Like many other restaurants in Roorkee, the place offers you a discount for being from IIT Desserts<br><strong>Speciality:</strong> Unreal Sundaes<br><strong>Route: </strong>Take the straight path from NIH gate and then take a left on meeting the main road. Else, walk straight from century gate, take the path that goes right and keep walking.</p>",
   },
   {
-    display: "Hari Confectioner",
+    display: "temp",
     title: "Hari Confectioner",
     img: "../images/transparent.png",
     content:
-      "<p>This is a place where you can satisfy your lassi cravings even at 1AM in the morning. It offers Lassi as good as the Milk Bar. It is among the few eateries in Roorkee outside the campus that stays open till 2AM<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong>  Lassi<br><strong>Route: </strong>Take the Civil lines main market road and keep walking till you reach the tiny mall.</p>",
+      "<p>This is a place where you can satisfy your lassi cravings even at 1AM in the morning. It offers Lassi as good as the Milk Bar. It is among the few eateries in Roorkee outside the campus that stays open till 2AM Veg And Non-Veg<br><strong>Speciality:</strong>  Lassi<br><strong>Route: </strong>Take the Civil lines main market road and keep walking till you reach the tiny mall.</p>",
   },
   {
-    display: "Center Point",
+    type: "veg",
+    display: "centerpoint",
     title: "Center Point",
     img: "../images/eateries/Center Point.jpg",
     content:
-      "<p>Probably the only place with a 'candle light' dinner setting (only on thursdays), Center Point never fails to be empty. The food is definitely not the best, nor is the price, but the place has something to be desired. Being the only diner in roorkee to serve lasagne is definitely a plus, but you may not be able to talk a lot as most Professors tend to eat here. People come here mostly for the Roti-sabzi, which is probably what you should eat there<br><strong>Type:</strong> Pure Veg<br><strong>Speciality:</strong> Lasagna, peanut-chat<br><strong>Route: </strong>Take an immediate left from Century Gate, cross the road and keep walking. CP is situated on the right side</p>",
+      "<p>Probably the only place with a 'candle light' dinner setting (only on thursdays), Center Point never fails to be empty. The food is definitely not the best, nor is the price, but the place has something to be desired. Being the only diner in roorkee to serve lasagne is definitely a plus, but you may not be able to talk a lot as most Professors tend to eat here.<br><strong>Speciality:</strong> Lasagna, peanut-chat<br><strong>Route: </strong>Take an immediate left from Century Gate, cross the road and keep walking. CP is situated on the right side</p>",
   },
   {
-    display: "Chowpatty",
+    type: "veg",
+    display: "chowpatty",
     title: "Chowpatty",
     img: "../images/eateries/Chopati.jpg",
     content:
-      "<p>Chowpattys are cool. They offer decent food, sometimes astonishingly good, and are light on the wallet. Roorkee's chowpatty doesn't offer anything good except for three things: South Indian, gol gappas, and chuskis(golas). The gol gappa guy gives a very value-for-money plate of sweet/spice gol gappas for 10rs. And yeah, he's got pretty tasty dahi puris too. The chuski dude has only two flavours, nimbu and strawberry, the nimbu one being the one to go for. The south Indian 'anna' gives decent dosas, good idlis, and even better vadas. Take a tamil pal along, and you're sure to get a discount. Oh yeah, and just outside chowpatty are two fantastic eateries for lassi<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Gol Gappas, chuskis, south indian <br><strong>Route: </strong>Take the lane that has the Samsung outlet and student store. Play 'Shine on you crazy Diamond' and keep walking.You shall reach chowpatty in no time.</p>",
+      "<p>Chowpattys are cool. They offer decent food, sometimes astonishingly good, and are light on the wallet. Roorkee's chowpatty doesn't offer anything good except for three things: South Indian, gol gappas, and chuskis(golas). The gol gappa guy gives a very value-for-money plate of sweet/spice gol gappas for 10rs. And yeah, he's got pretty tasty dahi puris too.<br><strong>Speciality:</strong> Gol Gappas, chuskis, south indian <br><strong>Route: </strong>Take the lane that has the Samsung outlet and student store. Play 'Shine on you crazy Diamond' and keep walking.You shall reach chowpatty in no time.</p>",
   },
   {
+    type: "veg",
     display: "Prakash",
     title: "Prakash",
     img: "../images/eateries/Prakash.jpg",
     content:
-      "<p>Prakash feels like one of those shady restaurants which somehow manages to be running every year. They’re only plus point, the south indian dishes, doesn’t seem to be attracting customers anymore. Prakash may just serve decent food at best, and surely lacks a USP. Should you visit? Yeah sure, make those waiters happy<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> South indian, peanut chat coin pizza<br><strong>Route: </strong>Just ahead of milk bar</p>",
+      "<p>Prakash feels like one of those shady restaurants which somehow manages to be running every year. They’re only plus point, the south indian dishes, doesn’t seem to be attracting customers anymore. Prakash may just serve decent food at best, and surely lacks a USP. Should you visit? Yeah sure, make those waiters happy Veg<br><strong>Speciality:</strong> South indian, peanut chat coin pizza<br><strong>Route: </strong>Just ahead of milk bar</p>",
   },
   {
-    display: "Pizza Hut",
+    display: "pizzahut",
     title: "Pizza Hut",
     img: "../images/eateries/Pizza_hut2.jpg",
     content:
-      "<p>Yay! There’s a Pizza Hut! Well, you wanna know the good part? The Pizzas taste exactly as they do everywhere else, but only at the store. Somehow, the delivered Pizzas don’t taste as good. What should I do if I just want to eat in Pizza Hut? The Tripe Treat Box is the Best Value for a group of 3 people, or maybe even 2 :<br><strong>Type:</strong> Veg And Non-Veg<br><strong>Speciality:</strong> Triple Treat Box<br><strong>Route: </strong>Just ahead of Dominos/ Just ahead of Olive.</p>",
+      "<p>Yay! There’s a Pizza Hut! Well, you wanna know the good part? The Pizzas taste exactly as they do everywhere else, but only at the store. Somehow, the delivered Pizzas don’t taste as good. What should I do if I just want to eat in Pizza Hut? The Tripe Treat Box is the Best Value for a group of 3 people, or maybe even 2 : Veg And Non-Veg<br><strong>Speciality:</strong> Triple Treat Box<br><strong>Route: </strong>Just ahead of Dominos/ Just ahead of Olive.</p>",
   },
   {
-    display: "Radha Krishna (RK)",
+    type: "veg",
+    display: "radhakrishna",
     title: "Radha Krishna (RK)",
     img: "../images/eateries/Radha_krishna2.jpg",
     content:
-      "<p>This diner gets a lot of dishes wrong and some special ones right. Barring the masala dosa, the south indian dishes are great. The rawa masala dosa and the onion chutney is a win-win. A lot of South Indians will agree that the onion chutney of this place is at par with any good South Indian diner. RK serves chat as well, the Rajkachori being the stand-out in the list.<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Rawa masala Dosa, Rajkachori, Chole Bhature<br><strong>Route: </strong>Just ahead of Center Point.</p>",
+      "<p>This diner gets a lot of dishes wrong and some special ones right. Barring the masala dosa, the south indian dishes are great. The rawa masala dosa and the onion chutney is a win-win. A lot of South Indians will agree that the onion chutney of this place is at par with any good South Indian diner. RK serves chat as well, the Rajkachori being the stand-out in the list. Veg<br><strong>Speciality:</strong> Rawa masala Dosa, Rajkachori, Chole Bhature<br><strong>Route: </strong>Just ahead of Center Point.</p>",
   },
   {
-    display: "Satkar",
+    type: "veg",
+    display: "temp",
     title: "Satkar",
     img: "../images/transparent.png",
     content:
-      "<p>Satkar is famous for the various paranthas it has on offer. It opens early in the morning and is the best place to have breakfast after a solani walk<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Aloo parantha with butter and dahi.<br><strong>Route: </strong>In the mobile road behind Royal Palace</p>",
+      "<p>Satkar is famous for the various paranthas it has on offer. It opens early in the morning and is the best place to have breakfast after a solani walk Veg<br><strong>Speciality:</strong> Aloo parantha with butter and dahi.<br><strong>Route: </strong>In the mobile road behind Royal Palace</p>",
   },
   {
-    display: "Chennai Kings",
+    type: "veg",
+    display: "chennaikings",
     title: "Chennai Kings",
     img: "../images/eateries/chennaikings.jpg",
     content:
-      "<p>One of the many recently opened restaurants in Roorkee, Chennai Kings operates from a small room with 6 tables somehow placed inside. The only thing they do is serve authentic South Indian food and they do it right. The food isn’t too expensive and the place could be your escape if you want to skip the mess once in awhile.<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Any Dosa, Vadas<br><strong>Route: </strong>Right in the middle of Civil Lines market, just take the Civil lines from the Century gate and keep your eyes on the right.</p>",
+      "<p>One of the many recently opened restaurants in Roorkee, Chennai Kings operates from a small room with 6 tables somehow placed inside. The only thing they do is serve authentic South Indian food and they do it right. The food isn’t too expensive and the place could be your escape if you want to skip the mess once in awhile. Veg<br><strong>Speciality:</strong> Any Dosa, Vadas<br><strong>Route: </strong>Right in the middle of Civil Lines market, just take the Civil lines from the Century gate and keep your eyes on the right.</p>",
   },
   {
-    display: "Amul",
+    type: "dessert",
+    display: "amul",
     title: "Amul",
     img: "../images/eateries/amul.jpg",
     content:
-      "<p>Located in the MAC, the Amul Parlour has most of the Amul products available namely ice creams, flavoured milk, chocolates etc. They also serve good grilled sandwiches, burgers and milkshakes.<br><strong>Type:</strong> Veg<br><strong>Speciality:</strong> Veg Grilled Sandwich<br><strong>Route: </strong>Take a right from the CCD on the ground floor of the MAC.</p>",
+      "<p>Located in the MAC, the Amul Parlour has most of the Amul products available namely ice creams, flavoured milk, chocolates etc. They also serve good grilled sandwiches, burgers and milkshakes. Veg<br><strong>Speciality:</strong> Veg Grilled Sandwich<br><strong>Route: </strong>Take a right from the CCD on the ground floor of the MAC.</p>",
   },
 ]
 
