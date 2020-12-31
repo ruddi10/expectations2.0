@@ -51,6 +51,25 @@ export const dropups = [
   },
 ]
 
+export const connect = [
+  {
+    url: "https://www.facebook.com/geekgazette",
+    image: "facebook.png",
+  },
+  {
+    url: "https://www.instagram.com/geek_gazette/",
+    image: "insta_exp.png",
+  },
+  {
+    url: "https://www.linkedin.com/company/geek-gazette/",
+    image: "linkedin_exp.png",
+  },
+  {
+    url: "https://twitter.com/teamgeekgazette",
+    image: "tweet_exp.png",
+  },
+]
+
 export const h2data = [
   {
     title: "Campus Groups",

@@ -23,6 +23,7 @@ html {
   font-weight: 400;
   color: var(--lightg);
   padding: 1rem 0 1rem 0;
+  line-height: 3rem;
 }
 .dark-color-head {
   font-family: "Poppins", sans-serif;
@@ -95,21 +96,6 @@ h2.dark-color-head {
   color: black;
   font-size: 1.3rem;
 }
-@media only screen and (max-width: 650px) {
-  html {
-    font-size: 12px !important;
-  }
-  .only-web {
-    display: none !important;
-  }
-  .only-mobile {
-    display: flex !important;
-  }
-  .expanded-image {
-    max-height: 50vw;
-  }
-}
-
 .ui.grid > .column:not(.row) {
   padding-bottom: 3rem !important;
 }
@@ -126,4 +112,24 @@ h2.dark-color-head {
 .tag2 {
   padding: 0.3rem 0.6rem;
   border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 651px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 12px !important;
+  }
+  .only-web {
+    display: none !important;
+  }
+  .only-mobile {
+    display: flex !important;
+  }
+  .expanded-image {
+    max-height: 50vw;
+  }
 }

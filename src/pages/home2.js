@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loa
 import { Carousel } from "react-responsive-carousel"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import HomeColumn from "../components/home-colum"
+import ResponsiveComponent from "../components/responsive-component"
 const Bottom = props => (
   <div className={`home2-bottom ${props.class}`}>
     <iframe
@@ -40,56 +41,67 @@ const Bottom = props => (
     </div>
   </div>
 )
-export default function Home2(props) {
-  return (
-    <Layout noContainer={true}>
-      <Carousel
-        showArrows={true}
-        infiniteLoop
-        autoPlay
-        swipeable
-        showThumbs={false}
-      >
-        <div style={{ height: "50vh" }}>
-          <img
-            className="image-gallery-image"
-            src="https://picsum.photos/id/1018/1000/600/"
-          />
-          <p className="legend">Legend 1</p>
+
+class Home2 extends ResponsiveComponent {
+  render() {
+    return (
+      <Layout noContainer={true}>
+        <Carousel
+          showArrows={true}
+          infiniteLoop
+          autoPlay
+          swipeable
+          showThumbs={false}
+        >
+          <div style={{ height: "50vh" }}>
+            <img
+              className="image-gallery-image"
+              src="https://picsum.photos/id/1018/1000/600/"
+            />
+            <p className="legend">Legend 1</p>
+          </div>
+          <div style={{ height: "50vh" }}>
+            <img
+              className="image-gallery-image"
+              src="https://picsum.photos/id/1015/1000/600/"
+            />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div style={{ height: "50vh" }}>
+            <img
+              className="image-gallery-image"
+              src="https://picsum.photos/id/1019/1000/600/"
+            />
+            <p className="legend">Legend 3</p>
+          </div>
+          <div style={{ height: "50vh" }}>
+            <img
+              className="image-gallery-image"
+              src={require("../images/expectations_carousel_dummy.png")}
+            />
+            <p className="legend">Legend 3</p>
+          </div>
+        </Carousel>
+        <div className="home-banner">
+          <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
+          <div className="dark-color-head">
+            A COMPREHENSIVE GUIDE TO IIT ROORKEE FOR FRESHERS AND PROSPECTIVE
+            STUDENTS.
+          </div>
         </div>
-        <div style={{ height: "50vh" }}>
-          <img
-            className="image-gallery-image"
-            src="https://picsum.photos/id/1015/1000/600/"
-          />
-          <p className="legend">Legend 2</p>
-        </div>
-        <div style={{ height: "50vh" }}>
-          <img
-            className="image-gallery-image"
-            src="https://picsum.photos/id/1019/1000/600/"
-          />
-          <p className="legend">Legend 3</p>
-        </div>
-        <div style={{ height: "50vh" }}>
-          <img
-            className="image-gallery-image"
-            src={require("../images/expectations_carousel_dummy.png")}
-          />
-          <p className="legend">Legend 3</p>
-        </div>
-      </Carousel>
-      <div className="home-banner">
-        <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
-        <div className="dark-color-head">
-          A COMPREHENSIVE GUIDE TO IIT ROORKEE FOR FRESHERS AND PROSPECTIVE
-          STUDENTS.
-        </div>
-      </div>
-      <div className="grey-body">
-        <div className="gb-container">
-          <div className="home2-heading">
-            <h2 className="light-color-head">Life and culture at IITR</h2>
+        <div className="grey-body">
+          <div className="gb-container">
+            <div className="home2-heading">
+              <h2 className="light-color-head">Life and culture at IITR</h2>
+            </div>
+            <div className="home2-cards">
+              {h2data.map(data => (
+                <div className="card-container">
+                  <Card1 carddata={data} />
+                </div>
+              ))}
+            </div>
+            <Bottom class={"only-web"} />
           </div>
           <div className="home2-cards">
             {h2data.map(data => (
@@ -97,7 +109,7 @@ export default function Home2(props) {
                 <Card1
                   carddata={{
                     ...data,
-                    fluid: props.data.allFile.edges.find(
+                    fluid: this.props.data.allFile.edges.find(
                       edge => edge.node.name === data.title
                     ).node.childImageSharp.fluid,
                   }}
@@ -105,20 +117,23 @@ export default function Home2(props) {
               </div>
             ))}
           </div>
-          <Bottom class={"only-web"} />
         </div>
-      </div>
-      <div className="home2-container">
-        <div className="home-column-container">
-          {homeColumn.map(data => (
-            <HomeColumn data={{ ...data }} />
-          ))}
+        <div className="home2-container">
+          <div className="home-column-container">
+            {homeColumn.map(data => (
+              <HomeColumn
+                windowWidth={this.state.windowWidth}
+                data={{ ...data }}
+              />
+            ))}
+          </div>
+          <Bottom class={"only-mobile"} />
         </div>
-        <Bottom class={"only-mobile"} />
-      </div>
-    </Layout>
-  )
+      </Layout>
+    )
+  }
 }
+export default Home2
 
 export const query = graphql`
   {
@@ -137,3 +152,76 @@ export const query = graphql`
     }
   }
 `
+
+// export default function Home2(props) {
+//   return (
+//     <Layout noContainer={true}>
+//       <Carousel
+//         showArrows={true}
+//         infiniteLoop
+//         autoPlay
+//         swipeable
+//         showThumbs={false}
+//       >
+//         <div style={{ height: "50vh" }}>
+//           <img
+//             className="image-gallery-image"
+//             src="https://picsum.photos/id/1018/1000/600/"
+//           />
+//           <p className="legend">Legend 1</p>
+//         </div>
+//         <div style={{ height: "50vh" }}>
+//           <img
+//             className="image-gallery-image"
+//             src="https://picsum.photos/id/1015/1000/600/"
+//           />
+//           <p className="legend">Legend 2</p>
+//         </div>
+//         <div style={{ height: "50vh" }}>
+//           <img
+//             className="image-gallery-image"
+//             src="https://picsum.photos/id/1019/1000/600/"
+//           />
+//           <p className="legend">Legend 3</p>
+//         </div>
+//         <div style={{ height: "50vh" }}>
+//           <img
+//             className="image-gallery-image"
+//             src={require("../images/expectations_carousel_dummy.png")}
+//           />
+//           <p className="legend">Legend 3</p>
+//         </div>
+//       </Carousel>
+//       <div className="home-banner">
+//         <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
+//         <div className="dark-color-head">
+//           A COMPREHENSIVE GUIDE TO IIT ROORKEE FOR FRESHERS AND PROSPECTIVE
+//           STUDENTS.
+//         </div>
+//       </div>
+//       <div className="grey-body">
+//         <div className="gb-container">
+//           <div className="home2-heading">
+//             <h2 className="light-color-head">Life and culture at IITR</h2>
+//           </div>
+//           <div className="home2-cards">
+//             {h2data.map(data => (
+//               <div className="card-container">
+//                 <Card1 carddata={data} />
+//               </div>
+//             ))}
+//           </div>
+//           <Bottom class={"only-web"} />
+//         </div>
+//       </div>
+//       <div className="home2-container">
+//         <div className="home-column-container">
+//           {homeColumn.map(data => (
+//             <HomeColumn  data={{ ...data }} />
+//           ))}
+//         </div>
+//         <Bottom class={"only-mobile"} />
+//       </div>
+//     </Layout>
+//   )
+// }

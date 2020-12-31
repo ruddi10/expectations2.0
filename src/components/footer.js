@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { connect } from "../data"
 import {
   Button,
   Icon,
@@ -59,46 +60,18 @@ export default function Footer() {
         </a>
         <div className="connect-icons">
           <List horizontal>
-            <List.Item>
-              <SemanticImage
-                avatar
-                as={"a"}
-                href="https://www.facebook.com/geekgazette"
-                target="_blank"
-                rel="noopener noreferrer"
-                src={require("../images/facebook.png")}
-              />
-            </List.Item>
-            <List.Item>
-              <SemanticImage
-                avatar
-                as={"a"}
-                href="https://www.instagram.com/geek_gazette/"
-                target="_blank"
-                rel="noopener noreferrer"
-                src={require("../images/insta_exp.png")}
-              />
-            </List.Item>
-            <List.Item>
-              <SemanticImage
-                avatar
-                as={"a"}
-                href="https://www.linkedin.com/company/geek-gazette/"
-                target="_blank"
-                rel="noopener noreferrer"
-                src={require("../images/linkedin_exp.png")}
-              />
-            </List.Item>
-            <List.Item>
-              <SemanticImage
-                avatar
-                as={"a"}
-                href="https://twitter.com/teamgeekgazette"
-                target="_blank"
-                rel="noopener noreferrer"
-                src={require("../images/tweet_exp.png")}
-              />
-            </List.Item>
+            {connect.map(conn => (
+              <List.Item>
+                <SemanticImage
+                  avatar
+                  as={"a"}
+                  href={conn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  src={require(`../images/${conn.image}`)}
+                />
+              </List.Item>
+            ))}
           </List>
         </div>
         <Menu.Item as={Link}>Gallery</Menu.Item>

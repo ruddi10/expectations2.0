@@ -80,3 +80,47 @@ a:hover {
   background: var(--lightg);
   color: #ffffff;
 }
+
+@media only screen and (max-width: 840px) {
+  .footer-bottom {
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: justify;
+    row-gap: 1.1rem;
+    font-size: 1.4rem;
+  }
+  .footer-bottom > * {
+    text-align: center;
+  }
+  .logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-wrapper > .gatsby-image-wrapper {
+    width: 50%;
+  }
+  .footer-bottom .grid-header {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+  .ui.teal.button.headings {
+    background-color: var(--lightg);
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .ui.teal.button.headings:hover {
+    background-color: var(--darkp);
+  }
+  .mobi-low {
+    color: #737171;
+    font-size: 1rem;
+    margin-top: 2.8rem;
+    background: #f7f7f7;
+  }
+  .mobi-low > div {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+  }
+}
