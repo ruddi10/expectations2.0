@@ -97,25 +97,18 @@ class Home2 extends ResponsiveComponent {
             <div className="home2-cards">
               {h2data.map(data => (
                 <div className="card-container">
-                  <Card1 carddata={data} />
+                  <Card1
+                    carddata={{
+                      ...data,
+                      fluid: this.props.data.allFile.edges.find(
+                        edge => edge.node.name === data.title
+                      ).node.childImageSharp.fluid,
+                    }}
+                  />
                 </div>
               ))}
             </div>
-            <Bottom class={"only-web"} />
-          </div>
-          <div className="home2-cards">
-            {h2data.map(data => (
-              <div className="card-container">
-                <Card1
-                  carddata={{
-                    ...data,
-                    fluid: this.props.data.allFile.edges.find(
-                      edge => edge.node.name === data.title
-                    ).node.childImageSharp.fluid,
-                  }}
-                />
-              </div>
-            ))}
+            <Bottom />
           </div>
         </div>
         <div className="home2-container">
@@ -127,7 +120,6 @@ class Home2 extends ResponsiveComponent {
               />
             ))}
           </div>
-          <Bottom class={"only-mobile"} />
         </div>
       </Layout>
     )
