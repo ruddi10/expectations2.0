@@ -77,7 +77,7 @@ export const h2data = [
       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. ",
     src:
       "https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png",
-    link: "/campus-groups",
+    link: "co-curricular/technical-groups",
   },
   {
     title: "Hostels",
@@ -85,7 +85,7 @@ export const h2data = [
       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. ",
     src:
       "https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png",
-    link: "/hostels",
+    link: "campus/hostels",
   },
   {
     title: "Eateries",
@@ -93,7 +93,7 @@ export const h2data = [
       "It is a general belief that a branch change is a big task and a very difficult thing to achieve. ",
     src:
       "https://cdn.dribbble.com/users/1036545/screenshots/2491401/iitr_dribbble.png",
-    link: "/esteries",
+    link: "campus/eateries",
   },
 ]
 

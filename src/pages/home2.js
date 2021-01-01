@@ -97,11 +97,18 @@ class Home2 extends ResponsiveComponent {
             <div className="home2-cards">
               {h2data.map(data => (
                 <div className="card-container">
-                  <Card1 carddata={data} />
+                  <Card1
+                    carddata={{
+                      ...data,
+                      fluid: this.props.data.allFile.edges.find(
+                        edge => edge.node.name === data.title
+                      ).node.childImageSharp.fluid,
+                    }}
+                  />
                 </div>
               ))}
             </div>
-            <Bottom class={"only-web"} />
+            <Bottom />
           </div>
         </div>
         <div className="home2-container">
@@ -113,14 +120,30 @@ class Home2 extends ResponsiveComponent {
               />
             ))}
           </div>
-          <Bottom class={"only-mobile"} />
         </div>
       </Layout>
     )
   }
 }
-
 export default Home2
+
+export const query = graphql`
+  {
+    allFile(filter: { relativeDirectory: { eq: "home" } }) {
+      totalCount
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+`
 
 // export default function Home2(props) {
 //   return (
