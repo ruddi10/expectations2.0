@@ -25,23 +25,33 @@ export default class FAQs extends Component {
         <p className="list-head">
           A list of frequent queries asked by freshers’ and prospective students
         </p>
-        <Accordion fluid styled>
+        <div>
           {faqs.map(faq => (
-            <div className="accordion-item">
-              <Accordion.Title
-                active={activeIndex === faq.index}
-                index={faq.index}
-                onClick={this.handleClick}
-              >
-                {faq.title}
-                <Icon name="dropdown" />
-              </Accordion.Title>
-              <Accordion.Content active={activeIndex === faq.index}>
-                {faq.content}
-              </Accordion.Content>
+            <div>
+            <h2 className="category"><span>{faq.SNo} &nbsp;&nbsp;</span>
+              {faq.criteria}
+            </h2>
+              <Accordion fluid styled>
+                {faq.questions.map(question => ( 
+                  <div className="accordion-item">
+                    <Accordion.Title
+                      active={activeIndex === question.index}
+                      index={question.index}
+                      onClick={this.handleClick}
+                    >
+                      {question.title}
+                      <Icon name="dropdown" />
+                    </Accordion.Title>
+
+                    <Accordion.Content active={activeIndex === question.index}>
+                      {question.content}
+                    </Accordion.Content>
+                  </div>
+                ))}
+              </Accordion>
             </div>
           ))}
-        </Accordion>
+        </div>
       </Layout>
     )
   }

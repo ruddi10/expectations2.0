@@ -707,83 +707,101 @@ export const incampusCommute = {
 
 export const faqs = [
   {
-    title: "Why Roorkee?",
-    content:
-      "Roorkee is a small, quiet town having a low population. This is a real advantage, even though this might seem like a boring place for many initially. With time, people will see how nice this place is. Apart from having one of the best IITs, Roorkee is close to many tourist spots like Mussoorie, Nainital, Rishikesh and so on. The calmness of the place is really soothing, and the low pollution here is a bonus. Roorkee is definitely a good choice, and people from cities will find it as a pleasant change.",
-    index: 0,
+    SNo: "01",
+    criteria: "Roorkee",
+    questions: [    
+      {
+        title: "Why Roorkee?",
+        content:
+          "Roorkee is a small, quiet town having a low population. This is a real advantage, even though this might seem like a boring place for many initially. With time, people will see how nice this place is. Apart from having one of the best IITs, Roorkee is close to many tourist spots like Mussoorie, Nainital, Rishikesh and so on. The calmness of the place is really soothing, and the low pollution here is a bonus. Roorkee is definitely a good choice, and people from cities will find it as a pleasant change.",
+        index: 0,
+      },
+      {
+        title: "How good are placements for my branch?",
+        content:
+          "We know how much you are itching to know the answer to the question. <Link to='/placements/analysis'>Here</Link> are your placement stats. But keep this in mind before selecting a branch based on the placement data only. In general a better branch of discipline is the one which combines interest with opportunities. At the end of the next 10 years, who knows, the entire market scenario could change with a drastic shift in opportunities.",
+        index: 1,
+      },
+      {
+        title: "Is there a good coaching center for IAS/CAT/GRE in Roorkee?",
+        content:
+          "Yes. Good coaching centers are indeed available for both CAT and IAS. For CAT, centers like Career Launcher, TIME and Arete are available. For IAS, Dronacharya and Samkalp are available, with Samkalp generally considered the better coaching center.",
+        index: 2,
+      },
+      {
+        title: "What are the documents required during registration?",
+        content:
+          "All documents you need to bring would be specified in your offer letter. We also recommend you to bring along stationery like scissors and fevistick as many forms need to be filled up. Also, sharing scissors with someone might just lead to the making of a long-lasting friendship at Roorkee. Registration will involve opening an account at a bank, and your subject and hostel registration. Once this is done, you'll be issued an Identity card. Keep it carefully, it is your identification on campus for at least 4 years! You seriously can’t afford to lose it, else you will have to face the administration of IIT Roorkee. Congratulations! You're now a student at IIT-R!",
+        index: 3,
+      },
+    ],
   },
   {
-    title: "Do seniors rag?",
-    content:
-      "UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions, 2009 completely forbids ragging of any kind in an institute of higher education. What this means for you as a potential student is that there is absolutely no reason to be afraid. If you’re looking for a safe stay, you will definitely get that and if you’re not looking for a safe stay, hmmm... As a matter of fact, IIT Roorkee can boast of a really good senior-junior culture.",
-    index: 1,
+    SNo: "02",
+    criteria: "Academic",
+    questions: [    
+      {
+        title: "How does grading happen?",
+        content:
+          "There is a concept of CGPA (Cumulative Grade Point Average) and SGPA (Semester Grade Point Average) calculated with the help of Course Credits and Grades for each course. Most courses (i.e. courses with a little more than a handful of students enrolled) have a Relative Grading System. In this system, you are evaluated against your peers to decide which grade you get. This does not mean that you'll have to fight it out with your classmates all the time; it means that even getting a 60% might be good enough to get a very good grade in a difficult course. There is one mid-sem exam, one end-sem exam, and class-work-sessional marks assigned for each course (the split up varies, but is told at the start of the course itself) and these add up to your final score. Using a statistical formula based on the mean and standard deviation of the scores of all the students in a course, a grade is assigned on a scale of 10. These grades then are averaged over a semester, weighted by the number of course credits, to get the SGPA. Average all the courses over all the semesters that have occurred until a certain time, and you get your CGPA at that point of time. Mathematically speaking, it is the weighted average of SGPA of each semester with the total credits of that semester. The number of credits for a course is basically a small number (like 3 or 4) which roughly denote how many hours you will be spending on lectures, tutorials, and practicals with a course. It is generally an indicator of how important a course probably is.",
+        index: 4,
+      },
+      {
+        title: "What is a good grade?",
+        content:
+          "Grades have always been a point of worry for students. It is essential to know that a grade does not define who you are. Keeping this fact in mind, it is generally a good idea to keep your grade above 7.5 as it ensures that you clear the cut offs for various CGPA dependent activities such as being a part of the college fest team or placement cell or competing in the student elections. A 7.5 or above CGPA also ensures good placement opportunities as it is generally the cut off for many Tier 1 companies. While a higher grade is somewhat of an advantage, it isn't worth it if that is what you only do in your years in college. A lot of the learning happens outside class, through interacting with others, taking part in groups and basically enjoying your time here. Sometimes, if you've done something outstanding in a non-course activity, companies might even ignore a difference (like between an X.6 and an X.4). Nonetheless, it is you who decide which grade is good for you, depending on your aspirations and future plans. If you intend to go for higher studies abroad and are looking for a scholarship, chances are, you need a CGPA above 8.5.",
+        index: 5,
+      },
+      {
+        title:
+          "What are the steps I need to take to get a branch change? What rituals to perform and what deity to pray to?",
+        content:
+          "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits. It helps prevent a last minute rush when exams are near. Secondly making proper notes is also important – apart from making you popular for your famous notes, it also helps summarize the subject easily, in your own words. Last but not least, sacrifices - yes, sorry to disappoint you but to change the branch sometimes you may have to miss some chapos (lingo at IITR for parties) or various events which happen round the semester in campus. You might even need to ditch the Pronites during Thomso. However, branch change at IITR happens at the end of the first semester itself, so it is only a semester for which you might have to miss these things. While religiously sacrificing everything materialistic is a good idea, do not forego recruitments to different groups, because it is these which will make your 4-5 years in college worth remembering. Instead, make your few sacrifices count using proper time management. The cutoffs for each branch vary each year and thus it is not possible to predict the branch for a particular grade point. However, the better the CGPA, the higher your chances. Even if you don’t get it, trying for branch change has its advantages because you end up with a good solid CGPA.",
+        index: 6,
+      },
+    ],
   },
   {
-    title: "How is the mess food?",
-    content:
-      "Everything you might have heard about the mess food is a blatant lie. The prestigious culinary masters working behind the scenes in the kitchens manage to consistently produce edible sustenance which also manages to barely pass safety inspections by the Food Safety and Standards Authority of India.",
-    index: 2,
-  },
-  {
-    title: "How good are placements for my branch?",
-    content:
-      "We know how much you are itching to know the answer to the question. <Link to='/placements/analysis'>Here</Link> are your placement stats. But keep this in mind before selecting a branch based on the placement data only. In general a better branch of discipline is the one which combines interest with opportunities. At the end of the next 10 years, who knows, the entire market scenario could change with a drastic shift in opportunities.",
-    index: 3,
-  },
-  {
-    title: "Is there a good coaching center for IAS/CAT/GRE in Roorkee?",
-    content:
-      "Yes. Good coaching centers are indeed available for both CAT and IAS. For CAT, centers like Career Launcher, TIME and Arete are available. For IAS, Dronacharya and Samkalp are available, with Samkalp generally considered the better coaching center.",
-    index: 4,
-  },
-  {
-    title: "Should I bring my laptop as soon as I join?",
-    content:
-      "It is recommended, but not necessary to bring one as soon as you join the college. It is highly dependent from person to person as to how dependent they have been on their laptops in their pre-college years and how much they will need it for their discipline of choice. If you own a laptop already, feel free to bring it, but if you don't - wait for a while to find a local computer genius in your batch to suggest the perfect laptop for you. Besides Computer Centre and library, all hostels have their own computer rooms which can easily fulfil your academic needs for the first semester at least.",
-    index: 5,
-  },
-  {
-    title: "How are the internet facilities in the hostels?",
-    content:
-      "All the hostel rooms are provided with LAN connections which provide one of the fastest internet speed inIndia. Trust us, you will miss the internet speed once you are back at your home. Besides LAN, all the common areas in the hostels like canteen, mess, visitors’ room etc. are provided with WiFi. Well, eventually you will realise that internet facilities are pretty decent and one of your greatest saviours from boredom while your 4 years stay at the campus.",
-    index: 6,
-  },
-  {
-    title: "How does grading happen?",
-    content:
-      "There is a concept of CGPA (Cumulative Grade Point Average) and SGPA (Semester Grade Point Average) calculated with the help of Course Credits and Grades for each course. Most courses (i.e. courses with a little more than a handful of students enrolled) have a Relative Grading System. In this system, you are evaluated against your peers to decide which grade you get. This does not mean that you'll have to fight it out with your classmates all the time; it means that even getting a 60% might be good enough to get a very good grade in a difficult course. There is one mid-sem exam, one end-sem exam, and class-work-sessional marks assigned for each course (the split up varies, but is told at the start of the course itself) and these add up to your final score. Using a statistical formula based on the mean and standard deviation of the scores of all the students in a course, a grade is assigned on a scale of 10. These grades then are averaged over a semester, weighted by the number of course credits, to get the SGPA. Average all the courses over all the semesters that have occurred until a certain time, and you get your CGPA at that point of time. Mathematically speaking, it is the weighted average of SGPA of each semester with the total credits of that semester. The number of credits for a course is basically a small number (like 3 or 4) which roughly denote how many hours you will be spending on lectures, tutorials, and practicals with a course. It is generally an indicator of how important a course probably is.",
-    index: 7,
-  },
-  {
-    title: "What is a good grade?",
-    content:
-      "Grades have always been a point of worry for students. It is essential to know that a grade does not define who you are. Keeping this fact in mind, it is generally a good idea to keep your grade above 7.5 as it ensures that you clear the cut offs for various CGPA dependent activities such as being a part of the college fest team or placement cell or competing in the student elections. A 7.5 or above CGPA also ensures good placement opportunities as it is generally the cut off for many Tier 1 companies. While a higher grade is somewhat of an advantage, it isn't worth it if that is what you only do in your years in college. A lot of the learning happens outside class, through interacting with others, taking part in groups and basically enjoying your time here. Sometimes, if you've done something outstanding in a non-course activity, companies might even ignore a difference (like between an X.6 and an X.4). Nonetheless, it is you who decide which grade is good for you, depending on your aspirations and future plans. If you intend to go for higher studies abroad and are looking for a scholarship, chances are, you need a CGPA above 8.5.",
-    index: 8,
-  },
-  {
-    title: "How are the sports facilities?",
-    content:
-      "Sports is something that will never feature in your list of disappointments with Roorkee. IIT Roorkee boasts world class stadiums and courts for popular sports such as cricket, football, volleyball, tennis, squash, table tennis, badminton, hockey, basketball and athletics! And that’s not all, we even have a well maintained Olympic size swimming pool. Indoor sports lovers need not waver as the UG Club building houses all you would want in the form of chess, carrom, pool, snooker, billiards, foosball and table tennis. If that’s not enough, every hostel also houses a selection of the above facilities for your pleasure.",
-    index: 9,
-  },
-  {
-    title:
-      "What are the steps I need to take to get a branch change? What rituals to perform and what deity to pray to?",
-    content:
-      "It is a general belief that a branch change is a big task and a very difficult thing to achieve. However with a little hard work and focus it is possible. The modus operandi for changing your branch is to get a good GPA. For this, firstly attend classes regularly. Though this might seem tedious and boring, it has its benefits. It helps prevent a last minute rush when exams are near. Secondly making proper notes is also important – apart from making you popular for your famous notes, it also helps summarize the subject easily, in your own words. Last but not least, sacrifices - yes, sorry to disappoint you but to change the branch sometimes you may have to miss some chapos (lingo at IITR for parties) or various events which happen round the semester in campus. You might even need to ditch the Pronites during Thomso. However, branch change at IITR happens at the end of the first semester itself, so it is only a semester for which you might have to miss these things. While religiously sacrificing everything materialistic is a good idea, do not forego recruitments to different groups, because it is these which will make your 4-5 years in college worth remembering. Instead, make your few sacrifices count using proper time management. The cutoffs for each branch vary each year and thus it is not possible to predict the branch for a particular grade point. However, the better the CGPA, the higher your chances. Even if you don’t get it, trying for branch change has its advantages because you end up with a good solid CGPA.",
-    index: 10,
-  },
-  {
-    title:
-      "Wait, in the previous answer, you mentioned that chapo is a party in IITR lingo. What are the other common words I will hear at IITR?",
-    content:
-      "As mentioned earlier, chapo, originally meaning chai-pakoda, has been now extended to mean party or treat. Then you may be called ‘Faccha’ by some of your seniors, which simply means a fresher. <br>Amongst one of the questions asked by seniors in your branch intro, would be “who is the branch kholu?”. Kholu literally means opener, in IIT-R this term refers to the person who opens the institute and/or branch by fetching the best rank in JEE-Advance in the institute or the corresponding branch. <br>These are some of the words you would be welcomed with, in the campus. Besides these, there is ‘Ghissu’, which is used to describe a person who is the epitome of a nerd and is too cautious about his grades. The term is generally used incorrectly for the purpose of ego satisfaction by many and in which case, it can be conveniently ignored. One of the coolest among all these words is ‘machau’ or ‘macha diya’. The term is used for somebody who achieves something of great importance. Definitely, this is one of the words you would want to be tagged with.<br>These are some of the very common ones used in the campus. Eventually with your stay, you will be more familiar with the our slang.",
-    index: 11,
-  },
-  {
-    title: "What are the documents required during registration?",
-    content:
-      "All documents you need to bring would be specified in your offer letter. We also recommend you to bring along stationery like scissors and fevistick as many forms need to be filled up. Also, sharing scissors with someone might just lead to the making of a long-lasting friendship at Roorkee. Registration will involve opening an account at a bank, and your subject and hostel registration. Once this is done, you'll be issued an Identity card. Keep it carefully, it is your identification on campus for at least 4 years! You seriously can’t afford to lose it, else you will have to face the administration of IIT Roorkee. Congratulations! You're now a student at IIT-R!",
-    index: 12,
+    SNo: "03",
+    criteria: "Campus",
+    questions: [
+      {
+        title:
+          "Wait, in the previous answer, you mentioned that chapo is a party in IITR lingo. What are the other common words I will hear at IITR?",
+        content:
+          "As mentioned earlier, chapo, originally meaning chai-pakoda, has been now extended to mean party or treat. Then you may be called ‘Faccha’ by some of your seniors, which simply means a fresher. <br>Amongst one of the questions asked by seniors in your branch intro, would be “who is the branch kholu?”. Kholu literally means opener, in IIT-R this term refers to the person who opens the institute and/or branch by fetching the best rank in JEE-Advance in the institute or the corresponding branch. <br>These are some of the words you would be welcomed with, in the campus. Besides these, there is ‘Ghissu’, which is used to describe a person who is the epitome of a nerd and is too cautious about his grades. The term is generally used incorrectly for the purpose of ego satisfaction by many and in which case, it can be conveniently ignored. One of the coolest among all these words is ‘machau’ or ‘macha diya’. The term is used for somebody who achieves something of great importance. Definitely, this is one of the words you would want to be tagged with.<br>These are some of the very common ones used in the campus. Eventually with your stay, you will be more familiar with the our slang.",
+        index: 7,
+      },
+      {
+        title: "Do seniors rag?",
+        content:
+          "UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions, 2009 completely forbids ragging of any kind in an institute of higher education. What this means for you as a potential student is that there is absolutely no reason to be afraid. If you’re looking for a safe stay, you will definitely get that and if you’re not looking for a safe stay, hmmm... As a matter of fact, IIT Roorkee can boast of a really good senior-junior culture.",
+        index: 8,
+      },
+      {
+        title: "How is the mess food?",
+        content:
+          "Everything you might have heard about the mess food is a blatant lie. The prestigious culinary masters working behind the scenes in the kitchens manage to consistently produce edible sustenance which also manages to barely pass safety inspections by the Food Safety and Standards Authority of India.",
+        index: 9,
+      },
+      {
+        title: "Should I bring my laptop as soon as I join?",
+        content:
+          "It is recommended, but not necessary to bring one as soon as you join the college. It is highly dependent from person to person as to how dependent they have been on their laptops in their pre-college years and how much they will need it for their discipline of choice. If you own a laptop already, feel free to bring it, but if you don't - wait for a while to find a local computer genius in your batch to suggest the perfect laptop for you. Besides Computer Centre and library, all hostels have their own computer rooms which can easily fulfil your academic needs for the first semester at least.",
+        index: 10,
+      },
+      {
+        title: "How are the internet facilities in the hostels?",
+        content:
+          "All the hostel rooms are provided with LAN connections which provide one of the fastest internet speed inIndia. Trust us, you will miss the internet speed once you are back at your home. Besides LAN, all the common areas in the hostels like canteen, mess, visitors’ room etc. are provided with WiFi. Well, eventually you will realise that internet facilities are pretty decent and one of your greatest saviours from boredom while your 4 years stay at the campus.",
+        index: 11,
+      },
+      {
+        title: "How are the sports facilities?",
+        content:
+          "Sports is something that will never feature in your list of disappointments with Roorkee. IIT Roorkee boasts world class stadiums and courts for popular sports such as cricket, football, volleyball, tennis, squash, table tennis, badminton, hockey, basketball and athletics! And that’s not all, we even have a well maintained Olympic size swimming pool. Indoor sports lovers need not waver as the UG Club building houses all you would want in the form of chess, carrom, pool, snooker, billiards, foosball and table tennis. If that’s not enough, every hostel also houses a selection of the above facilities for your pleasure.",
+        index: 12,
+      },
+    ],
   },
 ]
