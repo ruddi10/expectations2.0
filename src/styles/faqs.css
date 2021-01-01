@@ -1,13 +1,13 @@
 .ui.styled.accordion,
 .ui.styled.accordion .accordion {
-  background: var(--lightg);
+  box-shadow: none;
+  border-radius: 0rem;
 }
 .ui.styled.accordion .title,
 .ui.styled.accordion .accordion .title {
   margin: 0rem;
   padding: 1rem 2.75rem;
-  color: #333333;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  color: #333333; 
   transition: background 0.1s ease, color 0.1s ease;
   font-family: "Noto Sans";
   font-size: 18px;
@@ -35,4 +35,27 @@
 .ui.accordion .accordion .title .dropdown.icon {
   display: inline-block;
   float: right;
+  color: white;
+}
+
+.accordion-item {
+  background: var(--lightg);
+  margin-bottom: 1.5rem
+}
+
+@media only screen and (max-width: 650px) {
+  /*.ui.styled.accordion .active.content,
+  .ui.styled.accordion .accordion .active.content {
+    background: white;
+  }
+  .ui.styled.accordion .active.title,
+  .ui.styled.accordion .accordion .active.title {
+    background: none;
+    columns: #666666;;
+  }*/
+  .ui.accordion .title .dropdown.icon,
+  .ui.accordion .accordion .title .dropdown.icon {
+    display: none;
+}
+
 }

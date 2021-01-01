@@ -620,11 +620,32 @@ export const todolist = [
   },
 ]
 
-export const packinglist = {
-  title: "Packing List",
-  content:
-    "<h2>Documents-</h2><p>The most important requirement. Even if you forget everything else at home be sure to carry these.</p><h2>Laptop-</h2><p>Although you can buy a laptop later, it’d be best to have one from the start.</p><p>All the other things that are required can be purchased after coming to IIT-R. On the registration day, stalls are put up inside the campus for bedding and bicycles. And all the other things that you’ll require in your room will be available to purchase right outside the campus.</p>",
-}
+export const packinglist = [ 
+  {
+    title: "Clothing and Umbrella",
+    type: "label-green",
+    content:
+      "Roorkee’s weather is quite humid in the period of July to September. Do carry clothes accordingly and you could get a shirt or two for your freshers’ . "
+  },
+  {
+    title: "Naphthalene Balls",
+    type: "label-blue",
+    content:
+      "Roorkee’s weather is quite humid in the period of July to September. Do carry clothes accordingly and you could get a shirt or two for your freshers’ . "
+  },
+  {
+    title: "Documents",
+    type: "label-red",
+    content:
+      "The most important requirement. Even if you forget everything else at home be sure to carry these."
+  },
+  {
+    title: "Laptop",
+    type: "label-green",
+    content:
+      "Although you can buy a laptop later, it’d be best to have one from the start."
+  },  
+]
 
 export const security = {
   title: "Security",

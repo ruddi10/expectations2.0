@@ -27,7 +27,7 @@ export default class FAQs extends Component {
         </p>
         <Accordion fluid styled>
           {faqs.map(faq => (
-            <div>
+            <div className="accordion-item">
               <Accordion.Title
                 active={activeIndex === faq.index}
                 index={faq.index}
