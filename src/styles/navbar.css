@@ -96,7 +96,7 @@
     font-size: 0.6rem;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 770px) {
   .navbar-header {
     max-width: 95vw;
   }
@@ -111,5 +111,8 @@
   .cond-icon {
     visibility: visible;
     cursor: pointer;
+  }
+  .ui.dropdown.box > .text {
+    font-size: 0.9rem;
   }
 }
