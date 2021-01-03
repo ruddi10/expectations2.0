@@ -114,7 +114,7 @@ h2.dark-color-head {
   border-radius: 0.5rem;
 }
 
-@media only screen and (max-width: 900px) and (min-width: 651px) {
+@media only screen and (max-width: 1024px) and (min-width: 651px) {
   html {
     font-size: 13px !important;
   }
@@ -131,5 +131,11 @@ h2.dark-color-head {
   }
   .expanded-image {
     max-height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.grid > .cards-grid.column:not(.row) {
+    padding: 2rem 0rem !important;
   }
 }

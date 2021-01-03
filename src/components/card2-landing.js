@@ -20,7 +20,7 @@ const GenericCard2Landing = ({ data }) => {
         style={{ marginTop: "2rem", marginBottom: "2rem" }}
       >
         {data.cards.map(card => (
-          <GridColumn stretched>
+          <GridColumn className="cards-grid" stretched>
             {data.isExperience ? (
               <ExperienceCard
                 data={{

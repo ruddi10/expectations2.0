@@ -1,5 +1,5 @@
 .experience-two-wrapper {
-  margin: 4rem 3rem;
+  margin: 4rem 0rem;
 }
 
 .experience-two-header {
@@ -13,4 +13,13 @@
 .experience-two-all,
 .experience-two-all:hover {
   color: var(--darkg);
+}
+
+@media only screen and (max-width: 467px) {
+  .experience-two-header {
+    flex-direction: column;
+  }
+  .experience-two-all {
+    margin-top: 0.6rem;
+  }
 }

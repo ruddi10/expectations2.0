@@ -18,3 +18,16 @@
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 467px) {
+  .yay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .yay > .ui.avatar.image {
+    height: 3em;
+    width: 3em;
+  }
+}
