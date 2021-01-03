@@ -42,7 +42,10 @@ const HomeColumn = ({ data, windowWidth }) => {
         {windowWidth > 650 && (
           <div className="light-color-head headings">{data.heading}</div>
         )}
-        <div className="home-column-body">{data.body}</div>
+        <div
+          className="home-column-body"
+          dangerouslySetInnerHTML={{ __html: data.body }}
+        />
         <div>
           {windowWidth > 650 && (
             <Button
