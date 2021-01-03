@@ -125,9 +125,9 @@ body {
   height: 50vh !important;
 } */
 
-.slide {
+/* .slide {
   height: 50vh;
-}
+} */
 
 .card-container2 {
   display: flex;
@@ -162,15 +162,56 @@ body {
 .all-excerpt a:hover {
   color: var(--darkg);
 }
-
+.carousel .control-dots .dot {
+  background: transparent !important;
+  border: 1px solid #fff;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
 .carousel .slide {
   background-color: #ffffff !important;
 }
 
+.carousel .slide .legend.my-legend,
+.carousel:hover .slide .legend.my-legend {
+  width: 47vw;
+  background: rgba(35, 35, 35, 0.6);
+  opacity: 1;
+  min-height: calc(47vw / 4.33);
+  margin-left: 0;
+  left: 26.5%;
+  /* bottom: 2.2vw; */
+  border-radius: 0;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.8rem 1.5rem;
+}
+.carousel .slide .legend.my-legend .legend-link {
+  text-align: right;
+  text-decoration-line: underline;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
 .carousel .control-dots .dot.selected,
 .carousel .control-dots .dot:hover {
-  opacity: 0.5 !important;
-  background-color: #c4c4c4;
+  background-color: #ffffff !important;
+}
+
+.card-container2 .carousel .control-dots .dot.selected,
+.card-container2 .carousel .control-dots .dot:hover {
+  background-color: #121212 !important;
+}
+.card-container2 .carousel .control-dots .dot {
+  border: 1px solid #000;
+  opacity: 1;
+  background: #fff;
 }
 
 .home-column-container {

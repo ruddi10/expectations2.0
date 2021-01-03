@@ -51,6 +51,33 @@ export const dropups = [
   },
 ]
 
+export const carouselPic = [
+  {
+    link: "Academics",
+    content: "Read about academic structure and branch change at IITR here.",
+    name: "expectations_carousel_dummy",
+    to: "/",
+  },
+  {
+    link: "Academics",
+    content: "Read about academic structure and branch change at IITR here.",
+    name: "expectations_carousel_dummy",
+    to: "/",
+  },
+  {
+    link: "Academics",
+    content: "Read about academic structure and branch change at IITR here.",
+    name: "expectations_carousel_dummy",
+    to: "/",
+  },
+  {
+    link: "Academics",
+    content: "Read about academic structure and branch change at IITR here.",
+    name: "expectations_carousel_dummy",
+    to: "/",
+  },
+]
+
 export const connect = [
   {
     url: "https://www.facebook.com/geekgazette",

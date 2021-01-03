@@ -2,12 +2,13 @@ import React from "react"
 import Card1 from "../components/card1"
 import Layout from "../components/layout"
 import "../styles/home2.css"
-import { h2data, testimonialExcerpt, homeColumn } from "../data"
+import { h2data, testimonialExcerpt, homeColumn, carouselPic } from "../data"
 import TestimonialExcerpt from "../components/testimonial-excerpt"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import HomeColumn from "../components/home-colum"
+import Image from "gatsby-image"
 import ResponsiveComponent from "../components/responsive-component"
 const Bottom = props => (
   <div className={`home2-bottom ${props.class}`}>
@@ -44,6 +45,9 @@ const Bottom = props => (
 
 class Home2 extends ResponsiveComponent {
   render() {
+    const {
+      allFile: { edges },
+    } = this.props.data
     return (
       <Layout noContainer={true}>
         <Carousel
@@ -53,34 +57,63 @@ class Home2 extends ResponsiveComponent {
           swipeable
           showThumbs={false}
         >
-          <div style={{ height: "50vh" }}>
+          {carouselPic.map(pic => (
+            <div style={{ height: "calc(100vw/2.5)" }}>
+              <Image
+                fluid={
+                  edges.filter(edge => edge.node.name == pic.name)[0].node
+                    .childImageSharp.fluid
+                }
+              />
+              {this.state.windowWidth > 706 && (
+                <p className="legend my-legend text">
+                  <div className="legend-text">{pic.content}</div>
+                  <div style={{ textAlign: "right" }}>
+                    <Link className="legend-link text" to={pic.to}>
+                      {pic.link}
+                    </Link>
+                  </div>
+                </p>
+              )}
+            </div>
+          ))}
+          {/* <div style={{ height: "calc(100vw/2.5)" }}>
             <img
               className="image-gallery-image"
               src="https://picsum.photos/id/1018/1000/600/"
             />
             <p className="legend">Legend 1</p>
           </div>
-          <div style={{ height: "50vh" }}>
+          <div style={{ height: "calc(100vw/2.5)" }}>
             <img
               className="image-gallery-image"
               src="https://picsum.photos/id/1015/1000/600/"
             />
             <p className="legend">Legend 2</p>
           </div>
-          <div style={{ height: "50vh" }}>
+          <div style={{ height: "calc(100vw/2.5)" }}>
             <img
               className="image-gallery-image"
               src="https://picsum.photos/id/1019/1000/600/"
             />
             <p className="legend">Legend 3</p>
           </div>
-          <div style={{ height: "50vh" }}>
+          <div style={{ height: "calc(100vw/2.5)" }}>
             <img
               className="image-gallery-image"
               src={require("../images/expectations_carousel_dummy.png")}
             />
-            <p className="legend">Legend 3</p>
-          </div>
+            <p className="legend my-legend text">
+              <div className="legend-text">
+                Read about academic structure and branch change at IITR here.
+              </div>
+              <div style={{ textAlign: "right" }}>
+                <Link className="legend-link text" to="/">
+                  Academics
+                </Link>
+              </div>
+            </p>
+          </div> */}
         </Carousel>
         <div className="home-banner">
           <div>FIND ALL YOUR DOUBTS CLEARED HERE.</div>
