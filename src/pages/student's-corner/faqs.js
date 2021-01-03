@@ -3,6 +3,7 @@ import Layout from "../../components/layout"
 import { Accordion, Icon, Segment } from "semantic-ui-react"
 import "../../styles/faqs.css"
 import { faqs } from "../../data"
+import { Link } from "gatsby"
 //import AccordionFAQs from "../../components/accordion"
 
 export default class FAQs extends Component {
@@ -28,11 +29,12 @@ export default class FAQs extends Component {
         <div>
           {faqs.map(faq => (
             <div>
-            <h2 className="category"><span>{faq.SNo} &nbsp;&nbsp;</span>
-              {faq.criteria}
-            </h2>
+              <h2 className="category">
+                <span>{faq.SNo} &nbsp;&nbsp;</span>
+                {faq.criteria}
+              </h2>
               <Accordion fluid styled>
-                {faq.questions.map(question => ( 
+                {faq.questions.map(question => (
                   <div className="accordion-item">
                     <Accordion.Title
                       active={activeIndex === question.index}
@@ -44,7 +46,11 @@ export default class FAQs extends Component {
                     </Accordion.Title>
 
                     <Accordion.Content active={activeIndex === question.index}>
-                      {question.content}
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: question.content,
+                        }}
+                      />
                     </Accordion.Content>
                   </div>
                 ))}

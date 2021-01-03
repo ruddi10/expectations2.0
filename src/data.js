@@ -647,31 +647,31 @@ export const todolist = [
   },
 ]
 
-export const packinglist = [ 
+export const packinglist = [
   {
     title: "Clothing and Umbrella",
     type: "label-green",
     content:
-      "Roorkee’s weather is quite humid in the period of July to September. Do carry clothes accordingly and you could get a shirt or two for your freshers’ . "
+      "Roorkee’s weather is quite humid in the period of July to September. Do carry clothes accordingly and you could get a shirt or two for your freshers’ . ",
   },
   {
     title: "Naphthalene Balls",
     type: "label-blue",
     content:
-      "Roorkee’s weather is quite humid in the period of July to September. Do carry clothes accordingly and you could get a shirt or two for your freshers’ . "
+      "Roorkee’s weather is quite humid in the period of July to September. Do carry clothes accordingly and you could get a shirt or two for your freshers’ . ",
   },
   {
     title: "Documents",
     type: "label-red",
     content:
-      "The most important requirement. Even if you forget everything else at home be sure to carry these."
+      "The most important requirement. Even if you forget everything else at home be sure to carry these.",
   },
   {
     title: "Laptop",
     type: "label-green",
     content:
-      "Although you can buy a laptop later, it’d be best to have one from the start."
-  },  
+      "Although you can buy a laptop later, it’d be best to have one from the start.",
+  },
 ]
 
 export const security = {
@@ -736,7 +736,7 @@ export const faqs = [
   {
     SNo: "01",
     criteria: "Roorkee",
-    questions: [    
+    questions: [
       {
         title: "Why Roorkee?",
         content:
@@ -746,7 +746,7 @@ export const faqs = [
       {
         title: "How good are placements for my branch?",
         content:
-          "We know how much you are itching to know the answer to the question. <Link to='/placements/analysis'>Here</Link> are your placement stats. But keep this in mind before selecting a branch based on the placement data only. In general a better branch of discipline is the one which combines interest with opportunities. At the end of the next 10 years, who knows, the entire market scenario could change with a drastic shift in opportunities.",
+          "We know how much you are itching to know the answer to the question. <a href='/placements/analysis'>Here</a> are your placement stats. But keep this in mind before selecting a branch based on the placement data only. In general a better branch of discipline is the one which combines interest with opportunities. At the end of the next 10 years, who knows, the entire market scenario could change with a drastic shift in opportunities.",
         index: 1,
       },
       {
@@ -766,7 +766,7 @@ export const faqs = [
   {
     SNo: "02",
     criteria: "Academic",
-    questions: [    
+    questions: [
       {
         title: "How does grading happen?",
         content:
