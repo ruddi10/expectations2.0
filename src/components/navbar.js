@@ -13,13 +13,13 @@ const MenuList = () => (
     className="navbar-menu"
     attached={"bottom"}
   >
-    {dropups.map(dropup => (
-      <Dropdown item text={dropup.value} className="box">
+    {dropups.map((dropup, index) => (
+      <Dropdown item text={dropup.value} className={"box"}>
         <Dropdown.Menu>
           {dropup.fields.map(field => (
             <Dropdown.Item
               className="ditem"
-              value={field}
+              value={index}
               as={Link}
               to={`/${dropup.value
                 .split(" ")
@@ -55,14 +55,20 @@ export default class Navbar extends ResponsiveComponent {
               as={Link}
               to="/home2"
             />
-            <Icon
+            {/* <Icon
               className="cond-icon"
               name="list"
               size={"large"}
               onClick={this.handleClick}
+            /> */}
+            <Image
+              src={require("../images/hamburger.png")}
+              fluid
+              onClick={this.handleClick}
+              className="cond-icon"
             />
           </div>
-          {this.state.toggle || window.innerWidth > 800 ? (
+          {this.state.toggle || window.innerWidth > 1024 ? (
             <MenuList />
           ) : (
             this.state.toggle

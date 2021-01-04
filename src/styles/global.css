@@ -83,9 +83,9 @@ h2.dark-color-head {
   line-height: 1.75rem;
   color: #666666;
 }
-.only-mobile {
+/* .only-mobile {
   display: none !important;
-}
+} */
 .eat-cntr {
   padding-top: 3rem;
 }
@@ -123,12 +123,12 @@ h2.dark-color-head {
   html {
     font-size: 12px !important;
   }
-  .only-web {
+  /* .only-web {
     display: none !important;
   }
   .only-mobile {
     display: flex !important;
-  }
+  } */
   .expanded-image {
     max-height: 50vw;
   }

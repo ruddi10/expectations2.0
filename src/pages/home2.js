@@ -11,7 +11,7 @@ import HomeColumn from "../components/home-colum"
 import Image from "gatsby-image"
 import ResponsiveComponent from "../components/responsive-component"
 const Bottom = props => (
-  <div className={`home2-bottom ${props.class}`}>
+  <div className="home2-bottom">
     <iframe
       src="https://www.youtube.com/embed/b7xePppEUIU?start=1"
       frameborder="0"
@@ -44,6 +44,11 @@ const Bottom = props => (
 )
 
 class Home2 extends ResponsiveComponent {
+  constructor(props) {
+    super(props)
+    this.state = { windowWidth: window.innerWidth }
+  }
+
   render() {
     const {
       allFile: { edges },
@@ -141,7 +146,7 @@ class Home2 extends ResponsiveComponent {
                 </div>
               ))}
             </div>
-            <Bottom />
+            {this.state.windowWidth > 650 ? <Bottom /> : ""}
           </div>
         </div>
         <div className="home2-container">
@@ -153,6 +158,7 @@ class Home2 extends ResponsiveComponent {
               />
             ))}
           </div>
+          {this.state.windowWidth > 650 ? "" : <Bottom />}
         </div>
       </Layout>
     )

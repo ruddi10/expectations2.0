@@ -9,7 +9,7 @@
   padding-left: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   /* border: 1px solid black; */
 }
 .cwi-image {
