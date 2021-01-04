@@ -39,7 +39,7 @@ export const dropups = [
       "To-do list",
       "Packing list",
       "IITR Lingo",
-      "In campus commute and payments",
+      "Commute and payments",
       "FAQs",
     ],
   },
