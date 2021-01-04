@@ -4,24 +4,29 @@ import Layout from "../../components/layout"
 import { technicalGroup } from "../../data"
 import GenericCard2Landing from "../../components/card2-landing"
 import { graphql } from "gatsby"
+import ResponsiveComponent from "../../components/responsive-component"
 
-const TechnicalGroupsList = ({ data }) => {
-  const groups = data.allContentfulGroup.nodes.filter(node => node.technical)
-  return (
-    <Layout>
-      <GenericCard2Landing
-        data={{
-          ...technicalGroup,
-          isReadMore: true,
-          cards: groups,
-          rooturl: "/co-curricular/technical-groups/",
-          isTrim: true,
-          num: 25,
-          cardNum: 3,
-        }}
-      />
-    </Layout>
-  )
+class TechnicalGroupsList extends ResponsiveComponent {
+  render() {
+    const { data } = this.props
+    const { windowWidth } = this.state
+    const groups = data.allContentfulGroup.nodes.filter(node => node.technical)
+    return (
+      <Layout>
+        <GenericCard2Landing
+          data={{
+            ...technicalGroup,
+            isReadMore: true,
+            cards: groups,
+            rooturl: "/co-curricular/technical-groups/",
+            isTrim: true,
+            num: 25,
+            cardNum: windowWidth > 1024 ? 3 : 2,
+          }}
+        />
+      </Layout>
+    )
+  }
 }
 
 export const query = graphql`

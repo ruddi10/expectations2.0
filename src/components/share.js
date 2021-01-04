@@ -6,7 +6,7 @@ import { makeUrl } from "../helper-functions"
 const Share = ({ relativeUrl, slug, title }) => {
   return (
     <div className="share-parent">
-      <div className="text">
+      <div className=" yay text">
         <Image avatar src={require("../images/yayyyy.png")} />
         Yayy, you read it entirely! If you like this, share it on:
       </div>

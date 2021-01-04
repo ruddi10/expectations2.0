@@ -12,7 +12,15 @@ class Layout extends ResponsiveComponent {
     return (
       <div className="layout-container">
         <Navbar />
-        <div className={noContainer ? " " : "container"}>
+        <div
+          style={{
+            flex: "1",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+          className={noContainer ? " " : "container"}
+        >
           <div>{children}</div>
           {this.state.windowWidth > 840 ? <Footer /> : <MobileFooter />}
         </div>

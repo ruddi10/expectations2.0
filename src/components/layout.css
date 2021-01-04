@@ -2,3 +2,9 @@
   max-width: 80vw;
   margin: auto !important;
 }
+
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

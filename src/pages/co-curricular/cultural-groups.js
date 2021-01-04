@@ -4,24 +4,29 @@ import Layout from "../../components/layout"
 import { culturalGroup } from "../../data"
 import GenericCard2Landing from "../../components/card2-landing"
 import { graphql } from "gatsby"
+import ResponsiveComponent from "../../components/responsive-component"
 
-const CulturalGroupsList = ({ data }) => {
-  const groups = data.allContentfulGroup.nodes.filter(node => !node.technical)
-  return (
-    <Layout>
-      <GenericCard2Landing
-        data={{
-          ...culturalGroup,
-          isReadMore: true,
-          cards: groups,
-          rooturl: "/co-curricular/cultural-groups/",
-          isTrim: true,
-          num: 25,
-          cardNum: 3,
-        }}
-      />
-    </Layout>
-  )
+class CulturalGroupsList extends ResponsiveComponent {
+  render() {
+    const { data } = this.props
+    const { windowWidth } = this.state
+    const groups = data.allContentfulGroup.nodes.filter(node => !node.technical)
+    return (
+      <Layout>
+        <GenericCard2Landing
+          data={{
+            ...culturalGroup,
+            isReadMore: true,
+            cards: groups,
+            rooturl: "/co-curricular/cultural-groups/",
+            isTrim: true,
+            num: 25,
+            cardNum: windowWidth > 1024 ? 3 : 2,
+          }}
+        />
+      </Layout>
+    )
+  }
 }
 
 export const query = graphql`

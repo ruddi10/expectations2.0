@@ -25,7 +25,7 @@ const query = graphql`
     }
   }
 `
-const ExperienceTwo = ({ url, slug, archive }) => {
+const ExperienceTwo = ({ url, slug, archive, windowWidth }) => {
   const {
     data: { nodes },
   } = useStaticQuery(query)
@@ -49,14 +49,16 @@ const ExperienceTwo = ({ url, slug, archive }) => {
         style={{ marginTop: "4rem", marginBottom: "2rem" }}
       >
         {experience.map(card => (
-          <Grid.Column stretched>
+          <Grid.Column className="cards-grid" stretched>
             <ExperienceCard
               data={{
                 title: card.title,
                 tags: card.tags,
                 content:
-                  getWords(card.description.childMarkdownRemark.html, 40) +
-                  " ...",
+                  getWords(
+                    card.description.childMarkdownRemark.html,
+                    windowWidth > 1000 ? 40 : windowWidth > 850 ? 25 : 20
+                  ) + " ...",
                 to: url + card.slug,
                 author: card.author,
                 batch: card.batch,
