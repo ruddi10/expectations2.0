@@ -1,0 +1,242 @@
+body {
+  background-color: aqua;
+}
+.grey-body {
+  background-color: #f7f7f7;
+}
+.gb-container {
+  max-width: 80vw;
+  margin: auto;
+  padding-bottom: 5vw;
+}
+.home2-container > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+
+  /* border: 1px solid black; */
+}
+.home-banner {
+  max-width: 80vw;
+  margin: auto;
+}
+.home2-container {
+  max-width: 80vw;
+  margin: auto;
+}
+.home2-heading {
+  padding-top: 2rem;
+}
+.home2-cards {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0rem 10rem 2rem 10rem; */
+}
+.home2-bottom > * {
+  /* border: 1px solid black; */
+  margin-top: 2rem;
+  min-height: 24vw;
+  width: 45%;
+}
+.home2-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.home2-cards > *:not(:first-child) {
+  padding-left: 5vw;
+}
+
+@media only screen and (max-width: 650px) {
+  .home2-cards {
+    flex-direction: column;
+  }
+  .home2-cards > * {
+    padding: 0 0 2rem 0 !important;
+  }
+  .home2-heading {
+    text-align: center;
+  }
+  .home2-bottom {
+    flex-direction: column;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+  }
+  .home2-bottom > * {
+    width: 80vw;
+    border: 1px solid black;
+  }
+}
+
+.image-gallery-image {
+  object-fit: cover;
+}
+
+.image-gallery-description {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vh;
+  min-height: 20%;
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+}
+
+.home-banner {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+  padding: 3rem 0;
+  color: #666666;
+  flex-direction: column;
+}
+
+.home-banner .dark-color-head {
+  max-width: 60%;
+  padding-top: 0.8rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* .slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh;
+}
+
+.slider-item-div {
+  height: 50vh;
+}
+
+.carousel-style {
+  height: 50vh !important;
+} */
+
+/* .slide {
+  height: 50vh;
+} */
+
+.card-container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container2 .carousel-root {
+  flex: 1;
+}
+
+.card-container2 .carousel.carousel-slider {
+  height: 100%;
+  overflow: visible;
+}
+
+.card-container2 .slide {
+  height: 100%;
+  width: max-content;
+}
+.card-container2 .slider-wrapper,
+.card-container2 .slider {
+  height: 100%;
+}
+
+.all-excerpt {
+  text-align: right;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.all-excerpt a,
+.all-excerpt a:hover {
+  color: var(--darkg);
+}
+.carousel .control-dots .dot {
+  background: transparent !important;
+  border: 1px solid #fff;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+.carousel .slide {
+  background-color: #ffffff !important;
+}
+
+.carousel .slide .legend.my-legend,
+.carousel:hover .slide .legend.my-legend {
+  width: 47vw;
+  background: rgba(35, 35, 35, 0.6);
+  opacity: 1;
+  min-height: calc(47vw / 4.33);
+  margin-left: 0;
+  left: 26.5%;
+  /* bottom: 2.2vw; */
+  border-radius: 0;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.8rem 1.5rem;
+}
+.carousel .slide .legend.my-legend .legend-link {
+  text-align: right;
+  text-decoration-line: underline;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background-color: #ffffff !important;
+}
+
+.card-container2 .carousel .control-dots .dot.selected,
+.card-container2 .carousel .control-dots .dot:hover {
+  background-color: #121212 !important;
+}
+.card-container2 .carousel .control-dots .dot {
+  border: 1px solid #000;
+  opacity: 1;
+  background: #fff;
+}
+
+.home-column-container {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.all-excerpt {
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 650px) {
+  .home2-cards {
+    flex-direction: column;
+  }
+  .home2-cards > * {
+    padding: 0 0 2rem 0 !important;
+  }
+  .home2-bottom {
+    display: none;
+  }
+  .home2-heading {
+    text-align: center;
+  }
+  .home-banner .dark-color-head {
+    max-width: 100%;
+  }
+}

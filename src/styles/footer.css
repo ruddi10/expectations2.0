@@ -1,0 +1,127 @@
+.nav-container {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 0;
+  padding-top: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem;
+  margin-top: 2rem;
+}
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 2rem;
+  row-gap: 0.8rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.middle div {
+  color: #75c2be;
+}
+
+.middle a.item,
+a:hover {
+  color: #333333;
+  cursor: pointer;
+}
+
+.footer-bottom a,
+.footer-bottom a:hover,
+.footer-bottom a.item:hover {
+  color: #333333;
+  cursor: pointer;
+}
+
+.footer-bottom div {
+  color: #737171;
+}
+
+.logo-wrapper {
+  width: 178px;
+}
+
+.top .ui.button.button {
+  border: 2px;
+  padding: 0.8rem 2rem;
+}
+
+.footer-bottom .grid-header {
+  color: #75c2be;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.connect-icons {
+  grid-row: 2 / 4;
+  grid-column-start: 3;
+}
+
+.ui.button.cutoff-btn {
+  background: var(--lightg);
+  color: #ffffff;
+  width: max-content;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.ui.button.cutoff-btn:hover {
+  background: var(--lightg);
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 840px) {
+  .footer-bottom {
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: justify;
+    row-gap: 1.1rem;
+    font-size: 1.4rem;
+  }
+  .footer-bottom > * {
+    text-align: center;
+  }
+  .logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-wrapper > .gatsby-image-wrapper {
+    width: 50%;
+  }
+  .footer-bottom .grid-header {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+  .ui.teal.button.headings {
+    background-color: var(--lightg);
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .ui.teal.button.headings:hover {
+    background-color: var(--darkp);
+  }
+  .mobi-low {
+    color: #737171;
+    font-size: 1rem;
+    margin-top: 2.8rem;
+    background: #f7f7f7;
+  }
+  .mobi-low > div {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+  }
+}

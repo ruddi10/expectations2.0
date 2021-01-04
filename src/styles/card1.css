@@ -1,0 +1,73 @@
+.ui.card1.card > .content,
+.ui.cards > .card.card1 > .content {
+  padding: 1.2rem 0.3rem 0.3rem 0.6rem;
+}
+.ui.card.card1 > .content > .description {
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.2rem;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: #666666;
+}
+.ui.card.card1 > .content > .header,
+.ui.cards > .card.card1 > .content > .header {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #333333;
+}
+.ui.card.card1 > .image > img {
+  min-height: 15rem;
+  object-fit: cover;
+}
+.ui.card.card1 > :first-child,
+.ui.cards > .card.card1 > :first-child {
+  min-height: 18vw;
+}
+/* .ui.cards > .teal.card.card1,
+  .ui.cards.card1 > .teal.card:hover {
+    box-shadow: 0 0 0 1px #d4d4d5, 0 6px 0 0 #75c2be, 0 1px 3px 0 #d4d4d5;
+  } */
+.ui.cards > .card.card1 {
+  border-bottom: 4px solid var(--lightg);
+}
+
+.ui.card.card1 {
+  border-bottom: 4px solid var(--lightg);
+  width: 100%;
+  transform: none;
+}
+.ui.cards > .card.card1:hover,
+.ui.card.card1:hover {
+  border-bottom: 4px solid var(--darkp);
+  transform: none;
+}
+@media only screen and (max-width: 1024px) {
+  .ui.card.card1 > :first-child,
+  .ui.cards > .card.card1 > :first-child {
+    min-height: 22vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .ui.card.card1,
+  .ui.card.card1:hover {
+    font-size: 1.8rem;
+  }
+
+  .ui.card.card1 > .content {
+    font-size: 1.6rem;
+  }
+  .ui.card.card1 > .content > .description {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .ui.card.card1 > :first-child,
+  .ui.cards > .card.card1 > :first-child {
+    min-height: 50vw;
+  }
+}

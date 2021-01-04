@@ -1,0 +1,141 @@
+html {
+  background-color: #ffffff;
+  font-size: 15px !important;
+  box-sizing: border-box;
+}
+:root {
+  --lightg: #75c2be;
+  --darkg: #498b88;
+  --darkp: #e29a9a;
+}
+.text {
+  font-family: "Noto Sans" !important;
+}
+
+.headings {
+  font-family: "Poppins" !important;
+}
+
+.light-color-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--lightg);
+  padding: 1rem 0 1rem 0;
+  line-height: 3rem;
+}
+.dark-color-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--darkg);
+  padding: 1rem 0 1rem 0;
+}
+
+h2.dark-color-head {
+  padding: 2rem 0 1rem 0;
+}
+.normal-head,
+.normal-para h2 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.normal-para,
+.normal-para p {
+  font-family: "Noto Sans" !important;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #6b6b6b;
+}
+.normal-para strong {
+  color: black;
+}
+.para-container {
+}
+.normal-para > h4 {
+  font-family: "Noto Sans" !important;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #666666;
+  font-size: 1.3rem;
+}
+.expanded-image {
+  max-height: 30vw;
+  margin: 1rem 0 3rem 0;
+  object-fit: cover;
+}
+.experience-expanded-image {
+  max-height: calc(80vw / 3.3);
+  margin: 1rem 0 3rem 0;
+  object-fit: cover;
+}
+.description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  line-height: 1.75rem;
+  color: #666666;
+}
+.only-mobile {
+  display: none !important;
+}
+.eat-cntr {
+  padding-top: 3rem;
+}
+.list-head {
+  font-family: "Noto Sans" !important;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: black;
+  font-size: 1.3rem;
+}
+.ui.grid > .column:not(.row) {
+  padding-bottom: 3rem !important;
+}
+
+.tag1 {
+  background-color: rgba(231, 253, 223, 0.5);
+}
+
+.tag2 {
+  background-color: rgba(253, 245, 223, 0.5);
+}
+
+.tag1,
+.tag2 {
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 651px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 12px !important;
+  }
+  .only-web {
+    display: none !important;
+  }
+  .only-mobile {
+    display: flex !important;
+  }
+  .expanded-image {
+    max-height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.grid > .cards-grid.column:not(.row) {
+    padding: 2rem 0rem !important;
+  }
+}

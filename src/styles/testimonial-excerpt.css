@@ -1,0 +1,24 @@
+.excerpt-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+  color: #6b6b6b;
+  line-height: 1.3rem;
+  max-height: max-content;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  justify-content: center;
+}
+
+/* .all-excerpt {
+  text-align: right;
+  padding-bottom: 1.5rem;
+}
+
+.all-excerpt a,
+.all-excerpt a:hover {
+  color: var(--darkg);
+} */

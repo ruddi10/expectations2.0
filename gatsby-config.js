@@ -16,6 +16,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`poppins`, `noto sans`],
+        display: "swap",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -25,6 +32,29 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `w58jpvtm8bul`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `sueLh-7aDFgAF-vM82TrDNfG6eV3cDb81QbtdWsseOw`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

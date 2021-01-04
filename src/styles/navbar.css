@@ -1,23 +1,41 @@
-.ui.menu.navbar-menu {
+.ui.menu.mini.navbar-menu {
   border-radius: 0px;
   box-shadow: none;
-  border: none;
 }
 .navbar-header {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: max-content;
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+  max-width: 80vw;
+  margin: auto !important;
 }
 .ui.dropdown.item.box {
   background-color: white;
   border-radius: 5px 5px 0 0;
+  text-align: left;
 }
 .ui.link.menu .item.box:hover,
 .ui.menu .dropdown.item.box:hover,
 .ui.menu .link.item.ditem:hover,
 .ui.menu a.item.box:hover {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.95);
+  color: white;
   background-color: #ef9797;
+  text-align: left;
+}
+.ui.link.menu .item.box:focus,
+.ui.menu .dropdown.item.box:focus,
+.ui.menu .link.item.ditem:focus,
+.ui.menu a.item.box:focus {
+  cursor: pointer;
+  color: white;
+  background-color: #ef9797;
+  text-align: left;
 }
 /* .ui.link.menu .item:active,
 .ui.menu .dropdown.item.box:active,
@@ -29,11 +47,72 @@
 } */
 .ui.menu .ui.dropdown.box .menu > .item:hover {
   background-color: #ef9797 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: white !important;
 }
 .ui.menu .active.item.box {
   background: #ef9797;
   color: rgba(0, 0, 0, 0.95);
   font-weight: 400;
   box-shadow: none;
+}
+.ui.attached.item.menu:not(.tabular) {
+  border: none;
+}
+
+.navbar-container {
+  background-color: white;
+  border-bottom: 2px #75c2be solid;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+}
+.above-menu {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+.cond-icon {
+  visibility: hidden;
+}
+.ui.bottom.attached.menu.borderless > .item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+@media only screen and (max-width: 1150px) {
+  .ui.dropdown.box > .text {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .ui.dropdown.box > .text {
+    display: inline-block;
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .navbar-header {
+    max-width: 95vw;
+  }
+  .navbar-menu {
+    width: 100vw;
+  }
+  .ui.item.dropdown.box {
+    max-width: 100vw;
+    width: 100vw;
+    border-radius: 0;
+  }
+  .cond-icon {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .ui.dropdown.box > .text {
+    font-size: 0.9rem;
+  }
 }

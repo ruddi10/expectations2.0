@@ -1,0 +1,10 @@
+.scholar-link {
+  display: flex;
+  flex-direction: row;
+}
+.scholar-link a {
+  padding-left: 1rem;
+}
+.single-scholarship {
+  padding: 2.5rem 0 2.5rem 0;
+}

@@ -1,53 +1,54 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Navbar from "./navbar"
 import "./layout.css"
+import Footer from "./footer"
+import ResponsiveComponent from "./responsive-component"
+import MobileFooter from "./mobile-footer"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+class Layout extends ResponsiveComponent {
+  render() {
+    const { noContainer, children } = this.props
+    return (
+      <div className="layout-container">
+        <Navbar />
+        <div
+          style={{
+            flex: "1",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+          className={noContainer ? " " : "container"}
+        >
+          <div>{children}</div>
+          {this.state.windowWidth > 840 ? <Footer /> : <MobileFooter />}
+        </div>
+        {this.state.windowWidth > 840 ? (
+          <div
+            style={{
+              background: "#F7F7F7",
+              fontSize: "0.8rem",
+              marginTop: "0.6rem",
+            }}
+          >
+            <div className="container headings">
+              All rights reserved Geek Gazette,Copyright 2020
+            </div>
+          </div>
+        ) : (
+          <div className="mobi-low headings">
+            <div>Photo Courtesy: Photography Section, IITR</div>
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+            <div>Video Courtesy: Cinematic Section, IITR </div>
+            <div style={{ color: "#333333" }}>
+              All rights reserved Geek Gazette,Copyright 2020
+            </div>
+          </div>
+        )}
       </div>
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    )
+  }
 }
 
 export default Layout

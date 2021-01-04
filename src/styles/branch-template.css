@@ -1,0 +1,65 @@
+.btimage {
+}
+.branch-info {
+  padding: 1rem 0 1rem 0;
+}
+.icon-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.image-wi {
+  margin-bottom: 1rem;
+}
+.icon-group > img {
+  height: 2vw;
+}
+.single-link > p {
+  padding-left: 0.2rem;
+}
+.icon-group > *:not(:first-child) {
+  padding-left: 1rem;
+}
+.single-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 650px) {
+  .icon-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icon-group > * {
+    padding: 5px 0 0 0 !important;
+  }
+}
+.experience-template-author {
+  color: #666666;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.experience-template-branch {
+  font-size: 1.25rem;
+  color: #999999;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.experience-tag-bottom > span {
+  margin-right: 0.6rem;
+}
+
+.experience-tag-bottom {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid var(--lightg);
+  margin-bottom: 3rem;
+}
+
+.experience-tag-bottom > .tag1,
+.experience-tag-bottom > .tag2 {
+  font-size: 0.9rem;
+}
