@@ -29,7 +29,7 @@ function PackingList(props) {
             </div>
           </div>
         </div>
-        <p className="normal-para">
+        <p className="para">
           This is probably the first time most of you will be moving away from home, and even for those who were away for coaching - this will be your first experience in setting up your rooms all by yourself. The rooms in campus are typically small in size and a little tight to accommodate, a fact that often shocks/scares parents, but then you do learn alot . Here is a list curated for you to help in your packing, color-coded for your convenience.
         </p>
 
