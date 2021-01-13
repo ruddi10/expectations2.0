@@ -1,6 +1,6 @@
 # Expectations 2.0
 
-Sencond version of expectation ,a website made by geek gazette for freshers.
+Second version of expectation ,a website made by geek gazette for freshers.
 
 **Built Using :**
 
